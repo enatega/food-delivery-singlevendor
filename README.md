@@ -1,6 +1,7 @@
 # Enatega Restaurant Solution
 
 ![Project thumbnail](./contributingGuides/thumbnail.png)
+<br/>
 This is a white label restaurant solution for any kind of restaurant application or delivery solution that can be used by any restaurant owner to manage their restaurant and delivery business. The solution provides managing orders with a seperate rider application for delivery management.
 
 ## Getting Started
