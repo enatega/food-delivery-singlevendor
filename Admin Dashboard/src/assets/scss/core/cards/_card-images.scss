@@ -1,0 +1,42 @@
+//
+// Profile card
+//
+
+.card-title-image {
+    
+    img {
+        max-width: 180px;
+        border-radius: $border-radius;
+        @extend .shadow;
+        transition: $transition-base;
+        
+    }
+}
+
+.card-title-stats {
+    padding: 1rem 0;
+
+    > div {
+        text-align: center;
+        margin-right: 1rem;
+        padding: .875rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .heading {
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: block;
+        }
+        .description {
+            font-size: .875rem;
+            color: $gray-500;
+        }
+    }
+}
+
+.card-title-actions {
+    padding: .875rem;
+}
