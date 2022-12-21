@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "Enatega",
+    "version": "1.0.16",
+    "description": "Enatega is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://market.nativebase.io/view/react-native-food-delivery-backend-app",
+    "slug": "enategasinglevendor",
+    "privacy": "public",
+    "androidStatusBar": {
+      "backgroundColor": "#000"
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#febb2c"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.enatega.vendor",
+      "config": {
+        "googleMapsApiKey": "AIzaSyD0vSz1qjsn_RSPBB9HRD1Eqztm7DyuKw8"
+      },
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses the location to determine the delivery address for your orders."
+      }
+    },
+    "notification": {
+      "iosDisplayInForeground": true,
+      "color": "#d83765",
+      "icon": "./assets/not-icon.png",
+      "androidMode": "default",
+      "androidCollapsedTitle": "Enatega"
+    },
+    "android": {
+      "versionCode": 22,
+      "package": "com.enatega.vendor",
+      "googleServicesFile": "./google-services-prod.json",
+      "useNextNotificationsApi": true,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBt9S6e7ig5EkNiSXw3sCyX7kgo1gzPxl4"
+        }
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#febb2c"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "Allow this app to collect app-related data that can be used for tracking you or your device."
+        }
+      ]
+    ],
+    "facebookScheme": "fb3017447961609878",
+    "facebookAppId": "3017447961609878",
+    "facebookDisplayName": "Food delivery"
+  }
+}
