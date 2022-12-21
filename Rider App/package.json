@@ -1,0 +1,88 @@
+{
+  "name": "enatega-rider-app",
+  "version": "5.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "format": "prettier --write '**/*.js'",
+    "lint:fix": "eslint . --ext .js --fix",
+    "postinstall": "patch-package"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run format",
+      "npm run lint:fix"
+    ]
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.3",
+    "@expo/vector-icons": "^12.0.0",
+    "@react-native-async-storage/async-storage": "~1.15.0",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/bottom-tabs": "^5.11.11",
+    "@react-navigation/drawer": "^5.12.5",
+    "@react-navigation/native": "^5.5.1",
+    "@react-navigation/stack": "^5.14.5",
+    "apollo-boost": "^0.4.3",
+    "apollo-cache-inmemory": "^1.6.2",
+    "apollo-client": "^2.6.3",
+    "apollo-link": "^1.2.12",
+    "apollo-link-context": "^1.0.18",
+    "apollo-link-state": "^0.4.2",
+    "apollo-link-ws": "^1.0.20",
+    "apollo-upload-client": "^10.0.1",
+    "expo": "^44.0.0",
+    "expo-constants": "~13.0.1",
+    "expo-font": "~10.0.4",
+    "expo-localization": "~12.0.0",
+    "expo-location": "~14.0.1",
+    "expo-notifications": "~0.14.0",
+    "expo-splash-screen": "~0.14.1",
+    "expo-task-manager": "~10.1.0",
+    "expo-updates": "~0.11.6",
+    "graphql": "^14.3.1",
+    "graphql-tag": "^2.10.1",
+    "i18n-js": "^3.3.0",
+    "patch-package": "^6.2.2",
+    "react": "17.0.1",
+    "react-apollo": "^2.5.8",
+    "react-native": "0.64.3",
+    "react-native-animatable": "^1.3.2",
+    "react-native-flash-message": "^0.1.13",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-gifted-chat": "^0.16.3",
+    "react-native-maps": "0.29.4",
+    "react-native-maps-directions": "^1.8.0",
+    "react-native-material-textfield": "^0.16.1",
+    "react-native-modal": "^11.5.6",
+    "react-native-reanimated": "~2.3.1",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.10.1",
+    "react-native-svg": "12.1.1",
+    "react-native-webview": "11.15.0",
+    "subscriptions-transport-ws": "^0.9.16"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "9.0.2",
+    "eslint": "^7.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.7",
+    "prettier": "2.0.5",
+    "prettier-config-standard": "^1.0.1"
+  },
+  "private": true
+}
