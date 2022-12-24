@@ -29,7 +29,7 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.enatega.vendor",
       "config": {
-        "googleMapsApiKey": "AIzaSyD0vSz1qjsn_RSPBB9HRD1Eqztm7DyuKw8"
+        "googleMapsApiKey": ""
       },
       "usesAppleSignIn": true,
       "infoPlist": {
@@ -50,7 +50,7 @@
       "useNextNotificationsApi": true,
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyBt9S6e7ig5EkNiSXw3sCyX7kgo1gzPxl4"
+          "apiKey": ""
         }
       },
       "adaptiveIcon": {

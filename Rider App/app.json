@@ -36,7 +36,7 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.enatega.driver",
       "config": {
-        "googleMapsApiKey": "AIzaSyD0vSz1qjsn_RSPBB9HRD1Eqztm7DyuKw8"
+        "googleMapsApiKey": ""
       },
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "Allow $(PRODUCT_NAME) to use location to determine the delivery address for your orders.",
@@ -57,7 +57,7 @@
       ],
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyBt9S6e7ig5EkNiSXw3sCyX7kgo1gzPxl4"
+          "apiKey": ""
         }
       },
       "package": "com.enatega.rider"
