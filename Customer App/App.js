@@ -47,6 +47,7 @@ export default function App() {
 
     setupClient(client)
     await i18n.initAsync()
+    // load fonts
     await Font.loadAsync({
       Poppin300: require('./src/assets/font/Poppin/Poppins-Light.ttf'),
       Poppin400: require('./src/assets/font/Poppin/Poppins-Regular.ttf'),
