@@ -1,24 +1,49 @@
-# Enatega Restaurant Solution
+# Enatega Single Vendor Solution
 
 ![Project thumbnail](./contributingGuides/thumbnail.png)
 <br/>
-This is a white label restaurant solution for any kind of restaurant application or delivery solution that can be used by any restaurant owner to manage their restaurant and delivery business. The solution provides managing orders with a seperate rider application for delivery management.
+Enatega is a state of the art white label storefront delivery solution that allows business owners to easily manage their deliveries. Whether they have a restaurant, grocery store, pharmacy, winery or any similar storefront, Enatega will intuitively and instantly be able to automate their deliveries, and handle the logistics. Our solution provides the capability of order management, as well as separate applications for the rider and the customer. It also boasts a suit of features which allow for a greater range of customizability for customers in terms of item selection.
 
-## Getting Started
+<b>This is the full free source code of our solution, however the backend and API is proprietary and can be obtained via paid license.</b>
 
-The solution contain 3 projects, the admin panel, the restaurant panel and the rider panel. The admin panel is used to manage the restaurant and rider accounts. The Customer App is used to place orders which is then received by the admin panel. The admin panel accepts the order and rider app can accept the order and deliver it to the customer.
+## What is included:
 
-- To run the project, you need to have nodejs installed on your machine and go to the directory and run the following commands
-  For example:
-  `cd Customer\ App`
-  `npm install`
-  `npm start`
+Our solution contains three separate modules. These include the admin panel, the delivery app and the rider app. Below, the capabilities of all three modules have been listed:
 
-- The project has already been set with the required credentials and keys using `.env` and `environment.js` files you can also set your own keys and credentials in the same files.
+- The admin panel receives the orders that can be placed via the customer app. It also allows managing the restaurant’s orders as well as the riders’ accounts.
 
-- The project needs `expo-cli` and `nodejs` to run the project. The version of `nodejs` should be `>=14.00 and <=16.00`.
+- The customer app allows for customers to choose their specific selections and customize their order before placing it.
 
-### High Level Architecture
+- The rider app can accept the orders and also allows for location based zoning as well as the ability to locate customer’s address via google map’s API integration.
+
+## Features:
+
+- Analytics dashboard for the mobile app
+- Payment integration with Paypal and Stripe
+- Order tracking feature
+- Email Integration e.g for order confirmation etc.
+- Ability to provide ratings and reviews
+- Finding address using GPS integration
+- Facebook and Google authentication integration
+- Mobile responsive dashboard
+- Multi-Language support using localization
+- Separate rider app for order management
+- Multiple variations of food items
+- Push notifications for both mobile and web
+
+## Setup
+
+As we’ve mentioned above, the solution includes three separate modules. To setup these modules, follow the steps below:
+
+To run the module, you need to have nodejs installed on your machine. Once nodejs is installed, go to the directory and enter the following commands
+
+The required credentials and keys have been set already. You can setup your own keys and credentials
+
+The version of nodejs should be between 14.0 to 16.0
+
+-[Link to Video tutorial/demonstration of Setup](https://enatega-1.gitbook.io/enatega-multivendor/configurations/google-maps-api-keys)
+
+## High Level Architecture
 
 ![High Level Architecture](https://3875726860-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LfOcDTetx0vXD_N4Zpk%2F-LmsvWhbsgLiqJ_MFIRd%2F-LmsvfAi5Dqcs8MHjkfC%2Farchitecture.png?alt=media&token=0a27057b-ac2b-490a-9745-4ee69372929e)
 
@@ -26,7 +51,7 @@ The solution contain 3 projects, the admin panel, the restaurant panel and the r
 - Web dashboard communicates with only API Server
 - Rider App communicates with API Server
 
-### Prerequisites
+### Prerequisites:
 
 ##### App Ids for Mobile App in app.json
 
@@ -63,7 +88,7 @@ The solution contain 3 projects, the admin panel, the restaurant panel and the r
 
 ##### NOTE: Email provider has been only been tested for gmail accounts
 
-## Built With
+## Technologies:
 
 - [Expo](https://expo.dev/)
 - [React Navigation](https://reactnavigation.org/)
@@ -78,10 +103,6 @@ The solution contain 3 projects, the admin panel, the restaurant panel and the r
 - [GraphQL](https://graphql.org/)
 - [ExpressJS](https://expressjs.com/)
 - [React Strap](https://reactstrap.github.io/)
-
-## Contributing
-
-Enatega Restuarant Solution is an open source project. We welcome contributions of all kinds including documentation, bug fixes, feature requests, and code. Please read our [contributing guide](./contributingGuides/CONTRIBUTING.md) for more information on how you can contribute.
 
 ## Demos
 
@@ -99,6 +120,14 @@ Enatega Restuarant Solution is an open source project. We welcome contributions 
 
 - [Admin Dashboard](https://enatega.ninjascode.com/admin/dashboard)
 
+## Documentation:
+
+Find the link for the complete documentation of the Enatega Single Vendor Solution [here](https://ninjas-code.gitbook.io/enatega-full-app/).
+
+## Contributing:
+
+Enatega Restuarant Solution is an open source project. We welcome contributions of all kinds including documentation, bug fixes, feature requests, and code. Please read our [contributing guide](./contributingGuides/CONTRIBUTING.md) for more information on how you can contribute.
+
 ## Get the Latest News
 
 - [Facebook](https://www.facebook.com/enatega)
@@ -106,4 +135,10 @@ Enatega Restuarant Solution is an open source project. We welcome contributions 
 - [Instagram](https://www.instagram.com/enatega.nb/)
 - [LinkedIn](https://www.linkedin.com/company/14583783/)
 
-Any other questions, please contact us at [our website](https://enatega.com/) or you can email us directly at sharan@ninjascode.com. We'd love to hear from you!
+## Disclaimer:
+
+The frontend source code for our solution is completely open source. However, the API and backend is proprietary and can be accessed via a paid license. For further information, contact us on the channels provided below.
+
+## Contact Us:
+
+sharan@ninjascode.com
