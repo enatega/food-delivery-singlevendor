@@ -43,6 +43,20 @@ The version of nodejs should be between 14.0 to 16.0
 
 -[Link to Video tutorial/demonstration of Setup](https://enatega-1.gitbook.io/enatega-multivendor/configurations/google-maps-api-keys)
 
+## Screenshots
+
+|                    Customer Menu                     |                 Customer Categories                  |                    Customer Items                    |
+| :--------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: | :-: |
+| ![](./contributingGuides/screenshots/customer1.jpeg) | ![](./contributingGuides/screenshots/customer2.jpeg) | ![](./contributingGuides/screenshots/customer3.jpeg) |  !  |
+
+|                    Rider Menu                     |                   Rider Orders                    |                Rider Item Details                 |
+| :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: | :-: |
+| ![](./contributingGuides/screenshots/rider1.jpeg) | ![](./contributingGuides/screenshots/rider2.jpeg) | ![](./contributingGuides/screenshots/rider3.jpeg) |  !  |
+
+|                  Stats Overview                   |                    Users Table                    |                Food Items Editing                 |
+| :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: | :-: |
+| ![](./contributingGuides/screenshots/admin1.jpeg) | ![](./contributingGuides/screenshots/admin2.jpeg) | ![](./contributingGuides/screenshots/admin3.jpeg) |  !  |
+
 ## High Level Architecture
 
 ![High Level Architecture](https://3875726860-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LfOcDTetx0vXD_N4Zpk%2F-LmsvWhbsgLiqJ_MFIRd%2F-LmsvfAi5Dqcs8MHjkfC%2Farchitecture.png?alt=media&token=0a27057b-ac2b-490a-9745-4ee69372929e)
