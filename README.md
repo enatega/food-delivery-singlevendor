@@ -46,8 +46,8 @@ The version of nodejs should be between 14.0 to 16.0
 ## Screenshots
 
 |                    Customer Menu                     |                 Customer Categories                  |                    Customer Items                    |
-| :--------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: | :-: |
-| ![](./contributingGuides/screenshots/customer1.jpeg) | ![](./contributingGuides/screenshots/customer2.jpeg) | ![](./contributingGuides/screenshots/customer3.jpeg) |  !  |
+| :--------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: |
+| ![](./contributingGuides/screenshots/customer1.jpeg) | ![](./contributingGuides/screenshots/customer2.jpeg) | ![](./contributingGuides/screenshots/customer3.jpeg) |
 
 |                    Rider Menu                     |                   Rider Orders                    |                Rider Item Details                 |
 | :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: | :-: |
