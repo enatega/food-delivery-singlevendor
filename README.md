@@ -49,13 +49,13 @@ The version of nodejs should be between 14.0 to 16.0
 | :--------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: |
 | ![](./contributingGuides/screenshots/customer1.jpeg) | ![](./contributingGuides/screenshots/customer2.jpeg) | ![](./contributingGuides/screenshots/customer3.jpeg) |
 
-|                    Rider Menu                     |                   Rider Orders                    |                Rider Item Details                 |
-| :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: | :-: |
-| ![](./contributingGuides/screenshots/rider1.jpeg) | ![](./contributingGuides/screenshots/rider2.jpeg) | ![](./contributingGuides/screenshots/rider3.jpeg) |  !  |
+|                    Rider Menu                     |                   Rider Orders                    |                Rider Items Details                |
+| :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
+| ![](./contributingGuides/screenshots/rider1.jpeg) | ![](./contributingGuides/screenshots/rider2.jpeg) | ![](./contributingGuides/screenshots/rider3.jpeg) |
 
-|                  Stats Overview                   |                    Users Table                    |                Food Items Editing                 |
-| :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: | :-: |
-| ![](./contributingGuides/screenshots/admin1.jpeg) | ![](./contributingGuides/screenshots/admin2.jpeg) | ![](./contributingGuides/screenshots/admin3.jpeg) |  !  |
+|                  Stats Overview                   |                    User Table                     |                Food Items Editing                 |
+| :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
+| ![](./contributingGuides/screenshots/admin1.jpeg) | ![](./contributingGuides/screenshots/admin2.jpeg) | ![](./contributingGuides/screenshots/admin3.jpeg) |
 
 ## High Level Architecture
 
