@@ -59,7 +59,7 @@ The version of nodejs should be between 14.0 to 16.0
 
 ## High Level Architecture
 
-![High Level Architecture](https://3875726860-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LfOcDTetx0vXD_N4Zpk%2F-LmsvWhbsgLiqJ_MFIRd%2F-LmsvfAi5Dqcs8MHjkfC%2Farchitecture.png?alt=media&token=0a27057b-ac2b-490a-9745-4ee69372929e)
+![High Level Architecture](./contributingGuides/screenshots/HighArchitectDiagram.png)
 
 - User Mobile App communicates with both API Server and [Amplitudes](https://amplitude.com/) analytics dashboard
 - Web dashboard communicates with only API Server
