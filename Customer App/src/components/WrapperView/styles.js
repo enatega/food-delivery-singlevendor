@@ -1,25 +1,25 @@
-import { useTheme } from '@react-navigation/native'
-import { useHeaderHeight } from '@react-navigation/stack'
-import { StyleSheet } from 'react-native'
-import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import { scale } from '../../utils/scaling'
+import { useTheme } from "@react-navigation/native";
+import { useHeaderHeight } from "@react-navigation/elements";
+import { StyleSheet } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { scale } from "../../utils/scaling";
 
 const useStyle = () => {
-  const { colors } = useTheme()
-  const inset = useSafeAreaInsets()
-  const headerHeight = useHeaderHeight()
+  const { colors } = useTheme();
+  const inset = useSafeAreaInsets();
+  const headerHeight = useHeaderHeight();
 
   return StyleSheet.create({
     flex: {
-      flex: 1
+      flex: 1,
     },
     wrapperView: {
       backgroundColor: colors.background,
       paddingTop: headerHeight,
-      paddingBottom: inset.bottom
+      paddingBottom: inset.bottom,
     },
     topCurve: {
-      position: 'absolute',
+      position: "absolute",
       opacity: 0.2,
       left: -75,
       borderTopRightRadius: scale(90),
@@ -28,10 +28,10 @@ const useStyle = () => {
       width: scale(250),
       height: scale(260),
       borderRadius: 100,
-      backgroundColor: colors.curve
+      backgroundColor: colors.curve,
     },
     bottomCurve: {
-      position: 'absolute',
+      position: "absolute",
       height: scale(185),
       width: scale(170),
       borderTopRightRadius: scale(110),
@@ -42,9 +42,9 @@ const useStyle = () => {
       backgroundColor: colors.curve,
       opacity: 0.2,
       bottom: -80,
-      zIndex: -1
-    }
-  })
-}
+      zIndex: -1,
+    },
+  });
+};
 
-export default useStyle
+export default useStyle;
