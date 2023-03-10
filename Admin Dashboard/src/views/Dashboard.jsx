@@ -16,7 +16,7 @@ import {
   Col
 } from 'reactstrap'
 
-import Header from 'components/Headers/Header.jsx'
+import Header from '../components/Headers/Header.jsx'
 import { Query } from 'react-apollo'
 import {
   getDashboardTotal,
