@@ -1,90 +1,90 @@
-import { Feather, FontAwesome } from '@expo/vector-icons'
-import { useNavigation, useTheme } from '@react-navigation/native'
-import React, { useCallback, useEffect, useState } from 'react'
-import { Keyboard, View } from 'react-native'
+import { Feather, FontAwesome } from "@expo/vector-icons";
+import { useNavigation, useTheme } from "@react-navigation/native";
+import React, { useCallback, useEffect, useState } from "react";
+import { Keyboard, View } from "react-native";
 import {
   Bubble,
   GiftedChat,
   InputToolbar,
-  Send
-} from 'react-native-gifted-chat'
-import { TextDefault, WrapperView } from '../../components'
-import { alignment } from '../../utils/alignment'
-import { scale } from '../../utils/scaling'
-import useStyle from './styles'
+  Send,
+} from "react-native-gifted-chat";
+import { TextDefault, WrapperView } from "../../components";
+import { alignment } from "../../utils/alignment";
+import { scale } from "../../utils/scaling";
+import useStyle from "./styles";
 
 const UserInfo = {
   _id: 1,
-  name: 'Jason',
-  active: true
-}
+  name: "Jason",
+  active: true,
+};
 
 function Chat() {
-  const styles = useStyle()
-  const { colors } = useTheme()
-  const navigation = useNavigation()
-  const [messages, setMessages] = useState([])
-  const [isTyping, setIsTyping] = useState(false)
+  const styles = useStyle();
+  const { colors } = useTheme();
+  const navigation = useNavigation();
+  const [messages, setMessages] = useState([]);
+  const [isTyping, setIsTyping] = useState(false);
 
   useEffect(() => {
-    Keyboard.addListener('keyboardDidShow', _keyboardDidShow)
-    Keyboard.addListener('keyboardDidHide', _keyboardDidHide)
+    Keyboard.addListener("keyboardDidShow", _keyboardDidShow);
+    Keyboard.addListener("keyboardDidHide", _keyboardDidHide);
 
     // cleanup function
     return () => {
-      Keyboard.removeListener('keyboardDidShow', _keyboardDidShow)
-      Keyboard.removeListener('keyboardDidHide', _keyboardDidHide)
-    }
-  }, [])
+      Keyboard.remove("keyboardDidShow", _keyboardDidShow);
+      Keyboard.remove("keyboardDidHide", _keyboardDidHide);
+    };
+  }, []);
 
-  const _keyboardDidShow = () => setIsTyping(true)
-  const _keyboardDidHide = () => setIsTyping(false)
+  const _keyboardDidShow = () => setIsTyping(true);
+  const _keyboardDidHide = () => setIsTyping(false);
 
   useEffect(() => {
     navigation.setOptions({
-      title: 'Chat'
-    })
+      title: "Chat",
+    });
     setMessages([
       {
         _id: 1,
-        text: 'How can I help you?',
+        text: "How can I help you?",
         sent: true,
         received: true,
         createdAt: new Date(),
         user: {
           _id: 2,
-          name: 'React Native',
-          avatar: 'https://placeimg.com/140/140/any'
-        }
-      }
-    ])
-  }, [navigation])
+          name: "React Native",
+          avatar: "https://placeimg.com/140/140/any",
+        },
+      },
+    ]);
+  }, [navigation]);
 
   const onSend = useCallback((messages = []) => {
-    setMessages(previousMessages =>
+    setMessages((previousMessages) =>
       GiftedChat.append(previousMessages, messages)
-    )
-  }, [])
+    );
+  }, []);
 
-  const renderBubble = props => {
+  const renderBubble = (props) => {
     return (
       <Bubble
         {...props}
         textStyle={{
           right: {
-            color: colors.fontMainColor
+            color: colors.fontMainColor,
           },
           left: {
-            color: colors.fontMainColor
-          }
+            color: colors.fontMainColor,
+          },
         }}
         bottomContainerStyle={{
           right: {
-            ...alignment.PTxSmall
+            ...alignment.PTxSmall,
           },
           left: {
-            ...alignment.PTxSmall
-          }
+            ...alignment.PTxSmall,
+          },
         }}
         wrapperStyle={{
           right: {
@@ -99,11 +99,11 @@ function Chat() {
             shadowColor: colors.shadowColor,
             shadowOffset: {
               width: 0,
-              height: 1
+              height: 1,
             },
             shadowOpacity: 0.2,
             shadowRadius: 2,
-            elevation: 3
+            elevation: 3,
           },
           left: {
             minWidth: 150,
@@ -117,36 +117,36 @@ function Chat() {
             shadowColor: colors.shadowColor,
             shadowOffset: {
               width: 0,
-              height: 1
+              height: 1,
             },
             shadowOpacity: 0.2,
             shadowRadius: 2,
-            elevation: 3
-          }
+            elevation: 3,
+          },
         }}
       />
-    )
-  }
+    );
+  };
 
-  const renderSend = props => (
+  const renderSend = (props) => (
     <Send {...props} containerStyle={styles.sendBtn}>
       <View style={styles.rightBtn}>
         <Feather
-          name={'send'}
+          name={"send"}
           color={colors.buttonText}
           size={scale(17)}
           style={{
             transform: [
-              { rotateZ: '45deg' },
+              { rotateZ: "45deg" },
               { translateY: 2 },
-              { translateX: -1 }
-            ]
+              { translateX: -1 },
+            ],
           }}
         />
       </View>
     </Send>
-  )
-  const customtInputToolbar = props => {
+  );
+  const customtInputToolbar = (props) => {
     return (
       <InputToolbar
         {...props}
@@ -154,8 +154,8 @@ function Chat() {
         renderSend={renderSend}
         render
       />
-    )
-  }
+    );
+  };
 
   return (
     <WrapperView>
@@ -166,7 +166,7 @@ function Chat() {
             color={UserInfo.active ? colors.active : colors.fontSecondColor}
           />
           <TextDefault medium H5 style={alignment.PLsmall}>
-            {UserInfo.active ? UserInfo.name : 'Offline'}
+            {UserInfo.active ? UserInfo.name : "Offline"}
           </TextDefault>
         </View>
         <GiftedChat
@@ -175,7 +175,7 @@ function Chat() {
           user={UserInfo}
           isTyping={isTyping}
           messages={messages}
-          onSend={messages => onSend(messages)}
+          onSend={(messages) => onSend(messages)}
           renderAvatar={() => null}
           renderBubble={renderBubble}
           renderInputToolbar={customtInputToolbar}
@@ -192,20 +192,20 @@ function Chat() {
           // }
           timeTextStyle={{
             left: {
-              width: '100%',
+              width: "100%",
               color: colors.fontMainColor,
               fontSize: 11,
-              textAlign: 'right'
+              textAlign: "right",
             },
             right: {
               color: colors.fontMainColor,
-              fontSize: 11
-            }
+              fontSize: 11,
+            },
           }}
         />
       </View>
     </WrapperView>
-  )
+  );
 }
 
-export default Chat
+export default Chat;

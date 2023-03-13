@@ -247,7 +247,7 @@ function MenuItems() {
           contentContainerStyle={styles.contentContaienr}
           showsVerticalScrollIndicator={false}
           ListHeaderComponent={renderListHeader()}
-          keyExtractor={(item) => item._id}
+          keyExtractor={(item, index) => String(index)}
           ListEmptyComponent={emptyView}
           data={loading ? [] : error ? [] : sortData(data.foodByCategory)}
           refreshing={networkStatus === 4}
