@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React, { useState } from 'react'
 import { Container, Badge, Row, Card, Modal } from 'reactstrap'
-import Header from 'components/Headers/Header.jsx'
+import Header from '../components/Headers/Header.jsx'
 import AddonComponent from '../components/Addon/Addon'
 import { addons, deleteAddon } from '../apollo/server'
 import CustomLoader from '../components/Loader/CustomLoader'

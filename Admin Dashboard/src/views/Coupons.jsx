@@ -8,7 +8,7 @@ import CouponComponent from '../components/Coupon/Coupon'
 import { Badge, Card, Container, Row, Modal } from 'reactstrap'
 
 // core components
-import Header from 'components/Headers/Header.jsx'
+import Header from '../components/Headers/Header.jsx'
 import CustomLoader from '../components/Loader/CustomLoader'
 import DataTable from 'react-data-table-component'
 import orderBy from 'lodash/orderBy'
