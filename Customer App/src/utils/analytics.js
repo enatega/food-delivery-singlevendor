@@ -1,4 +1,3 @@
-//import * as Amplitude from 'expo-analytics-amplitude'
 import * as Amplitude from "@amplitude/analytics-react-native";
 import { normalizeTrackingOptions } from "./analyticsUtils";
 import getEnvVars from "../../environment";

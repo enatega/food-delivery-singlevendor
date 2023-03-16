@@ -1,10 +1,10 @@
 import { useMutation } from "@apollo/react-hooks";
 import { FontAwesome } from "@expo/vector-icons";
 import { useNavigation, useTheme } from "@react-navigation/native";
-import * as AppAuth from "expo-app-auth";
+
 import * as AppleAuthentication from "expo-apple-authentication";
 import Constants from "expo-constants";
-import * as Facebook from "expo-facebook";
+
 //import * as Google from 'expo-google-app-auth'
 import * as Google from "expo-auth-session/providers/google";
 import * as Notifications from "expo-notifications";
@@ -16,7 +16,6 @@ import { login } from "../../apollo/server";
 import {
   EnategaImage,
   FdEmailBtn,
-  FdFacebookBtn,
   FdGoogleBtn,
   FlashMessage,
   RegistrationHeader,
@@ -30,11 +29,11 @@ import Analytics from "../../utils/analytics";
 import { NAVIGATION_SCREEN } from "../../utils/constant";
 import { scale } from "../../utils/scaling";
 import useStyle from "./styles";
+import ApolloClient from "apollo-client";
 
 const {
   IOS_CLIENT_ID_GOOGLE,
   ANDROID_CLIENT_ID_GOOGLE,
-  FACEBOOK_APP_ID,
   Expo_CLIENT_ID_GOOGLE,
 } = getEnvVars();
 
@@ -125,6 +124,7 @@ const CreateAccount = () => {
                 AppleAuthentication.AppleAuthenticationScope.EMAIL,
               ],
             });
+            console.log(credential);
             if (credential) {
               const user = {
                 appleId: credential.user,
@@ -164,30 +164,6 @@ const CreateAccount = () => {
         </TextDefault>
       </TouchableOpacity>
     );
-  }
-
-  async function _facebookSignup() {
-    try {
-      await Facebook.initializeAsync({ appId: FACEBOOK_APP_ID });
-    } catch (err) {
-      console.log("err", err);
-    }
-
-    try {
-      const { type, token } = await Facebook.logInWithReadPermissionsAsync({
-        permissions: ["public_profile", "email"],
-      });
-      if (type === "success") {
-        // Get the user's name using Facebook's Graph API
-        const response = await fetch(
-          `https://graph.facebook.com/me?access_token=${token}&fields=email,name`
-        );
-        const user = await response.json();
-        return user;
-      }
-    } catch (err) {
-      console.log("error", err);
-    }
   }
 
   const [googleRequest, googleResponse, googlePromptAsync] =
@@ -231,31 +207,6 @@ const CreateAccount = () => {
     googleSignUp();
   }, [googleResponse]);
 
-  function renderFacebookAction() {
-    return (
-      <FdFacebookBtn
-        loadingIcon={loading && loginButton === "Facebook"}
-        onPressIn={() => {
-          loginButtonSetter("Facebook");
-        }}
-        onPress={async () => {
-          const facebookUser = await _facebookSignup();
-          if (facebookUser) {
-            const user = {
-              facebookId: facebookUser.id,
-              phone: "",
-              email: facebookUser.email,
-              password: "",
-              name: facebookUser.name,
-              picture: "",
-              type: "facebook",
-            };
-            mutateLogin(user);
-          }
-        }}
-      />
-    );
-  }
   function renderGoogleAction() {
     return (
       <FdGoogleBtn
@@ -293,7 +244,6 @@ const CreateAccount = () => {
             />
           </View>
           <View style={styles.width100}>
-            {Platform.OS === "ios" && renderFacebookAction()}
             <View style={alignment.MTmedium}>{renderGoogleAction()}</View>
             {enableApple && (
               <View style={alignment.MTmedium}>{renderAppleAction()}</View>

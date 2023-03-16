@@ -1,7 +1,6 @@
 {
   "name": "enatega-full-app",
   "version": "5.0.0",
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -45,8 +44,7 @@
     "apollo-upload-client": "^10.0.0",
     "apollo-utilities": "^1.3.4",
     "deprecated-react-native-prop-types": "^4.0.0",
-    "expo": "^47.0.0",
-    "expo-analytics-amplitude": "~11.3.0",
+    "expo": "~47.0.12",
     "expo-app-auth": "~11.1.0",
     "expo-app-loading": "~2.1.1",
     "expo-apple-authentication": "~5.0.1",
@@ -57,7 +55,6 @@
     "expo-constants": "~14.0.2",
     "expo-contacts": "~11.0.1",
     "expo-device": "~5.0.0",
-    "expo-facebook": "~12.2.0",
     "expo-font": "~11.0.1",
     "expo-google-app-auth": "^8.3.0",
     "expo-image-picker": "~14.0.2",
@@ -68,6 +65,7 @@
     "expo-random": "~13.0.0",
     "expo-sensors": "~12.0.1",
     "expo-splash-screen": "~0.17.5",
+    "expo-status-bar": "~1.4.2",
     "expo-tracking-transparency": "~3.0.1",
     "expo-updates": "~0.15.6",
     "graphql": "^16.6.0",
@@ -81,9 +79,8 @@
     "react-native-button": "^3.0.1",
     "react-native-flash-message": "^0.4.0",
     "react-native-flatlist-slider": "^1.0.5",
-    "react-native-gesture-handler": "~~2.1.0",
+    "react-native-gesture-handler": "~2.8.0",
     "react-native-gifted-chat": "^1.1.1",
-    "react-native-i18n": "1.0.0",
     "react-native-maps": "1.3.2",
     "react-native-material-textfield": "^0.16.1",
     "react-native-modal": "^13.0.1",
@@ -100,6 +97,7 @@
     "validate.js": "^0.13.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
     "babel-jest": "^29.4.3",
     "babel-preset-expo": "~9.2.1",
     "babel-preset-react-native": "^4.0.1",
@@ -120,10 +118,7 @@
     "react-test-renderer": "^18.2.0"
   },
   "jest": {
-    "preset": "react-native",
-    "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|expo|@expo|apollo-boost|apollo-cache-inmemory|apollo-client|apollo-link-context|apollo-link-http|apollo-link-state|apollo-upload-client|graphql|graphql-tag|react-apollo|react-native-animatable|react-native-material-buttons|react-native-material-ripple|react-native-material-textfield|react-native-ratings|react-native-swiper-flatlist|react-native-timeline-listview|react-navigation|validate.js)/)"
-    ]
+    "preset": "react-native"
   },
   "private": true
 }

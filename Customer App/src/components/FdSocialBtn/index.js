@@ -1,5 +1,5 @@
-import FdEmailBtn from './FdEmailBtn/FdEmailBtn'
-import FdFacebookBtn from './FdFacebookBtn/FdFacebookBtn'
-import FdGoogleBtn from './FdGoogleBtn/FdGoogleBtn'
+import FdEmailBtn from "./FdEmailBtn/FdEmailBtn";
 
-export { FdEmailBtn, FdFacebookBtn, FdGoogleBtn }
+import FdGoogleBtn from "./FdGoogleBtn/FdGoogleBtn";
+
+export { FdEmailBtn, FdGoogleBtn };
