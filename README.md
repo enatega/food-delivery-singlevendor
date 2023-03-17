@@ -134,9 +134,11 @@ The version of nodejs should be between 14.0 to 16.0
 
 - [Admin Dashboard](https://enatega.ninjascode.com/admin/dashboard)
 
-## Documentation:
+## Documentation and Product Demo Video:
 
 Find the link for the complete documentation of the Enatega Single Vendor Solution [here](https://ninjas-code.gitbook.io/enatega-full-app/).
+
+If you want to see demo video of the product please check out the link over [here](https://www.youtube.com/watch?v=AWbdt9GX1t4&t=3s&ab_channel=NinjasCode)
 
 ## Contributing:
 
