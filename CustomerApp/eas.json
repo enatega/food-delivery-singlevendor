@@ -6,9 +6,6 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "android": {
-        "buildType": "apk"
-      },
       "ios": {
         "resourceClass": "m-medium"
       }
@@ -23,16 +20,22 @@
       "developmentClient": false,
       "releaseChannel": "production",
       "distribution": "store",
-      "android": {
-        "buildType": "apk"
-      },
       "ios": {
-      "buildConfiguration": "Debug",
-      "image": "latest"
+        "resourceClass": "m-medium"
        }
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./google-service-account.json",
+        "track": "production"
+      },
+      "ios": {
+        "appleId": "sharan.gohar@icloud.com",
+        "ascAppId": "1526488093",
+        "appleTeamId": "GDFK7MVY6P"
+      }
+    }
   }
 }
