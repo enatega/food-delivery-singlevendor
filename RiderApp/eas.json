@@ -6,9 +6,6 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "android": {
-        "buildType": "apk"
-      },
       "ios": {
         "resourceClass": "m-medium"
       }
@@ -20,10 +17,8 @@
       }
     },
     "production": {
-      "developmentClient": false,
-      "releaseChannel": "production",
-      "android": {
-        "buildType": "apk"
+      "ios": {
+        "resourceClass": "m-medium"
       }
     }
   },

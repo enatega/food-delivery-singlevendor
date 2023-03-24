@@ -2,10 +2,9 @@
   "expo": {
     "name": "Enatega Rider",
     "description": "Enatega is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://market.nativebase.io/view/react-native-food-delivery-backend-app",
-    "version": "4.2.3",
+    "version": "4.2.4",
     "slug": "food-delivery-rider",
     "privacy": "public",
- 
     "androidStatusBar": {
       "backgroundColor": "#000"
     },
@@ -21,7 +20,8 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/e3fb49ee-7c4f-4e4a-91fe-8f4f93662dde"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -37,7 +37,6 @@
       "bitcode": false,
       "supportsTablet": true,
       "bundleIdentifier": "com.enatega.driver",
-       
       "config": {
         "googleMapsApiKey": ""
       },
@@ -52,7 +51,7 @@
       }
     },
     "android": {
-      "versionCode": 13,
+      "versionCode": 14,
       "googleServicesFile": "./google-services.json",
       "permissions": [
         "ACCESS_COARSE_LOCATION",
@@ -60,7 +59,7 @@
       ],
       "config": {
         "googleMaps": {
-          "apiKey": ""
+          "apiKey": "AIzaSyCzNP5qQql2a5y8lOoO-1yj1lj_tzjVImA"
         }
       },
       "package": "com.enatega.rider"
@@ -69,6 +68,9 @@
       "eas": {
         "projectId": "e3fb49ee-7c4f-4e4a-91fe-8f4f93662dde"
       }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }

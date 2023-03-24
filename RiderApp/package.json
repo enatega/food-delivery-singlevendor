@@ -69,7 +69,9 @@
     "react-native-screens": "~3.18.0",
     "react-native-svg": "13.4.0",
     "react-native-webview": "11.23.1",
-    "subscriptions-transport-ws": "^0.9.16"
+    "subscriptions-transport-ws": "^0.9.16",
+    "expo-system-ui": "~2.0.1",
+    "expo-navigation-bar": "~2.0.1"
   },
   "devDependencies": {
     "babel-preset-expo": "~9.2.1",

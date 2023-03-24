@@ -2,7 +2,6 @@
  * environment.js
  * path: '/environment.js' (root of your project)
  ******************************/
-
 import Constants from "expo-constants";
 
 const ENV = {
@@ -22,7 +21,7 @@ const ENV = {
   },
 };
 
-const getEnvVars = (env = Constants.manifest.releaseChannel) => {
+const getEnvVars = (env = Constants.manifest) => {
   // What is __DEV__ ?
   // This variable is set to true when react-native is running in Dev mode.
   // __DEV__ is true when run locally, but false when published.
