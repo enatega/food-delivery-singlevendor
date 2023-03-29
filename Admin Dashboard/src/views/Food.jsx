@@ -6,7 +6,7 @@ import { withTranslation } from 'react-i18next'
 // reactstrap components
 import { Badge, Card, Container, Row, Media, Modal } from 'reactstrap'
 // core components
-import Header from 'components/Headers/Header.jsx'
+import Header from '../components/Headers/Header.jsx'
 import { getFoods, deleteFood } from '../apollo/server'
 import FoodComponent from '../components/Food/Food'
 import CustomLoader from '../components/Loader/CustomLoader'

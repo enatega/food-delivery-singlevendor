@@ -47,7 +47,7 @@
       "versionCode": 22,
       "package": "com.enatega.vendor",
       "googleServicesFile": "./google-services-prod.json",
-      "useNextNotificationsApi": true,
+     
       "config": {
         "googleMaps": {
           "apiKey": ""

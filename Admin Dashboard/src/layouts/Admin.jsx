@@ -3,11 +3,11 @@ import { Route, Switch } from 'react-router-dom'
 // reactstrap components
 import { Container } from 'reactstrap'
 // core components
-import AdminNavbar from 'components/Navbars/AdminNavbar.jsx'
-import AdminFooter from 'components/Footers/AdminFooter.jsx'
-import Sidebar from 'components/Sidebar/Sidebar.jsx'
+import AdminNavbar from '../components/Navbars/AdminNavbar.jsx'
+import AdminFooter from '../components/Footers/AdminFooter.jsx'
+import Sidebar from '../components/Sidebar/Sidebar.jsx'
 
-import routes from 'routes.js'
+import routes from './../routes.js'
 
 const Admin = props => {
   var divRef = useRef(null)
@@ -49,7 +49,7 @@ const Admin = props => {
         routes={routes}
         logo={{
           innerLink: '/admin/dashboard',
-          imgSrc: require('assets/img/brand/logo.png'),
+          imgSrc: require('../assets/img/brand/logo.png'),
           imgAlt: '...'
         }}
       />
