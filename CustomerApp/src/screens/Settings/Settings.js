@@ -16,9 +16,14 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+
 import { Modalize } from "react-native-modalize";
+import { async } from "validate.js";
 import i18n from "../../../i18n";
+import { moderateScale } from "../../utils/scaling";
+
 import {
+  updateUser,
   profile,
   pushToken,
   updateNotificationStatus,
@@ -55,24 +60,23 @@ const UPDATE_NOTIFICATION_TOKEN = gql`
 const PROFILE = gql`
   ${profile}
 `;
-
+const UPDATEUSER = gql`
+  ${updateUser}
+`;
 function Settings() {
   const styles = useStyle();
   const { colors } = useTheme();
   const navigation = useNavigation();
-  const { profile } = useContext(UserContext);
+  const { profile, logout } = useContext(UserContext);
 
   const [languageName, languageNameSetter] = useState("English");
-  const [offerNotification, offerNotificationSetter] = useState(
-    profile.is_offer_notification
-  );
-  const [orderNotification, orderNotificationSetter] = useState(
-    profile.is_order_notification
-  );
+  const [offerNotification, offerNotificationSetter] = useState();
+  const [orderNotification, orderNotificationSetter] = useState();
   const [activeRadio, activeRadioSetter] = useState(languageTypes[0].index);
   // eslint-disable-next-line no-unused-vars
   const [appState, setAppState] = useState(AppState.currentState);
   const [uploadToken] = useMutation(PUSH_TOKEN);
+  const [updateUserInfo] = useMutation(UPDATEUSER);
   const [mutate, { loading }] = useMutation(UPDATE_NOTIFICATION_TOKEN, {
     onCompleted,
     onError,
@@ -203,7 +207,22 @@ function Settings() {
       },
     });
   }
-
+  // console.log(profile.name);
+  // console.log(profile.phone);
+  // console.log(profile.is_active);
+  //console.log(profile.is_activated);
+  async function updateUserInformation() {
+    updateUserInfo({
+      variables: {
+        //updateUserInput: {
+        name: profile.name,
+        phone: profile.phone,
+        is_active: false,
+        //is_activated: false,
+        // },
+      },
+    });
+  }
   return (
     <WrapperView>
       {loading && (
@@ -289,6 +308,34 @@ function Settings() {
               />
             </View>
           </TouchableOpacity>
+
+          <TouchableOpacity
+            activeOpacity={0.7}
+            onPress={() => modalizeRef.current.open("top")}
+            // onPress={
+            //   async () => {
+            //   await updateUserInformation();
+            //   logout();
+            //   navigation.reset({
+            //     routes: [{ name: "Menu" }],
+            //   }
+            //   );
+            //   //navigation.dispatch(DrawerActions.closeDrawer());
+            // }}
+            style={[styles.notificationContainer, styles.shadow]}
+          >
+            <View style={styles.notificationChekboxContainer}>
+              <TextDefault numberOfLines={1} textColor={"red"}>
+                {" "}
+                Delete Account{" "}
+              </TextDefault>
+              <CustomIcon
+                name={ICONS_NAME.Trash}
+                size={scale(28)}
+                color={"red"}
+              />
+            </View>
+          </TouchableOpacity>
           <View style={styles.versionContainer}>
             <TextDefault textColor={colors.fontSecondColor}>
               Version: {Constants.manifest.version}
@@ -321,6 +368,52 @@ function Settings() {
           onSelectedLanguage={onSelectedLanguage}
           activeRadio={activeRadio}
         />
+      </Modalize>
+      {/* Modal for Delete Account */}
+      <Modalize
+        ref={modalizeRef}
+        adjustToContentHeight
+        handlePosition="inside"
+        avoidKeyboardLikeIOS={Platform.select({
+          ios: true,
+          android: true,
+        })}
+        keyboardAvoidingOffset={2}
+        keyboardAvoidingBehavior="height"
+      >
+        <View style={{ flex: 1, alignItems: "center" }}>
+          <TextDefault bolder H5 style={{ marginTop: 20 }}>
+            Are you Sure you want to delete Account?
+          </TextDefault>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={{
+              justifyContent: "center",
+              alignItems: "center",
+              backgroundColor: colors.buttonBackgroundBlue,
+              borderRadius: moderateScale(10),
+              width: "70%",
+              padding: moderateScale(15),
+              ...alignment.MTlarge,
+            }}
+            onPress={async () => {
+              await updateUserInformation();
+              logout();
+              navigation.reset({
+                routes: [{ name: "Menu" }],
+              });
+            }}
+          >
+            <TextDefault center>Delete Account</TextDefault>
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={[styles.width100, alignment.PBlarge, alignment.PTlarge]}
+            onPress={() => onClose()}
+          >
+            <TextDefault center>Cancel</TextDefault>
+          </TouchableOpacity>
+        </View>
       </Modalize>
     </WrapperView>
   );
