@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "346954645996",
+    "firebase_url": "https://enatega-4d403.firebaseio.com",
+    "project_id": "enatega-4d403",
+    "storage_bucket": "enatega-4d403.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346954645996:android:f968efbb41d1fa7a",
+        "android_client_info": {
+          "package_name": "host.exp.exponent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346954645996-a2t28in6j98u33hnd4evb45m5d34lvjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFfJ4RHfakMqvp_QsIHkfWcpeYrxtk8j0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346954645996-a2t28in6j98u33hnd4evb45m5d34lvjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

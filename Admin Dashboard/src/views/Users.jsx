@@ -2,7 +2,7 @@
 import React from 'react'
 import { withTranslation } from 'react-i18next'
 import { Container, Row, Card } from 'reactstrap'
-import Header from 'components/Headers/Header.jsx'
+import Header from '../components/Headers/Header.jsx'
 import CustomLoader from '../components/Loader/CustomLoader'
 import { Query, compose, withApollo } from 'react-apollo'
 import gql from 'graphql-tag'

@@ -1,0 +1,5 @@
+src/assets/*
+public/*
+./node_modules
+./patches
+./history
