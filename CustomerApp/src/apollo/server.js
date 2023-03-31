@@ -3,13 +3,14 @@ mutation Login($facebookId:String,$email:String,$password:String,$type:String!,$
     login(facebookId:$facebookId,email:$email,password:$password,type:$type,appleId:$appleId,name:$name,notificationToken:$notificationToken){
      userId
      token
+     is_active
      tokenExpiration
      name
      email
      phone
    }
 }
-`
+`;
 
 export const categories = `
 {
@@ -19,7 +20,7 @@ export const categories = `
   description
   img_menu
   }
-}`
+}`;
 
 export const foods = `
 query FoodByCategory($category:String!,$onSale:Boolean,$inStock:Boolean,$min:Float,$max:Float,$search:String){
@@ -50,7 +51,7 @@ query FoodByCategory($category:String!,$onSale:Boolean,$inStock:Boolean,$min:Flo
       img_url
       stock
     }
-  }`
+  }`;
 
 export const createUser = `
   mutation CreateUser($facebookId:String,$phone:String,$email:String,$password:String,$name:String,$notificationToken:String,$appleId:String){
@@ -71,16 +72,17 @@ export const createUser = `
           phone
           notificationToken
       }
-    }`
+    }`;
 
 export const updateUser = `
-    mutation UpdateUser($name:String!,$phone:String!){
-        updateUser(updateUserInput:{name:$name,phone:$phone}){
+    mutation UpdateUser($name:String!,$phone:String!,$is_active:Boolean!){
+        updateUser(updateUserInput:{name:$name,phone:$phone,is_active:$is_active}){
           _id
           name
           phone
+          is_active
         }
-      }`
+      }`;
 
 export const updateNotificationStatus = `
     mutation UpdateNotificationStatus($offerNotification:Boolean!,$orderNotification:Boolean!){
@@ -90,7 +92,7 @@ export const updateNotificationStatus = `
         is_order_notification
         is_offer_notification
       }
-    }`
+    }`;
 export const profile = `
         query{
           profile{
@@ -98,6 +100,8 @@ export const profile = `
             name
             phone
             email
+            is_active
+            
             notificationToken
             is_order_notification
             is_offer_notification
@@ -111,7 +115,7 @@ export const profile = `
               selected
             }
           }
-        }`
+        }`;
 
 export const order = `query Order($id:String!){
   order(id:$id){
@@ -184,7 +188,7 @@ export const order = `query Order($id:String!){
     }
   }
 }
-`
+`;
 
 export const myOrders = `query Orders($offset:Int){
   orders(offset:$offset){
@@ -257,7 +261,7 @@ export const myOrders = `query Orders($offset:Int){
     }
   }
 }
-`
+`;
 
 //
 // can we get userId from request instead??
@@ -340,7 +344,7 @@ export const orderStatusChanged = `subscription OrderStatusChanged($userId:Strin
   }
   }
 }
-`
+`;
 
 //
 // status queue??
@@ -417,7 +421,7 @@ mutation PlaceOrder($orderInput:[OrderInput!]!,$paymentMethod:String!,$couponCod
       description
     }
   }
-}`
+}`;
 
 export const reviewOrder = `mutation ReviewOrder(
   $orderId:String!,
@@ -440,7 +444,7 @@ export const reviewOrder = `mutation ReviewOrder(
     updatedAt
     is_active
   }
-}`
+}`;
 
 //
 // use this to push token instead of login, signup mutation?
@@ -451,7 +455,7 @@ export const pushToken = `mutation PushToken($token:String!){
     _id
     notificationToken
   }
-}`
+}`;
 
 export const getConfiguration = `query Configuration{
   configuration{
@@ -460,7 +464,7 @@ export const getConfiguration = `query Configuration{
     currency_symbol
     delivery_charges
   }
-}`
+}`;
 
 export const foodByIds = `query FoodByIds($ids:[String!]!){
   foodByIds(ids: $ids) {
@@ -492,7 +496,7 @@ export const foodByIds = `query FoodByIds($ids:[String!]!){
       }
     }
   }
-}`
+}`;
 
 export const getCoupon = `mutation Coupon($coupon:String!){
   coupon(coupon:$coupon){
@@ -501,7 +505,7 @@ export const getCoupon = `mutation Coupon($coupon:String!){
     discount
     enabled
   }
-}`
+}`;
 
 export const deleteAddress = `mutation DeleteAddress($id:ID!){
   deleteAddress(id:$id){
@@ -516,7 +520,7 @@ export const deleteAddress = `mutation DeleteAddress($id:ID!){
       selected
     }
   }
-}`
+}`;
 
 export const createAddress = `mutation CreateAddress($addressInput:AddressInput!){
   createAddress(addressInput:$addressInput){
@@ -531,7 +535,7 @@ export const createAddress = `mutation CreateAddress($addressInput:AddressInput!
       selected
     }
   }
-}`
+}`;
 
 export const editAddress = `mutation EditAddress($addressInput:AddressInput!){
   editAddress(addressInput:$addressInput){
@@ -542,17 +546,17 @@ export const editAddress = `mutation EditAddress($addressInput:AddressInput!){
     longitude
     latitude
   }
-}`
+}`;
 
 export const changePassword = `mutation ChangePassword($oldPassword:String!,$newPassword:String!){
   changePassword(oldPassword:$oldPassword,newPassword:$newPassword)
-}`
+}`;
 
 export const forgotPassword = `mutation ForgotPassword($email:String!){
   forgotPassword(email:$email){
     result
   }
-}`
+}`;
 
 export const selectAddress = `mutation SelectAddress($id:String!){
   selectAddress(id:$id){
@@ -567,7 +571,7 @@ export const selectAddress = `mutation SelectAddress($id:String!){
       selected
     }
   }
-}`
+}`;
 
 export const subscriptionRiderLocation = `subscription SubscriptionRiderLocation($riderId:String!){
   subscriptionRiderLocation(riderId:$riderId) {
@@ -577,7 +581,7 @@ export const subscriptionRiderLocation = `subscription SubscriptionRiderLocation
       longitude
     }
   }
-}`
+}`;
 
 export const rider = `query Rider($id:String){
   rider(id:$id){
@@ -587,4 +591,4 @@ export const rider = `query Rider($id:String){
       longitude
     }
   }
-}`
+}`;
