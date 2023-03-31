@@ -49,7 +49,7 @@ function Login() {
   const [loading, setLoading] = useState(false);
   const [password, setPassword] = useState("123123");
   const [emailError, setEmailError] = useState("");
-  const { setTokenAsync } = useContext(UserContext);
+  const { setTokenAsync, logout } = useContext(UserContext);
   const [passwordError, setPasswordError] = useState(null);
 
   const [mutate] = useMutation(LOGIN, { onCompleted, onError });
@@ -99,34 +99,28 @@ function Login() {
     return result;
   }
   async function onCompleted(data) {
-    try {
-      const trackingOpts = {
-        id: data.login.userId,
-        usernameOrEmail: data.login.email,
-      };
-
-      Analytics.identify(data.login.userId, trackingOpts);
-      Analytics.track(Analytics.events.USER_LOGGED_IN, trackingOpts);
-      setTokenAsync(data.login.token);
-      console.log("Data Before Navigation:", data.login.is_active);
-      if (!data.login.is_active) {
-        FlashMessage({
-          message: "Can't Login,This Account is Deleted!",
-        });
-      }
-      {
-        data.login.is_active && navigation.navigate(NAVIGATION_SCREEN.Menu);
-      }
-
-      // {
-      //   FlashMessage({
-      //     message: "Can't Login,This Account is Deleted!",
-      //   });
-      // }
-    } catch (e) {
-      console.log(e);
-    } finally {
+    if (!data.login.is_active) {
+      FlashMessage({
+        message: "Can't Login,This Account is Deleted!",
+      });
       setLoading(false);
+    } else {
+      try {
+        const trackingOpts = {
+          id: data.login.userId,
+          usernameOrEmail: data.login.email,
+        };
+
+        Analytics.identify(data.login.userId, trackingOpts);
+        Analytics.track(Analytics.events.USER_LOGGED_IN, trackingOpts);
+        setTokenAsync(data.login.token);
+        console.log("Data Before Navigation:", data.login.is_active);
+        navigation.navigate(NAVIGATION_SCREEN.Menu);
+      } catch (e) {
+        console.log(e);
+      } finally {
+        setLoading(false);
+      }
     }
   }
   function onError(error) {

@@ -70,8 +70,12 @@ function Settings() {
   const { profile, logout } = useContext(UserContext);
 
   const [languageName, languageNameSetter] = useState("English");
-  const [offerNotification, offerNotificationSetter] = useState();
-  const [orderNotification, orderNotificationSetter] = useState();
+  const [offerNotification, offerNotificationSetter] = useState(
+    profile.is_offer_notification
+  );
+  const [orderNotification, orderNotificationSetter] = useState(
+    profile.is_order_notification
+  );
   const [activeRadio, activeRadioSetter] = useState(languageTypes[0].index);
   // eslint-disable-next-line no-unused-vars
   const [appState, setAppState] = useState(AppState.currentState);
@@ -207,19 +211,14 @@ function Settings() {
       },
     });
   }
-  // console.log(profile.name);
-  // console.log(profile.phone);
-  // console.log(profile.is_active);
-  //console.log(profile.is_activated);
+
   async function updateUserInformation() {
+    console.log("profile data", profile);
     updateUserInfo({
       variables: {
-        //updateUserInput: {
         name: profile.name,
         phone: profile.phone,
         is_active: false,
-        //is_activated: false,
-        // },
       },
     });
   }
