@@ -87,6 +87,7 @@ function Settings() {
     refetchQueries: [{ query: PROFILE }],
   });
   const modalizeRef = useRef(null);
+  const modalizeRef1 = useRef(null);
 
   useEffect(() => {
     navigation.setOptions({
@@ -310,17 +311,7 @@ function Settings() {
 
           <TouchableOpacity
             activeOpacity={0.7}
-            onPress={() => modalizeRef.current.open("top")}
-            // onPress={
-            //   async () => {
-            //   await updateUserInformation();
-            //   logout();
-            //   navigation.reset({
-            //     routes: [{ name: "Menu" }],
-            //   }
-            //   );
-            //   //navigation.dispatch(DrawerActions.closeDrawer());
-            // }}
+            onPress={() => modalizeRef1.current.open("top")}
             style={[styles.notificationContainer, styles.shadow]}
           >
             <View style={styles.notificationChekboxContainer}>
@@ -370,7 +361,7 @@ function Settings() {
       </Modalize>
       {/* Modal for Delete Account */}
       <Modalize
-        ref={modalizeRef}
+        ref={modalizeRef1}
         adjustToContentHeight
         handlePosition="inside"
         avoidKeyboardLikeIOS={Platform.select({
