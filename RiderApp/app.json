@@ -2,7 +2,7 @@
   "expo": {
     "name": "Enatega Rider",
     "description": "Enatega is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://market.nativebase.io/view/react-native-food-delivery-backend-app",
-    "version": "4.2.4",
+    "version": "4.2.6",
     "slug": "food-delivery-rider",
     "privacy": "public",
     "androidStatusBar": {
@@ -38,7 +38,7 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.enatega.driver",
       "config": {
-        "googleMapsApiKey": ""
+        "googleMapsApiKey": "AIzaSyCzNP5qQql2a5y8lOoO-1yj1lj_tzjVImA"
       },
       "infoPlist": {
         "NSCameraUsageDescription": "To scan credit cards using Stripe sdk.",
