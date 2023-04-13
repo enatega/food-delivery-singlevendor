@@ -8,16 +8,16 @@ const ENV = {
   development: {
     // GRAPHQL_URL: 'http://192.168.100.90:8000/graphql',
     // WS_GRAPHQL_URL: 'ws://192.168.100.90:8000/graphql'
-    GRAPHQL_URL: "https://prod-enatega-single-api.herokuapp.com/graphql",
-    WS_GRAPHQL_URL: "wss://prod-enatega-single-api.herokuapp.com/graphql",
+    GRAPHQL_URL: "https://enatega-singlevendor.up.railway.app/graphql",
+    WS_GRAPHQL_URL: "wss://enatega-singlevendor.up.railway.app/graphql",
   },
   staging: {
-    GRAPHQL_URL: "https://staging-enatega-single-api.herokuapp.com/graphql",
-    WS_GRAPHQL_URL: "wss://staging-enatega-single-api.herokuapp.com/graphql",
+    GRAPHQL_URL: "https://enatega-singlevendor.up.railway.app/graphql",
+    WS_GRAPHQL_URL: "wss://enatega-singlevendor.up.railway.app/graphql",
   },
   production: {
-    GRAPHQL_URL: "https://prod-enatega-single-api.herokuapp.com/graphql",
-    WS_GRAPHQL_URL: "wss://prod-enatega-single-api.herokuapp.com/graphql",
+    GRAPHQL_URL: "https://enatega-singlevendor.up.railway.app/graphql",
+    WS_GRAPHQL_URL: "wss://enatega-singlevendor.up.railway.app/graphql",
   },
 };
 

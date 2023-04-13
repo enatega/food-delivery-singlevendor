@@ -7,9 +7,9 @@ import Constants from "expo-constants";
 
 const ENV = {
   development: {
-    GRAPHQL_URL: "http://10.97.28.39:8000/graphql",
-    WS_GRAPHQL_URL: "ws://110.97.28.39.90:8000/graphql",
-    SERVER_URL: "http://110.97.28.39.90:8000/",
+    GRAPHQL_URL: "https://enatega-singlevendor.up.railway.app/graphql",
+    WS_GRAPHQL_URL: "wss://enatega-singlevendor.up.railway.app/graphql",
+    SERVER_URL: "https://enatega-singlevendor.up.railway.app/",
     Expo_CLIENT_ID_GOOGLE:
       "630195385603-82e52jpb722a8l0huhkspq3tqh2d6r6f.apps.googleusercontent.com",
     IOS_CLIENT_ID_GOOGLE:
@@ -23,9 +23,9 @@ const ENV = {
     STRIPE_STORE_NAME: "Enatega",
   },
   staging: {
-    GRAPHQL_URL: "https://staging-enatega-single-api.herokuapp.com/graphql",
-    WS_GRAPHQL_URL: "wss://staging-enatega-single-api.herokuapp.com/graphql",
-    SERVER_URL: "https://staging-enatega-single-api.herokuapp.com/", // put / at the end of server url
+    GRAPHQL_URL: "https://enatega-singlevendor.up.railway.app/graphql",
+    WS_GRAPHQL_URL: "wss://enatega-singlevendor.up.railway.app/graphql",
+    SERVER_URL: "https://enatega-singlevendor.up.railway.app/", // put / at the end of server url
     IOS_CLIENT_ID_GOOGLE:
       "967541328677-nf8h4ou7rhmq9fahs87p057rggo95eah.apps.googleusercontent.com",
     ANDROID_CLIENT_ID_GOOGLE:
@@ -38,9 +38,9 @@ const ENV = {
     STRIPE_STORE_NAME: "Enatega",
   },
   production: {
-    GRAPHQL_URL: "https://prod-enatega-single-api.herokuapp.com/graphql",
-    WS_GRAPHQL_URL: "wss://prod-enatega-single-api.herokuapp.com/graphql",
-    SERVER_URL: "https://prod-enatega-single-api.herokuapp.com/", // put / at the end of server url
+    GRAPHQL_URL: "https://enatega-singlevendor.up.railway.app/graphql",
+    WS_GRAPHQL_URL: "wss://enatega-singlevendor.up.railway.app/graphql",
+    SERVER_URL: "https://enatega-singlevendor.up.railway.app/", // put / at the end of server url
     IOS_CLIENT_ID_GOOGLE:
       "94983896797-irt6u2cmq2sjcp7j1rj9m9pqptjd12ue.apps.googleusercontent.com",
     ANDROID_CLIENT_ID_GOOGLE:
