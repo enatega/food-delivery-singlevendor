@@ -11,6 +11,10 @@ import setupApolloClient from "./src/apollo/index";
 import { AuthContext } from "./src/context/auth";
 import { ConfigurationProvider } from "./src/context/configuration";
 import AppContainer from "./src/routes/index";
+import { LogBox } from "react-native";
+
+LogBox.ignoreLogs(["Warning: ..."]);
+LogBox.ignoreAllLogs();
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
