@@ -10,7 +10,7 @@ Enatega is a state of the art white label storefront delivery solution that allo
 
 Our solution contains three separate modules. These include the admin panel, the delivery app and the rider app. Below, the capabilities of all three modules have been listed:
 
-- The admin panel receives the orders that can be placed via the customer app. It also allows managing the restaurant’s orders as well as the riders’ accounts.
+- The admin panel receives the orders that can be placed via the customer app. It also allows managing the restaurant’s orders as well as the riders’ accounts.(Run on node version 14)
 
 - The customer app allows for customers to choose their specific selections and customize their order before placing it.
 
@@ -35,7 +35,7 @@ Our solution contains three separate modules. These include the admin panel, the
 
 As we’ve mentioned above, the solution includes three separate modules. To setup these modules, follow the steps below:
 
-To run the module, you need to have nodejs installed on your machine. Once nodejs is installed, go to the directory and enter the following commands
+To run the module, you need to have nodejs installed on your machine(Install node version 14). Once nodejs is installed, go to the directory and enter the following commands
 
 The required credentials and keys have been set already. You can setup your own keys and credentials
 
