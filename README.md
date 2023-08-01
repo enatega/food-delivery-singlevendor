@@ -132,7 +132,7 @@ The version of nodejs should be between 14.0 to 16.0
 - [Rider App iOS](https://apps.apple.com/pk/app/enatega-rider-app/id1493291047)
   [![Rider App iOS](https://user-images.githubusercontent.com/551004/29770691-a2082ff4-8bc6-11e7-89a6-964cd405ea8e.png)](https://apps.apple.com/pk/app/enatega-rider-app/id1493291047)
 
-- [Admin Dashboard](https://inspiring-kirch-8454fc.netlify.app/)
+- [Admin Dashboard](https://singlevendor-admin.enatega.com)
 
 ## Documentation and Product Demo Video:
 
