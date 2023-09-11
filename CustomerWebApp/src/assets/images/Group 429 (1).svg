@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="566" height="608" viewBox="0 0 566 608">
+    <defs>
+        <filter id="Rectangle_2431" width="566" height="608" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="20"/>
+            <feFlood flood-opacity=".2"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-8{fill:#fff}.cls-14,.cls-4{fill:none}.cls-4{stroke:#ccc;stroke-width:.5px}.cls-5{fill:#636363;font-size:16px;font-family:Poppins-Regular,Poppins}.cls-8{stroke:#a5a5a5}.cls-9{fill:#febb2c}.cls-13{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_429" transform="translate(-4482 -12215)">
+        <g filter="url(#Rectangle_2431)" transform="matrix(1, 0, 0, 1, 4482, 12215)">
+            <rect id="Rectangle_2431-2" width="446" height="488" fill="#fff" rx="18" transform="translate(60 60)"/>
+        </g>
+        <path id="Rectangle_2432" fill="#f6f6f6" d="M18 0h410a18 18 0 0 1 18 18v99H0V18A18 18 0 0 1 18 0z" transform="translate(4542 12275)"/>
+        <text id="Change_Payment_Method" fill="#0b0b0b" font-family="Poppins-SemiBold, Poppins" font-size="21px" font-weight="600" transform="translate(4628 12342.5)">
+            <tspan x="0" y="0">Change Payment Method</tspan>
+        </text>
+        <path id="Line_110" d="M0 0L372 0" className="cls-4" transform="translate(4579 12482)"/>
+        <path id="Line_112" d="M0 0L372 0" className="cls-4" transform="translate(4579 12591)"/>
+        <path id="Line_111" d="M0 0L372 0" className="cls-4" transform="translate(4579 12537)"/>
+        <text id="COD_Cash_On_Delivery_" className="cls-5" transform="translate(4653 12459)">
+            <tspan x="0" y="0">COD (Cash On Delivery)</tspan>
+        </text>
+        <text id="Paypal" className="cls-5" transform="translate(4653 12568.5)">
+            <tspan x="0" y="0">Paypal</tspan>
+        </text>
+        <text id="Credit_Card_Debit_Card" fill="#0b0b0b" font-family="Poppins-Regular, Poppins" font-size="16px" transform="translate(4653 12514.5)">
+            <tspan x="0" y="0">Credit Card/Debit Card</tspan>
+        </text>
+        <g id="Ellipse_291" fill="#fff" stroke="#febb2c" stroke-width="4px" transform="translate(4907.326 12501.5)">
+            <circle cx="8" cy="8" r="8" className="cls-13"/>
+            <circle cx="8" cy="8" r="6" className="cls-14"/>
+        </g>
+        <g id="Ellipse_292" className="cls-8" transform="translate(4907.326 12446.5)">
+            <circle cx="8" cy="8" r="8" className="cls-13"/>
+            <circle cx="8" cy="8" r="7.5" className="cls-14"/>
+        </g>
+        <g id="Ellipse_293" className="cls-8" transform="translate(4907.326 12555.5)">
+            <circle cx="8" cy="8" r="8" className="cls-13"/>
+            <circle cx="8" cy="8" r="7.5" className="cls-14"/>
+        </g>
+        <g id="money-bag" transform="translate(4611 12444)">
+            <path id="Path_27609" d="M81.578 14.453l-3.6-7.134V4.764L79.365 0H75.49a2.746 2.746 0 0 0-2.06.929A2.746 2.746 0 0 0 71.371 0H67.5l1.388 4.764v2.555l-3.6 7.134a6.323 6.323 0 0 0 5.645 9.172h5.006a6.323 6.323 0 0 0 5.645-9.172zM71.371 1.384a1.369 1.369 0 0 1 1.368 1.368h1.384a1.369 1.369 0 0 1 1.367-1.368h2.03l-.754 2.588H70.1l-.754-2.588zm5.222 3.973v1.435h-6.325V5.357zm3.546 14.534a4.906 4.906 0 0 1-4.206 2.35h-5.005a4.939 4.939 0 0 1-4.409-7.164L70 8.176h6.857l3.483 6.9a4.906 4.906 0 0 1-.201 4.815z" className="cls-9" transform="translate(-64.599 0)"/>
+            <path id="Path_27610" d="M204.177 235.224h-1.485a.606.606 0 1 1 0-1.212h2.508v-1.384h-1.254v-.934h-1.384v.939a1.99 1.99 0 0 0 .132 3.976h1.485a.659.659 0 1 1 0 1.317h-3.2v1.384h1.583v.934h1.384v-.934h.232a2.043 2.043 0 0 0 0-4.086z" className="cls-9" transform="translate(-194.422 -221.002)"/>
+        </g>
+        <g id="visa" transform="translate(4602 12500)">
+            <g id="Group_336" transform="translate(6 7.499)">
+                <g id="Group_335" transform="translate(0 0)">
+                    <path id="Path_27611" d="M93.862 192.044a.749.749 0 0 0-.975.417l-2.812 7.029h-.242v-6.75a.75.75 0 0 0-.75-.75h-3a.75.75 0 1 0 0 1.5h2.25v6.75a.75.75 0 0 0 .75.75h1.5a.75.75 0 0 0 .7-.471l3-7.5a.749.749 0 0 0-.421-.975z" className="cls-9" transform="translate(-85.333 -191.989)"/>
+                </g>
+            </g>
+            <g id="Group_338" transform="translate(14.999 7.5)">
+                <g id="Group_337">
+                    <path id="Path_27612" d="M215.715 192.018a.758.758 0 0 0-.882.588l-1.5 7.5a.75.75 0 0 0 .59.882.716.716 0 0 0 .148.015.75.75 0 0 0 .734-.6l1.5-7.5a.75.75 0 0 0-.59-.885z" className="cls-9" transform="translate(-213.318 -192.004)"/>
+                </g>
+            </g>
+            <g id="Group_340" transform="translate(18 7.497)">
+                <g id="Group_339" transform="translate(0 0)">
+                    <path id="Path_27613" d="M261.43 192.114c-.121-.033-3.007-.741-4.121 1.065a2.191 2.191 0 0 0-.324 1.714 3.8 3.8 0 0 0 1.919 2.067c.864.513 1.322 1.032 1.225 1.385a1.462 1.462 0 0 1-.712.894 3.169 3.169 0 0 1-2.432-.075.751.751 0 0 0-.483 1.422 6.171 6.171 0 0 0 1.971.364 3.439 3.439 0 0 0 1.65-.387 2.956 2.956 0 0 0 1.455-1.824c.206-.759.043-1.908-1.907-3.068-.332-.2-1.115-.665-1.228-1.134a.71.71 0 0 1 .144-.57c.441-.72 1.972-.525 2.475-.4a.75.75 0 0 0 .368-1.454z" className="cls-9" transform="translate(-255.993 -191.95)"/>
+                </g>
+            </g>
+            <g id="Group_342" transform="translate(24 7.5)">
+                <g id="Group_341">
+                    <path id="Path_27614" d="M346.578 192h-1.5a.75.75 0 0 0-.7.471l-3 7.5a.749.749 0 0 0 .417.975.733.733 0 0 0 .279.054.75.75 0 0 0 .7-.471l2.813-7.029h.241v6.75a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75z" className="cls-9" transform="translate(-341.328 -192)"/>
+                </g>
+            </g>
+            <g id="Group_344" transform="translate(25.5 12)">
+                <g id="Group_343">
+                    <path id="Path_27615" d="M366.416 256h-3a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5z" className="cls-9" transform="translate(-362.666 -256)"/>
+                </g>
+            </g>
+            <g id="Group_346">
+                <g id="Group_345">
+                    <path id="Path_27616" d="M30.75 85.333H5.25A5.256 5.256 0 0 0 0 90.583v13.5a5.256 5.256 0 0 0 5.25 5.25h25.5a5.256 5.256 0 0 0 5.25-5.25v-13.5a5.256 5.256 0 0 0-5.25-5.25zm3.75 18.75a3.754 3.754 0 0 1-3.75 3.75H5.25a3.754 3.754 0 0 1-3.75-3.75v-13.5a3.754 3.754 0 0 1 3.75-3.75h25.5a3.754 3.754 0 0 1 3.75 3.75z" className="cls-9" transform="translate(0 -85.333)"/>
+                </g>
+            </g>
+        </g>
+        <g id="Group_363" transform="translate(4602 12554)">
+            <g id="Group_346-2">
+                <g id="Group_345-2">
+                    <path id="Path_27616-2" d="M30.75 85.333H5.25A5.256 5.256 0 0 0 0 90.583v13.5a5.256 5.256 0 0 0 5.25 5.25h25.5a5.256 5.256 0 0 0 5.25-5.25v-13.5a5.256 5.256 0 0 0-5.25-5.25zm3.75 18.75a3.754 3.754 0 0 1-3.75 3.75H5.25a3.754 3.754 0 0 1-3.75-3.75v-13.5a3.754 3.754 0 0 1 3.75-3.75h25.5a3.754 3.754 0 0 1 3.75 3.75z" className="cls-9" transform="translate(0 -85.333)"/>
+                </g>
+            </g>
+            <g id="paypal-logo" transform="translate(6 8.4)">
+                <g id="Group_348" transform="translate(0 0.447)">
+                    <g id="Group_347">
+                        <path id="Path_27617" d="M4.767 19.954a1.078 1.078 0 0 0-.4-.427 1.854 1.854 0 0 0-.629-.231 5.145 5.145 0 0 0-.855-.068H1.374a.379.379 0 0 0-.348.276L.008 23.94a.214.214 0 0 0 .219.275h.724a.371.371 0 0 0 .349-.275l.249-1.076a.371.371 0 0 1 .347-.275H2.1a3.431 3.431 0 0 0 2.065-.545 1.7 1.7 0 0 0 .74-1.437 1.347 1.347 0 0 0-.138-.653zM3.2 21.4a1.523 1.523 0 0 1-.916.241h-.172a.216.216 0 0 1-.22-.276l.218-.941a.367.367 0 0 1 .345-.275h.237a1.159 1.159 0 0 1 .63.141.479.479 0 0 1 .209.432.784.784 0 0 1-.331.678z" className="cls-9" transform="translate(0 -19.229)"/>
+                    </g>
+                </g>
+                <g id="Group_350" transform="translate(24.98 0)">
+                    <g id="Group_349">
+                        <path id="Path_27618" d="M47.783 19.176l-.045.014-.061.008-.074-.012-.038-.037-.017-.058v-.409h.242v-.1h-.242v-.2h-.12v.2h-.081v.1h.081v.375l.056.186.165.059.069-.006.073-.014v-.106z" className="cls-9" transform="translate(-47.345 -18.381)"/>
+                    </g>
+                </g>
+                <g id="Group_352" transform="translate(25.567 0.181)">
+                    <g id="Group_351">
+                        <path id="Path_27619" d="M49.431 18.8l-.173-.071-.128.026-.13.088-.075-.084-.122-.029-.118.026-.111.072v-.078h-.118v.7h.117v-.526l.1-.061.1-.024.08.014.04.041.017.068.006.087v.4h.118v-.52l.1-.064.1-.025.078.014.042.041.015.068.008.086v.4h.118v-.457z" className="cls-9" transform="translate(-48.456 -18.724)"/>
+                    </g>
+                </g>
+                <g id="Group_354" transform="translate(4.504 1.575)">
+                    <g id="Group_353">
+                        <path id="Path_27620" d="M12.293 21.6A2.749 2.749 0 0 0 11 21.367a5.722 5.722 0 0 0-.876.068c-.217.033-.238.04-.371.069a.425.425 0 0 0-.319.335l-.089.365c-.05.233.084.224.14.2a3.764 3.764 0 0 1 .433-.128 3.106 3.106 0 0 1 .679-.091 1.788 1.788 0 0 1 .659.093.333.333 0 0 1 .218.329l-.013.1-.1.064c-.411.026-.708.064-1.068.116a3.314 3.314 0 0 0-.919.253 1.428 1.428 0 0 0-.624.492 1.34 1.34 0 0 0-.207.758.9.9 0 0 0 .295.688 1.107 1.107 0 0 0 .763.261 2.083 2.083 0 0 0 .455-.042l.351-.121.3-.165.273-.18v.005l-.027.116a.215.215 0 0 0 .194.271h.682a.375.375 0 0 0 .312-.271l.528-2.286.027-.186.013-.175a.764.764 0 0 0-.416-.705zm-1.168 2.571l-.113.149-.285.147a1.015 1.015 0 0 1-.379.082.869.869 0 0 1-.413-.079L9.8 24.2a.543.543 0 0 1 .106-.354l.307-.209a2.656 2.656 0 0 1 .478-.108c.166-.021.493-.058.536-.059l.05.088c-.015.047-.108.436-.152.611z" className="cls-9" transform="translate(-8.537 -21.367)"/>
+                    </g>
+                </g>
+                <g id="Group_356" transform="translate(17.662 1.578)">
+                    <g id="Group_355">
+                        <path id="Path_27621" d="M37.231 21.6a2.755 2.755 0 0 0-1.294-.232 5.516 5.516 0 0 0-.876.07c-.217.032-.239.039-.373.067a.424.424 0 0 0-.318.336l-.089.364c-.05.233.081.222.142.2a4.291 4.291 0 0 1 .429-.128 3.24 3.24 0 0 1 .68-.091 1.779 1.779 0 0 1 .657.093.332.332 0 0 1 .218.329l-.011.1-.1.066c-.415.025-.713.063-1.07.115a3.315 3.315 0 0 0-.919.253 1.427 1.427 0 0 0-.624.493 1.324 1.324 0 0 0-.208.755.885.885 0 0 0 .3.689 1.109 1.109 0 0 0 .762.262 2.018 2.018 0 0 0 .454-.043l.35-.119.3-.165.271-.183v.006l-.025.117a.212.212 0 0 0 .193.271h.683a.371.371 0 0 0 .308-.273l.53-2.283.028-.187.015-.175a.763.763 0 0 0-.413-.707zm-1.166 2.571l-.118.15-.282.146a1.026 1.026 0 0 1-.377.082.844.844 0 0 1-.412-.079l-.141-.271a.566.566 0 0 1 .1-.355.742.742 0 0 1 .31-.208 2.691 2.691 0 0 1 .477-.107c.165-.021.491-.059.533-.06l.051.088c-.006.054-.097.443-.14.617z" className="cls-9" transform="translate(-33.475 -21.372)"/>
+                    </g>
+                </g>
+                <g id="Group_358" transform="translate(13.155 0.463)">
+                    <g id="Group_357">
+                        <path id="Path_27622" d="M29.7 19.985a1.121 1.121 0 0 0-.4-.428 1.778 1.778 0 0 0-.629-.231 4.98 4.98 0 0 0-.852-.066h-1.513a.376.376 0 0 0-.346.275l-1.019 4.435a.215.215 0 0 0 .218.275h.725a.376.376 0 0 0 .348-.274l.245-1.077a.376.376 0 0 1 .348-.275h.207a3.449 3.449 0 0 0 2.069-.544 1.715 1.715 0 0 0 .737-1.439 1.413 1.413 0 0 0-.138-.651zm-1.562 1.45a1.542 1.542 0 0 1-.914.237h-.18a.217.217 0 0 1-.222-.276l.219-.94a.368.368 0 0 1 .346-.275h.235a1.173 1.173 0 0 1 .63.14.483.483 0 0 1 .211.432.8.8 0 0 1-.324.682z" className="cls-9" transform="translate(-24.934 -19.259)"/>
+                    </g>
+                </g>
+                <g id="Group_360" transform="translate(21.947 0.503)">
+                    <g id="Group_359">
+                        <path id="Path_27623" d="M43.783 19.606a.212.212 0 0 0-.217-.272h-.649a.368.368 0 0 0-.311.22l-.036.056-.033.144-.907 4.123-.03.123a.205.205 0 0 0 .182.257l.011.015h.674a.368.368 0 0 0 .312-.224l.037-.048.97-4.4z" className="cls-9" transform="translate(-41.595 -19.334)"/>
+                    </g>
+                </g>
+                <g id="Group_362" transform="translate(8.913 1.631)">
+                    <g id="Group_361">
+                        <path id="Path_27624" d="M21.163 21.472h-.868a.628.628 0 0 0-.456.276s-1.039 1.781-1.139 1.96h-.12l-.323-1.945a.4.4 0 0 0-.395-.284h-.649a.214.214 0 0 0-.217.276s.493 2.8.591 3.464c.046.364-.006.429-.006.429l-.642 1.118c-.095.152-.044.276.112.276h.75a.606.606 0 0 0 .454-.275l2.886-4.882s.28-.419.022-.413z" className="cls-9" transform="translate(-16.893 -21.472)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Group_364" transform="translate(4575 11557)">
+            <rect id="Rectangle_2320" width="300" height="50" fill="#00b9c6" rx="18" transform="translate(38 1086)"/>
+            <text id="Done" fill="#fff" font-family="Poppins-SemiBold, Poppins" font-size="14px" font-weight="600" transform="translate(188 1116)">
+                <tspan x="-18.431" y="0">Done</tspan>
+            </text>
+        </g>
+        <text id="Cancel" fill="#0b0b0b" font-family="Poppins-Medium, Poppins" font-size="14px" font-weight="500" transform="translate(4763 12724)">
+            <tspan x="-25.067" y="0">Cancel</tspan>
+        </text>
+    </g>
+</svg>
