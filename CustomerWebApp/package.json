@@ -15,6 +15,7 @@
     "graphql": "^15.5.1",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
+    "react-apple-signin-auth": "^1.0.9",
     "react-dom": "^17.0.2",
     "react-facebook-login": "^4.1.1",
     "react-geocode": "^0.2.3",

@@ -3,7 +3,13 @@ import { Grid, LinearProgress, Typography } from "@material-ui/core";
 import React, { useEffect } from "react";
 import { gql, useQuery } from "@apollo/client";
 import { categories } from "../../apollo/graphQL";
-import { RestaurantRow, SearchContainer, Footer, PaymentModal, FilterModal } from "../../components";
+import {
+  RestaurantRow,
+  SearchContainer,
+  Footer,
+  PaymentModal,
+  FilterModal,
+} from "../../components";
 import useFilterModal from "../../hooks/useFilterModal";
 
 const CATEGORIES = gql`
@@ -11,8 +17,8 @@ const CATEGORIES = gql`
 `;
 
 function Home() {
-  const { data, loading} = useQuery(CATEGORIES);
-  const {isOpen, toggleModal} = useFilterModal()  
+  const { data, loading } = useQuery(CATEGORIES);
+  const { isOpen, toggleModal } = useFilterModal();
 
   const sections = [
     {
@@ -27,14 +33,14 @@ function Home() {
 
   const restaurantSections = sections.map((sec) => ({
     ...sec,
-    ...data
+    ...data,
   }));
 
   return (
     <Grid container>
-      {<FilterModal isOpen={isOpen} toggleModal={toggleModal}/>}
+      {<FilterModal isOpen={isOpen} toggleModal={toggleModal} />}
       <Grid container item>
-        <SearchContainer showSearch toggleModal={toggleModal}/>
+        <SearchContainer showSearch toggleModal={toggleModal} />
       </Grid>
       <Grid container item>
         {loading ? (

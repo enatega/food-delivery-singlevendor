@@ -8,7 +8,7 @@ import useStyle from "./styles";
 
 function SearchContainer(props) {
   const classes = useStyle();
- 
+
   return (
     <Grid container className={classes.mainContainer}>
       <Grid container item xs={12} className={classes.headingContainer}>
@@ -18,10 +18,26 @@ function SearchContainer(props) {
           <Grid container item xs={10} sm={10} md={9} lg={8}>
             <Grid item xs={12} sm={9}>
               {props.showSearch ? (
-                <Paper component="form" className={clsx(classes.searchContainer, classes.bottomHeight)}>
+                <Paper
+                  component="form"
+                  className={clsx(
+                    classes.searchContainer,
+                    classes.bottomHeight
+                  )}
+                >
                   <SearchIcon color="action" />
-                  <InputBase fullWidth color="primary" placeholder="Search" className={classes.input} />
-                  <Button onClick={props.toggleModal} size="large" color="primary" className={classes.rightBtn}>
+                  <InputBase
+                    fullWidth
+                    color="primary"
+                    placeholder="Search"
+                    className={classes.input}
+                  />
+                  <Button
+                    onClick={props.toggleModal}
+                    size="large"
+                    color="primary"
+                    className={classes.rightBtn}
+                  >
                     <TuneIcon color="primary" />
                     <Typography variant="body1" color="primary">
                       Filters
@@ -29,7 +45,11 @@ function SearchContainer(props) {
                   </Button>
                 </Paper>
               ) : (
-                <Typography variant="h3" color="textPrimary" className={classes.bottomHeight}>
+                <Typography
+                  variant="h3"
+                  color="textPrimary"
+                  className={classes.bottomHeight}
+                >
                   {props.heading ?? ""}
                 </Typography>
               )}

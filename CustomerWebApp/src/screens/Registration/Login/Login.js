@@ -11,6 +11,7 @@ import { GetStartedWrapper } from "../../../components";
 import { useRegistration } from "../../../hooks";
 import useStyles from "./styles";
 import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
+import AppleSignIn from "react-apple-signin-auth";
 
 function Login() {
   const classes = useStyles();
@@ -23,42 +24,24 @@ function Login() {
 
   return (
     <GetStartedWrapper>
-      <Grid container item xs={12} direction="row" justifyContent="space-between" className={classes.height100}>
+      <Grid
+        container
+        item
+        xs={12}
+        direction="row"
+        justifyContent="space-between"
+        className={classes.height100}
+      >
         <Grid item xs={12} className={clsx(classes.width100, classes.logoView)}>
           <img className={classes.imgContainer} src={Logo} alt="Logo" />
         </Grid>
-        <Grid container item xs={12} direction="column" className={clsx(classes.width100, classes.bottomView)}>
-          <FacebookLogin
-            appId="487943819244563"
-            fields="name,email,picture"
-            callback={responseFacebook}
-            render={(renderProps) => (
-              <Button
-                variant="contained"
-                size="large"
-                disableElevation
-                fullWidth
-                disabled={loading || renderProps.disabled}
-                className={classes.loginBtn}
-                startIcon={<FacebookIcon />}
-                onClick={() => renderProps.onClick()}
-              >
-                {loading && loginButton === "FACEBOOK" ? (
-                  <CircularProgress color="secondary" size={24} thickness={5} />
-                ) : (
-                  <Typography
-                    variant="button"
-                    color="textSecondary"
-                    align="left"
-                    al
-                    className={clsx(classes.font700, classes.btnText)}
-                  >
-                    Continue with Facebook
-                  </Typography>
-                )}
-              </Button>
-            )}
-          />
+        <Grid
+          container
+          item
+          xs={12}
+          direction="column"
+          className={clsx(classes.width100, classes.bottomView)}
+        >
           <Button
             variant="contained"
             size="large"
@@ -85,24 +68,7 @@ function Login() {
               </Typography>
             )}
           </Button>
-          <Button
-            variant="contained"
-            size="large"
-            disableElevation
-            fullWidth
-            disabled={loading}
-            className={classes.loginBtn}
-            startIcon={<AppleIcon />}
-          >
-            <Typography
-              variant="button"
-              color="textSecondary"
-              align="left"
-              className={clsx(classes.font700, classes.btnText)}
-            >
-              Continue With Apple
-            </Typography>
-          </Button>
+
           <Button
             component={RouterLink}
             to="/Signup"
