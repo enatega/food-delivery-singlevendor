@@ -6,6 +6,7 @@ import { UserContext } from "../../context/User";
 import useStyles from "./styles";
 
 function DetailCard(props) {
+  console.log(props)
   const classes = useStyles();
   const navigation = useHistory();
   const { isLoggedIn } = useContext(UserContext);
@@ -84,3 +85,4 @@ function DetailCard(props) {
 }
 
 export default DetailCard;
+

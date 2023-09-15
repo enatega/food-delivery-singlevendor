@@ -12,7 +12,7 @@ import {
   Settings,
   Signup,
 } from "../screens";
-
+import Cart from "../screens/Cart/Cart";
 const ROUTES = [
   {
     path: "/Login",
@@ -86,6 +86,12 @@ const ROUTES = [
     authRequired: true,
     accessRequired: false,
   },
+  {
+    path: "/Cart",
+    component: Cart,
+    authRequired: true,
+    accessRequired: false,
+  },
 ];
 
 const HEADER_NAV = [
@@ -114,6 +120,7 @@ const HEADER_NAV = [
     name: "Settings",
     navigate: "/Settings",
   },
+
 ];
 
 const HELP_NAV = [

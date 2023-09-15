@@ -82,6 +82,10 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.primary.light,
     },
   },
+  variationPrice: {
+    fontWeight: 700,
+    marginLeft: 20
+  }
 }));
 
 export default useStyles;
