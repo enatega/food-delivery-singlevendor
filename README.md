@@ -1,10 +1,83 @@
-# Enatega Single Vendor Solution
+<div align="right">
+<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution" style="text-decoration:none">
+  <img src="https://img.shields.io/badge/-0d1117?logo=facebook"  width="40" height="30">
+</a>
+<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution" style="text-decoration:none">
+  <img src="https://img.shields.io/badge/-0d1117?logo=linkedin"  width="40" height="30">
+</a>
+<a target="_blank" href="https://twitter.com/intent/tweet?&url=https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution&via=TWITTER-HANDLE" style="text-decoration:none">
+  <img src="https://img.shields.io/badge/-0d1117?logo=twitter" width="40" height="30">
+</a>
+</div>
 
-![Project thumbnail](./contributingGuides/thumbnail.png)
+<div align="center">
+  <h2>Enatega Single-vendor</h2>
+  <i>Enatega is an open-source delivery management platform for the future.</i>
+ <br/>
+<br />
+</div>
+	
+
+<div align="center">
+
+  [![Static Badge](https://img.shields.io/badge/License-MIT-red)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/blob/main/LICENSE)
+  [![Stars](https://img.shields.io/github/stars/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/stargazers)
+  [![Forks](https://img.shields.io/github/forks/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/network/members)
+  ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution)
+  [![GitHub contributors](https://img.shields.io/github/contributors/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/graphs/contributors)
+  [![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/pulls)
+  [![Activity](https://img.shields.io/github/last-commit/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/commits/main)
+  [![YouTube Channel](https://img.shields.io/badge/Watch_us-Youtube-red)](https://www.youtube.com/@ninjascode509)
+  [![Company Website](https://img.shields.io/badge/Visit_us-Website-blue)](https://enatega.com)
+  [![Closed Issues](https://img.shields.io/github/issues-closed/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution?color=success)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/issues?q=is%3Aissue+is%3Aclosed)
+[![Closed Pull Requests](https://img.shields.io/badge/Closed%20Pull%20Requests-View%20on%20GitHub-blue.svg)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/pulls?q=is%3Apr+is%3Aclosed)
+</div>
+
+<div align="center">
+
+  [![Static Badge](https://img.shields.io/badge/facebook-blue?logo=facebook&logoColor=Blue&color=%23fbfbfb)](https://www.facebook.com/enatega)
+  [![Static Badge](https://img.shields.io/badge/Instagram-blue?logo=instagram&logoColor=D815BE&color=%23fcfcfc)](https://www.instagram.com/enatega.nb/)
+  [![Static Badge](https://img.shields.io/badge/Twitter-blue?logo=Twitter&logoColor=blue&color=%23fcfcfc)](https://twitter.com/EnategaA)
+  [![Static Badge](https://img.shields.io/badge/LinkedIn-blue?logo=LinkedIn&logoColor=darkblue&color=%23fcfcfc)](https://www.linkedin.com/company/14583783/)
+
+</div>
+
+# Enatega Single Vendor Solution
+<div align="center">
+
+  <a href="https://www.youtube.com/watch?v=8sE7ivnFyo0&feature=youtu.be&ab_channel=NinjasCode">
+  <img src="./contributingGuides/thumbnail.png" alt="Demo video" style="border-radius: 6px; width: auto;">
+  </a>
+
+</div>
+
 <br/>
 Enatega is a state of the art white label storefront delivery solution that allows business owners to easily manage their deliveries. Whether they have a restaurant, grocery store, pharmacy, winery or any similar storefront, Enatega will intuitively and instantly be able to automate their deliveries, and handle the logistics. Our solution provides the capability of order management, as well as separate applications for the rider and the customer. It also boasts a suit of features which allow for a greater range of customizability for customers in terms of item selection.
 
 <b>This is the full free source code of our solution, however the backend and API is proprietary and can be obtained via paid license.</b>
+
+<!-- Add a horizontal rule for separation -->
+<hr/>
+
+## :fast_forward: Quick Links
+
+- [:book: What is included](#heading-1)
+- [:rocket: Features](#heading-2)
+- [:wrench: Setup](#heading-3)
+- [:gear: Prerequisites](#heading-4)
+- [:computer: Technologies](#heading-5)
+- [:camera: Screenshots](#heading-6)
+- [:triangular_ruler: High Level Architecture](#heading-7)
+- [:page_with_curl: Documentation](#heading-8)
+- [:movie_camera: Demo Videos](#heading-14)
+- [:video_game: Demos](#heading-9)
+- [:rocket: Contributing](#heading-10)
+- [:busts_in_silhouette: Contributors](#heading-14)
+- [:warning: Disclaimer](#heading-12)
+- [:email: Contact Us](#heading-13)
+
+<!-- Add a horizontal rule for separation -->
+<hr/>
 
 ## What is included:
 
@@ -140,21 +213,20 @@ Find the link for the complete documentation of the Enatega Single Vendor Soluti
 
 If you want to see demo video of the product please check out the link over [here](https://www.youtube.com/watch?v=AWbdt9GX1t4&t=3s&ab_channel=NinjasCode)
 
-## Contributing:
+## :people_holding_hands: Contributors: <a id="heading-14"></a>
+<div align="center">
+<br>
+<a href="https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ninjas-Code-official/Enatega-Food-Delivery-Solution"" style="max-width: 50%; height: auto;" />
+</a>
+</div>
 
-Enatega Restuarant Solution is an open source project. We welcome contributions of all kinds including documentation, bug fixes, feature requests, and code. Please read our [contributing guide](./contributingGuides/CONTRIBUTING.md) for more information on how you can contribute.
 
-## Get the Latest News
-
-- [Facebook](https://www.facebook.com/enatega)
-- [Twitter](https://twitter.com/EnategaA)
-- [Instagram](https://www.instagram.com/enatega.nb/)
-- [LinkedIn](https://www.linkedin.com/company/14583783/)
-
-## Disclaimer:
+## :warning: Disclaimer: <a id="heading-12"></a>
 
 The frontend source code for our solution is completely open source. However, the API and backend is proprietary and can be accessed via a paid license. For further information, contact us on the channels provided below.
 
-## Contact Us:
+## :mailbox_with_mail: Contact Us: <a id="heading-13"></a>
+	
+support@enatega.com
 
-sales@ninjascode.com
