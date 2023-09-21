@@ -79,7 +79,7 @@ Enatega is a state of the art white label storefront delivery solution that allo
 <!-- Add a horizontal rule for separation -->
 <hr/>
 
-## What is included:
+## :question: What is included: <a id="heading-1"></a>
 
 Our solution contains three separate modules. These include the admin panel, the delivery app and the rider app. Below, the capabilities of all three modules have been listed:
 
@@ -89,7 +89,8 @@ Our solution contains three separate modules. These include the admin panel, the
 
 - The rider app can accept the orders and also allows for location based zoning as well as the ability to locate customer’s address via google map’s API integration.
 
-## Features:
+
+## :fire: Features: <a id="heading-2"></a>
 
 - Analytics dashboard for the mobile app
 - Payment integration with Paypal and Stripe
@@ -104,7 +105,7 @@ Our solution contains three separate modules. These include the admin panel, the
 - Multiple variations of food items
 - Push notifications for both mobile and web
 
-## Setup
+## :repeat_one: Setup: <a id="heading-3"></a>
 
 As we’ve mentioned above, the solution includes three separate modules. To setup these modules, follow the steps below:
 
@@ -116,7 +117,7 @@ The version of nodejs should be between 14.0 to 16.0
 
 -[Link to Video tutorial/demonstration of Setup](https://enatega-1.gitbook.io/enatega-multivendor/configurations/google-maps-api-keys)
 
-## Screenshots
+## :framed_picture: Screenshots: <a id="heading-6"></a>
 
 |                    Customer Menu                     |                 Customer Categories                  |                    Customer Items                    |
 | :--------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: |
@@ -130,7 +131,7 @@ The version of nodejs should be between 14.0 to 16.0
 | :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
 | ![](./contributingGuides/screenshots/admin1.jpeg) | ![](./contributingGuides/screenshots/admin2.jpeg) | ![](./contributingGuides/screenshots/admin3.jpeg) |
 
-## High Level Architecture
+## :wrench: High Level Architecture: <a id="heading-7"></a>
 
 ![High Level Architecture](./contributingGuides/screenshots/HighArchitectDiagram.png)
 
@@ -138,7 +139,7 @@ The version of nodejs should be between 14.0 to 16.0
 - Web dashboard communicates with only API Server
 - Rider App communicates with API Server
 
-### Prerequisites:
+## :information_source: Prerequisites: <a id="heading-4"></a>
 
 ##### App Ids for Mobile App in app.json
 
@@ -175,23 +176,21 @@ The version of nodejs should be between 14.0 to 16.0
 
 ##### NOTE: Email provider has been only been tested for gmail accounts
 
-## Technologies:
+## :hammer_and_wrench: Technologies: <a id="heading-5"></a>
+|  Expo   | React-Navigation | Apollo GraphQL | ReactJS | NodeJS | MongoDB | Firebase | 
+|:-------:|:------------:|:--------------:|:-------:|:------:|:-------:|:--------:|
+| <a href="https://expo.dev/"><img src="https://enatega.com/wp-content/uploads/2023/09/expoicon.png" alt="Enatega Logos" width="100"></a>| <a href="https://reactnavigation.org/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-navigation.png" alt="Enatega Logos" width="100"></a>| <a href="https://www.apollographql.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/apollo.png" alt="Enatega Logos" width="100"></a>| <a href="https://reactjs.org/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-native.png" alt="Enatega Logos" width="100"></a> | <a href="https://nodejs.org/en/"><img src="https://enatega.com/wp-content/uploads/2023/09/node.png" alt="Enatega Logos" width="100"></a> | <a href="https://www.mongodb.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/mongoDB.png" alt="Enatega Logos" width="100"></a> | <a href="https://firebase.google.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/firebase.png" alt="Enatega Logos" width="100"></a> | 
 
-- [Expo](https://expo.dev/)
-- [React Navigation](https://reactnavigation.org/)
-- [Apollo GraphQL](https://www.apollographql.com/)
-- [ReactJS](https://reactjs.org/)
-- [NodeJS](https://nodejs.org/en/)
-- [MongoDB](https://www.mongodb.com/)
-- [Firebase](https://firebase.google.com/)
-- [Amplitude](https://amplitude.com/)
-- [React Native](https://reactnative.dev/)
-- [React Router](https://reactrouter.com/)
-- [GraphQL](https://graphql.org/)
-- [ExpressJS](https://expressjs.com/)
-- [React Strap](https://reactstrap.github.io/)
+|React Native | React Router | GraphQL | ExpressJS | React Strap | Amplitude | 
+|:------------:|:------------:|:-------:|:---------:|:-----------:|:---------:|
+|<a href="https://reactnative.dev/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-native.png" alt="Enatega Logos" width="100"></a> | <a href="https://reactrouter.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-router-svgrepo-com.png" alt="Enatega Logos" width="100"></a> |<a href="https://graphql.org/"><img src="https://enatega.com/wp-content/uploads/2023/09/graphQl.png" alt="Enatega Logos" width="100"></a> | <a href="https://expressjs.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/expo.png" alt="Enatega Logos" width="100"></a> |<a href="https://reactstrap.github.io/"><img src="https://enatega.com/wp-content/uploads/2023/09/React-strap.png" alt="Enatega Logos" width="100"></a> | <a href="https://amplitude.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/Amplitude.png" alt="Enatega Logos" width="100"></a> | 
 
-## Demos
+
+|      Customer App             |        Rider App               |      Restaurant App           |          Customer Web        |       Admin Dashboard        |
+| :---------------------------: | :----------------------------: | :----------------------------:|:----------------------------:|:----------------------------:|
+| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/logooo.png" alt="Enatega Logos" width="150"></a>| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/Untitled-1-1.png" alt="Enatega Logos" width="150"></a>| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/LOGOS-FOR-ENATGEA-res.png" alt="Enatega Logos" width="150"></a>| <a href="http://multivendor.enatega.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/worldwide.png" alt="Enatega Logos" width="180"></a> | <a href="http://multivendor-admin-staging.enatega.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/dashboard.png" alt="Enatega Logos" width="150"></a> |
+| <a href="https://play.google.com/store/apps/details?id=com.enatega.multivendor"><img src="https://enatega.com/wp-content/uploads/2023/09/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/enatega-multivendor/id1526488093"><img src="https://enatega.com/wp-content/uploads/2023/09/social_10096939.png" alt="iOS Logo" width="25"></a> |<a href="https://play.google.com/store/apps/details?id=com.enatega.multirider"><img src="https://enatega.com/wp-content/uploads/2023/09/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/enatega-mulitvendor-rider/id1526674511"><img src="https://enatega.com/wp-content/uploads/2023/09/social_10096939.png" alt="iOS Logo" width="25"></a> |<a href="https://play.google.com/store/apps/details?id=multivendor.enatega.restaurant"><img src="https://enatega.com/wp-content/uploads/2023/09/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/enatega-multivendor-restaurant/id1526672537"><img src="https://enatega.com/wp-content/uploads/2023/09/social_10096939.png" alt="iOS Logo" width="25"></a> |
+
 
 - [Customer App Android](https://play.google.com/store/apps/details?id=com.enatega.vendor)
   [![Customer App Android](https://user-images.githubusercontent.com/551004/29770692-a20975c6-8bc6-11e7-8ab0-1cde275496e0.png)](https://play.google.com/store/apps/details?id=com.enatega.vendor)
@@ -207,10 +206,11 @@ The version of nodejs should be between 14.0 to 16.0
 
 - [Admin Dashboard](https://enatega.ninjascode.com/admin/dashboard)
 
-## Documentation and Product Demo Video:
+## :book: Documentation <a id="heading-8"></a>
 
 Find the link for the complete documentation of the Enatega Single Vendor Solution [here](https://ninjas-code.gitbook.io/enatega-full-app/).
 
+## :tv: Demo Videos: <a id="heading-14"></a>
 If you want to see demo video of the product please check out the link over [here](https://www.youtube.com/watch?v=AWbdt9GX1t4&t=3s&ab_channel=NinjasCode)
 
 ## :people_holding_hands: Contributors: <a id="heading-14"></a>
