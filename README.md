@@ -199,10 +199,9 @@ Find the link for the complete documentation of the Enatega Single Vendor Soluti
 
 ## :tv: Demo Videos: <a id="heading-14"></a>
 If you want to see demo video of the product please check out the link over [here](https://www.youtube.com/watch?v=AWbdt9GX1t4&t=3s&ab_channel=NinjasCode)
-|      Admin Dashboard Demo        |        Mobile App Demo         |
-| :---------------------------: | :----------------------------: | 
-| <a href="https://www.youtube.com/watch?v=AWbdt9GX1t4&t=3s&ab_channel=NinjasCode"><img src="https://www.youtube.com/vi/AWbdt9GX1t4/0.jpg" width="200" alt="Video"></a>| <a href="https://www.youtube.com/watch?v=2HdHS2I-p6g"><img src="https://img.youtube.com/vi/2HdHS2I-p6g/0.jpg" width="200" alt="Video"></a>
-
+|      Admin Dashboard Demo     |      
+| :---------------------------: | 
+| <a href="https://www.youtube.com/watch?v=AWbdt9GX1t4&t=3s&ab_channel=NinjasCode"><img src="https://www.youtube.com/vi/AWbdt9GX1t4/0.jpg" width="200" alt="Video"></a>
 
 
 ## :people_holding_hands: Contributors: <a id="heading-14"></a>
