@@ -71,7 +71,6 @@ Enatega is a state of the art white label storefront delivery solution that allo
 - [:page_with_curl: Documentation](#heading-8)
 - [:movie_camera: Demo Videos](#heading-14)
 - [:video_game: Demos](#heading-9)
-- [:rocket: Contributing](#heading-10)
 - [:busts_in_silhouette: Contributors](#heading-14)
 - [:warning: Disclaimer](#heading-12)
 - [:email: Contact Us](#heading-13)
@@ -185,7 +184,7 @@ The version of nodejs should be between 14.0 to 16.0
 |:------------:|:------------:|:-------:|:---------:|:-----------:|:---------:|
 |<a href="https://reactnative.dev/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-native.png" alt="Enatega Logos" width="100"></a> | <a href="https://reactrouter.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-router-svgrepo-com.png" alt="Enatega Logos" width="100"></a> |<a href="https://graphql.org/"><img src="https://enatega.com/wp-content/uploads/2023/09/graphQl.png" alt="Enatega Logos" width="100"></a> | <a href="https://expressjs.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/expo.png" alt="Enatega Logos" width="100"></a> |<a href="https://reactstrap.github.io/"><img src="https://enatega.com/wp-content/uploads/2023/09/React-strap.png" alt="Enatega Logos" width="100"></a> | <a href="https://amplitude.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/Amplitude.png" alt="Enatega Logos" width="100"></a> | 
 
-
+## :iphone: Demos: <a id="heading-9"></a>
 |      Customer App             |        Rider App               |      Restaurant App           |          Customer Web        |       Admin Dashboard        |
 | :---------------------------: | :----------------------------: | :----------------------------:|:----------------------------:|:----------------------------:|
 | <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/logooo.png" alt="Enatega Logos" width="150"></a>| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/Untitled-1-1.png" alt="Enatega Logos" width="150"></a>| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/LOGOS-FOR-ENATGEA-res.png" alt="Enatega Logos" width="150"></a>| <a href="http://multivendor.enatega.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/worldwide.png" alt="Enatega Logos" width="180"></a> | <a href="http://multivendor-admin-staging.enatega.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/dashboard.png" alt="Enatega Logos" width="150"></a> |
