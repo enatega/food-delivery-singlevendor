@@ -198,11 +198,9 @@ The version of nodejs should be between 14.0 to 16.0
 Find the link for the complete documentation of the Enatega Single Vendor Solution [here](https://enatega.com/singlevendor-documentation/).
 
 ## :tv: Demo Videos: <a id="heading-14"></a>
-If you want to see demo video of the product please check out the link over [here](https://www.youtube.com/watch?v=AWbdt9GX1t4&t=3s&ab_channel=NinjasCode)
-|      Admin Dashboard Demo     |      
+|             Demo              |     
 | :---------------------------: | 
-| <a href="https://www.youtube.com/watch?v=AWbdt9GX1t4&t=3s&ab_channel=NinjasCode"><img src="https://www.youtube.com/vi/AWbdt9GX1t4/0.jpg" width="200" alt="Video"></a>
-
+| <a href="https://www.youtube.com/watch?v=AWbdt9GX1t4"><img src="https://img.youtube.com/vi/AWbdt9GX1t4/0.jpg" width="200" alt="Video"></a>
 
 ## :people_holding_hands: Contributors: <a id="heading-14"></a>
 <div align="center">
