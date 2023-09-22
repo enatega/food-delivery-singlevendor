@@ -356,11 +356,11 @@ function OrderDetail() {
             <MapView
               style={styles.flex}
               scrollEnabled={false}
+              zoomEnabled={false}
               loadingBackgroundColor={colors.tagColor}
               zoomControlEnabled={false}
               rotateEnabled={false}
               cacheEnabled={true}
-              googleMapsApiKey="AIzaSyCzNP5qQql2a5y8lOoO-1yj1lj_tzjVImA"
               initialRegion={{
                 latitude: parseFloat(selectedOrder.delivery_address.latitude),
                 latitudeDelta: LATITUDE_DELTA,

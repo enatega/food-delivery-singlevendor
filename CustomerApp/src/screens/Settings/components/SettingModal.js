@@ -1,24 +1,24 @@
-import { useTheme } from '@react-navigation/native'
-import PropTypes from 'prop-types'
-import React, { useState } from 'react'
-import { TouchableOpacity, View } from 'react-native'
-import RadioButton from '../../../components/FdRadioBtn/RadioBtn'
-import TextDefault from '../../../components/Text/TextDefault/TextDefault'
-import { alignment } from '../../../utils/alignment'
-import useStyle from './styles'
+import { useTheme } from "@react-navigation/native";
+import PropTypes from "prop-types";
+import React, { useState } from "react";
+import { TouchableOpacity, View } from "react-native";
+import RadioButton from "../../../components/FdRadioBtn/RadioBtn";
+import TextDefault from "../../../components/Text/TextDefault/TextDefault";
+import { alignment } from "../../../utils/alignment";
+import useStyle from "./styles";
 
 const languageTypes = [
-  { value: 'English', code: 'en', index: 0 },
-  { value: 'français', code: 'fr', index: 1 },
-  { value: 'ភាសាខ្មែរ', code: 'km', index: 2 },
-  { value: '中文', code: 'zh', index: 3 },
-  { value: 'Deutsche', code: 'de', index: 4 }
-]
+  { value: "English", code: "en", index: 0 },
+  { value: "français", code: "fr", index: 1 },
+  { value: "ភាសាខ្មែរ", code: "km", index: 2 },
+  { value: "中文", code: "zh", index: 3 },
+  { value: "Deutsche", code: "de", index: 4 },
+];
 
 function SettingModal(props) {
-  const styles = useStyle()
-  const { colors } = useTheme()
-  const [activeRadio, activeRadioSetter] = useState(props.activeRadio)
+  const styles = useStyle();
+  const { colors } = useTheme();
+  const [activeRadio, activeRadioSetter] = useState(props.activeRadio);
 
   return (
     <View style={styles.flex}>
@@ -31,12 +31,13 @@ function SettingModal(props) {
           activeOpacity={0.7}
           key={item.index}
           onPress={() => activeRadioSetter(item.index)}
-          style={[styles.radioContainer]}>
+          style={[styles.radioContainer]}
+        >
           <TextDefault numberOfLines={1} bold style={alignment.MLsmall}>
             {item.value}
           </TextDefault>
           <RadioButton
-            animation={'bounceIn'}
+            animation={"bounceIn"}
             size={13}
             outerColor={colors.radioOuterColor}
             innerColor={colors.radioColor}
@@ -51,7 +52,8 @@ function SettingModal(props) {
       <TouchableOpacity
         activeOpacity={0.7}
         style={styles.button}
-        onPress={() => props.onSelectedLanguage(activeRadio)}>
+        onPress={() => props.onSelectedLanguage(activeRadio)}
+      >
         <TextDefault textColor={colors.lightBackground} bolder uppercase>
           Done
         </TextDefault>
@@ -59,17 +61,18 @@ function SettingModal(props) {
       <TouchableOpacity
         activeOpacity={0.7}
         style={[styles.width100, alignment.PBlarge, alignment.PTlarge]}
-        onPress={() => props.onClose()}>
+        onPress={() => props.onClose()}
+      >
         <TextDefault center>Cancel</TextDefault>
       </TouchableOpacity>
       {/* </View> */}
     </View>
-  )
+  );
 }
 
 SettingModal.propTypes = {
   activeRadio: PropTypes.number,
   onSelectedLanguage: PropTypes.func,
-  onClose: PropTypes.func
-}
-export default SettingModal
+  onClose: PropTypes.func,
+};
+export default SettingModal;

@@ -62,19 +62,26 @@ const CreateAccount = () => {
   }
 
   async function onCompleted(data) {
-    try {
-      const trackingOpts = {
-        id: data.login.userId,
-        usernameOrEmail: data.login.email,
-      };
-      Analytics.identify(data.login.userId, trackingOpts);
-      Analytics.track(Analytics.events.USER_CREATED_ACCOUNT, trackingOpts);
-      setTokenAsync(data.login.token);
-      navigation.navigate(NAVIGATION_SCREEN.Menu);
-    } catch (e) {
-      console.log(e);
-    } finally {
+    if (!data.login.is_active) {
+      FlashMessage({
+        message: "Can't Login,This Account is Deleted!",
+      });
       setLoading(false);
+    } else {
+      try {
+        const trackingOpts = {
+          id: data.login.userId,
+          usernameOrEmail: data.login.email,
+        };
+        Analytics.identify(data.login.userId, trackingOpts);
+        Analytics.track(Analytics.events.USER_CREATED_ACCOUNT, trackingOpts);
+        setTokenAsync(data.login.token);
+        navigation.navigate(NAVIGATION_SCREEN.Menu);
+      } catch (e) {
+        console.log(e);
+      } finally {
+        setLoading(false);
+      }
     }
   }
   function onError(error) {
@@ -139,6 +146,7 @@ const CreateAccount = () => {
               };
               mutateLogin(user);
             }
+
             loginButtonSetter("Apple");
             // signed in
           } catch (e) {
