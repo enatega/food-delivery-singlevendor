@@ -20,17 +20,16 @@
 
 <div align="center">
 
-  [![Static Badge](https://img.shields.io/badge/License-MIT-red)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/blob/main/LICENSE)
-  [![Stars](https://img.shields.io/github/stars/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/stargazers)
-  [![Forks](https://img.shields.io/github/forks/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/network/members)
-  ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution)
-  [![GitHub contributors](https://img.shields.io/github/contributors/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/graphs/contributors)
-  [![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/pulls)
-  [![Activity](https://img.shields.io/github/last-commit/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/commits/main)
+  [![Static Badge](https://img.shields.io/badge/License-MIT-red)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/blob/main/LICENSE)
+  [![Stars](https://img.shields.io/github/stars/Ninjas-Code-official/Enatega-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/stargazers)
+  [![Forks](https://img.shields.io/github/forks/Ninjas-Code-official/Enatega-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/forks)
+  [![GitHub contributors](https://img.shields.io/github/contributors/Ninjas-Code-official/Enatega-Food-Delivery-Solution)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/graphs/contributors)
+  [![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/Ninjas-Code-official/Enatega-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/pulls)
+  [![Activity](https://img.shields.io/github/last-commit/Ninjas-Code-official/Enatega-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/commits/main)
   [![YouTube Channel](https://img.shields.io/badge/Watch_us-Youtube-red)](https://www.youtube.com/@ninjascode509)
   [![Company Website](https://img.shields.io/badge/Visit_us-Website-blue)](https://enatega.com)
-  [![Closed Issues](https://img.shields.io/github/issues-closed/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution?color=success)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/issues?q=is%3Aissue+is%3Aclosed)
-[![Closed Pull Requests](https://img.shields.io/badge/Closed%20Pull%20Requests-View%20on%20GitHub-blue.svg)](https://github.com/Ninjas-Code-official/Enatega-Multivendor-Food-Delivery-Solution/pulls?q=is%3Apr+is%3Aclosed)
+  [![Closed Issues](https://img.shields.io/github/issues-closed/Ninjas-Code-official/Enatega-Food-Delivery-Solution?color=success)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/issues?q=is%3Aissue+is%3Aclosed)
+[![Closed Pull Requests](https://img.shields.io/badge/Closed%20Pull%20Requests-View%20on%20GitHub-blue.svg)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/pulls?q=is%3Apr+is%3Aclosed)
 </div>
 
 <div align="center">
