@@ -190,27 +190,17 @@ The version of nodejs should be between 14.0 to 16.0
 | <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/logooo.png" alt="Enatega Logos" width="150"></a>| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/Untitled-1-1.png" alt="Enatega Logos" width="150"></a>| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/LOGOS-FOR-ENATGEA-res.png" alt="Enatega Logos" width="150"></a>| <a href="http://multivendor.enatega.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/worldwide.png" alt="Enatega Logos" width="180"></a> | <a href="http://multivendor-admin-staging.enatega.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/dashboard.png" alt="Enatega Logos" width="150"></a> |
 | <a href="https://play.google.com/store/apps/details?id=com.enatega.multivendor"><img src="https://enatega.com/wp-content/uploads/2023/09/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/enatega-multivendor/id1526488093"><img src="https://enatega.com/wp-content/uploads/2023/09/social_10096939.png" alt="iOS Logo" width="25"></a> |<a href="https://play.google.com/store/apps/details?id=com.enatega.multirider"><img src="https://enatega.com/wp-content/uploads/2023/09/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/enatega-mulitvendor-rider/id1526674511"><img src="https://enatega.com/wp-content/uploads/2023/09/social_10096939.png" alt="iOS Logo" width="25"></a> |<a href="https://play.google.com/store/apps/details?id=multivendor.enatega.restaurant"><img src="https://enatega.com/wp-content/uploads/2023/09/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/enatega-multivendor-restaurant/id1526672537"><img src="https://enatega.com/wp-content/uploads/2023/09/social_10096939.png" alt="iOS Logo" width="25"></a> |
 
-
-- [Customer App Android](https://play.google.com/store/apps/details?id=com.enatega.vendor)
-  [![Customer App Android](https://user-images.githubusercontent.com/551004/29770692-a20975c6-8bc6-11e7-8ab0-1cde275496e0.png)](https://play.google.com/store/apps/details?id=com.enatega.vendor)
-
-- [Customer App iOS](https://apps.apple.com/pk/app/enatega/id1493209281)
-  [![Customer App iOS](https://user-images.githubusercontent.com/551004/29770691-a2082ff4-8bc6-11e7-89a6-964cd405ea8e.png)](https://apps.apple.com/pk/app/enatega/id1493209281)
-
-- [Rider App Android](https://play.google.com/store/apps/details?id=com.enatega.rider)
-  [![Rider App Android](https://user-images.githubusercontent.com/551004/29770692-a20975c6-8bc6-11e7-8ab0-1cde275496e0.png)](https://play.google.com/store/apps/details?id=com.enatega.rider)
-
-- [Rider App iOS](https://apps.apple.com/pk/app/enatega-rider-app/id1493291047)
-  [![Rider App iOS](https://user-images.githubusercontent.com/551004/29770691-a2082ff4-8bc6-11e7-89a6-964cd405ea8e.png)](https://apps.apple.com/pk/app/enatega-rider-app/id1493291047)
-
-- [Admin Dashboard](https://enatega.ninjascode.com/admin/dashboard)
-
 ## :book: Documentation <a id="heading-8"></a>
 
 Find the link for the complete documentation of the Enatega Single Vendor Solution [here](https://ninjas-code.gitbook.io/enatega-full-app/).
 
 ## :tv: Demo Videos: <a id="heading-14"></a>
 If you want to see demo video of the product please check out the link over [here](https://www.youtube.com/watch?v=AWbdt9GX1t4&t=3s&ab_channel=NinjasCode)
+|      Admin Dashboard Demo        |        Mobile App Demo         |
+| :---------------------------: | :----------------------------: | 
+| <a href="https://www.youtube.com/watch?v=AWbdt9GX1t4&t=3s&ab_channel=NinjasCode"><img src="https://www.youtube.com/vi/AWbdt9GX1t4/0.jpg" width="200" alt="Video"></a>| <a href="https://www.youtube.com/watch?v=2HdHS2I-p6g"><img src="https://img.youtube.com/vi/2HdHS2I-p6g/0.jpg" width="200" alt="Video"></a>
+
+
 
 ## :people_holding_hands: Contributors: <a id="heading-14"></a>
 <div align="center">
