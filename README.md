@@ -45,7 +45,7 @@
 <div align="center">
 
   <a href="https://www.youtube.com/watch?v=8sE7ivnFyo0&feature=youtu.be&ab_channel=NinjasCode">
-  <img src="./contributingGuides/thumbnail.png" alt="Demo video" style="border-radius: 6px; width: auto;">
+  <img src="https://enatega.com/wp-content/uploads/2023/09/final.jpg" alt="Demo video" style="border-radius: 6px; width: auto;">
   </a>
 
 </div>
@@ -117,17 +117,17 @@ The version of nodejs should be between 14.0 to 16.0
 
 ## :framed_picture: Screenshots: <a id="heading-6"></a>
 
-|                    Customer Menu                     |                 Customer Categories                  |                    Customer Items                    |
-| :--------------------------------------------------: | :--------------------------------------------------: | :--------------------------------------------------: |
-| ![](./contributingGuides/screenshots/customer1.jpeg) | ![](./contributingGuides/screenshots/customer2.jpeg) | ![](./contributingGuides/screenshots/customer3.jpeg) |
+|                    Customer App                      |                
+| :--------------------------------------------------: | 
+| ![](https://enatega.com/wp-content/uploads/2023/09/customer.jpg) | 
 
-|                    Rider Menu                     |                   Rider Orders                    |                Rider Items Details                |
-| :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
-| ![](./contributingGuides/screenshots/rider1.jpeg) | ![](./contributingGuides/screenshots/rider2.jpeg) | ![](./contributingGuides/screenshots/rider3.jpeg) |
+|                    Rider App                     |                 
+| :-----------------------------------------------:|
+| ![](https://enatega.com/wp-content/uploads/2023/09/rider-app.jpg) |
 
-|                  Stats Overview                   |                    User Table                     |                Food Items Editing                 |
-| :-----------------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
-| ![](./contributingGuides/screenshots/admin1.jpeg) | ![](./contributingGuides/screenshots/admin2.jpeg) | ![](./contributingGuides/screenshots/admin3.jpeg) |
+|                  Dashboard                        |                   
+| :-----------------------------------------------: | 
+| ![](https://enatega.com/wp-content/uploads/2023/09/dashboard-scaled.jpg) | 
 
 ## :wrench: High Level Architecture: <a id="heading-7"></a>
 
