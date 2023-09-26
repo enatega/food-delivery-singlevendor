@@ -1,0 +1,305 @@
+export const login = `
+mutation Login($facebookId:String,$email:String,$password:String,$type:String!,$appleId:String,$name:String,$notificationToken:String){
+  login(facebookId:$facebookId,email:$email,password:$password,type:$type,appleId:$appleId,name:$name,notificationToken:$notificationToken){
+    userId
+    token
+    tokenExpiration
+    name
+    email
+    phone
+  }
+}
+`;
+
+export const createUser = `
+  mutation CreateUser($facebookId:String,$phone:String,$email:String,$password:String,$name:String,$notificationToken:String,$appleId:String){
+    createUser(userInput:{
+        facebookId:$facebookId,
+        phone:$phone,
+        email:$email,
+        password:$password,
+        name:$name,
+        notificationToken:$notificationToken,
+        appleId:$appleId
+    }){
+        userId
+        token
+        tokenExpiration
+        name
+        email
+        phone
+    }
+  }`;
+
+
+export const getConfiguration = `query Configuration{
+  configuration{
+    _id
+    currency
+    currency_symbol
+    delivery_charges
+  }
+}`
+
+export const foods = `
+query FoodByCategory($category:String!,$onSale:Boolean,$inStock:Boolean,$min:Float,$max:Float,$search:String){
+    foodByCategory(category:$category,onSale:$onSale,inStock:$inStock,min:$min,max:$max,search:$search){
+      _id
+      title
+      description
+      variations{
+        _id
+        title
+        price
+        discounted
+        addons{
+          _id
+          title
+          description
+          quantity_minimum
+          quantity_maximum
+          options{
+            _id
+            title
+            description
+            price
+          }
+        }
+      }
+      category{_id}
+      img_url
+      stock
+    }
+  }`
+
+export const updateUser = `
+    mutation UpdateUser($name:String!,$phone:String!){
+        updateUser(updateUserInput:{name:$name,phone:$phone}){
+          _id
+          name
+          phone
+        }
+      }`
+export const profile = `
+  query{
+    profile{
+      _id
+      name
+      phone
+      email
+      notificationToken
+      is_order_notification
+      is_offer_notification
+      addresses{
+        _id
+        label
+        delivery_address
+        details
+        longitude
+        latitude
+        selected
+      }
+    }
+  }`;
+
+  export const deleteAddress = `mutation DeleteAddress($id:ID!){
+    deleteAddress(id:$id){
+      _id
+      addresses{
+        _id
+        label
+        delivery_address
+        details
+        longitude
+        latitude
+        selected
+      }
+    }
+  }`
+  
+  export const createAddress = `mutation CreateAddress($addressInput:AddressInput!){
+    createAddress(addressInput:$addressInput){
+      _id
+      addresses{
+        _id
+        label
+        delivery_address
+        details
+        longitude
+        latitude
+        selected
+      }
+    }
+  }`
+  
+  export const editAddress = `mutation EditAddress($addressInput:AddressInput!){
+    editAddress(addressInput:$addressInput){
+      _id
+      label
+      delivery_address
+      details
+      longitude
+      latitude
+    }
+  }`
+
+export const categories = `
+{
+  categories{
+  _id
+  title
+  description
+  img_menu
+  }
+}`;
+
+export const myOrders = `query Orders($offset:Int){
+  orders(offset:$offset){
+    _id
+    delivery_address{
+      latitude
+      longitude
+      delivery_address
+      details
+      label
+    }
+    delivery_charges
+    order_id
+    user{
+      _id
+      phone
+    }
+    
+    items{
+      _id
+      food{
+        _id
+        title
+        category{
+          _id
+        }
+        description
+        img_url
+      }
+      variation{
+        _id
+        title
+        price
+      }
+      addons{
+        _id
+        title
+        description
+        quantity_minimum
+        quantity_maximum
+        options{
+          _id
+          title
+          description
+          price
+        }
+      }
+      quantity
+    }
+    payment_status
+    payment_method
+    order_amount
+    paid_amount
+    order_status
+    status_queue{
+      pending
+      preparing
+      picked
+      delivered
+      cancelled
+    }
+    createdAt
+    review{
+      _id
+      rating
+      description
+    }
+    rider{
+      _id
+    }
+  }
+}
+`
+
+export const orderStatusChanged = `subscription OrderStatusChanged($userId:String!){
+  orderStatusChanged(userId:$userId)
+  {
+    userId
+    origin
+    order{
+    _id
+    delivery_address{
+      latitude
+      longitude
+      delivery_address
+      details
+      label
+    }
+    delivery_charges
+    order_id
+    user{
+      _id
+      phone
+    }
+    
+    items{
+      _id
+      food{
+        _id
+        title
+        category{
+          _id
+        }
+        description
+        img_url
+      }
+      variation{
+        _id
+        title
+        price
+      }
+      addons{
+        _id
+        title
+        description
+        quantity_minimum
+        quantity_maximum
+        options{
+          _id
+          title
+          description
+          price
+        }
+      }
+      quantity
+    }
+    payment_status
+    payment_method
+    order_amount
+    paid_amount
+    order_status
+    status_queue{
+      pending
+      preparing
+      picked
+      delivered
+      cancelled
+    }
+    createdAt
+    review{
+      _id
+      rating
+      description
+    }
+    rider{
+      _id
+    }
+  }
+  }
+}
+`
