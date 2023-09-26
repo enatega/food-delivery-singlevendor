@@ -133,10 +133,6 @@ The version of nodejs should be between 14.0 to 16.0
 
 ![High Level Architecture](./contributingGuides/screenshots/HighArchitectDiagram.png)
 
-- User Mobile App communicates with both API Server and [Amplitudes](https://amplitude.com/) analytics dashboard
-- Web dashboard communicates with only API Server
-- Rider App communicates with API Server
-
 ## :information_source: Prerequisites: <a id="heading-4"></a>
 
 ##### App Ids for Mobile App in app.json
