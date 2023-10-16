@@ -10,14 +10,14 @@ import useStyle from './styles'
 const links = [
   {
     title: 'Product Page',
-    url: 'https://market.nativebase.io/view/react-native-food-delivery-backend-app'
+    url: 'https://enatega.com/enatega-single-vendor/'
   },
-  { title: 'Docs', url: 'https://enatega.gitbook.io/enatega-full-app/' },
+  { title: 'Docs', url: 'https://enatega.com/docs/enatega-singlevendor-introduction/' },
   {
     title: 'Blog',
-    url: 'https://blog.nativebase.io/enatega-full-food-delivery-app-is-finally-here-a6039de4a09d'
+    url: 'https://enatega.com/blog/'
   },
-  { title: 'About Us', url: 'https://ninjascode.com/pages/ourteam.html' }
+  { title: 'About Us', url: 'https://ninjascode.com/our-team' }
 ]
 function Help() {
   const styles = useStyle()
