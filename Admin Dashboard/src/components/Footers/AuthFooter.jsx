@@ -27,7 +27,7 @@ function AuthFooter(props) {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="https://ninjascode.com/pages/ourteam.html"
+                    href="https://ninjascode.com/our-team"
                     target="_blank">
                     {t('About Us')}
                   </NavLink>

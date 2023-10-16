@@ -11,7 +11,7 @@ const ENV = {
     WS_GRAPHQL_URL: "wss://enatega-singlevendor.up.railway.app/graphql",
     SERVER_URL: "https://enatega-singlevendor.up.railway.app/",
     Expo_CLIENT_ID_GOOGLE:
-      "630195385603-82e52jpb722a8l0huhkspq3tqh2d6r6f.apps.googleusercontent.com",
+      "967541328677-2lkpq6a9cj7bnokht7ich14igsi3brs5.apps.googleusercontent.com",
     IOS_CLIENT_ID_GOOGLE:
       "967541328677-uq7f7odvmeea2pb2sq0l7q320ds86536.apps.googleusercontent.com",
     ANDROID_CLIENT_ID_GOOGLE:
@@ -54,7 +54,7 @@ const ENV = {
   },
 };
 
-const getEnvVars = (env = Constants.manifest.releaseChannel) => {
+const getEnvVars = (env = Constants.manifest/*.releaseChannel*/) => {
   // What is __DEV__ ?
   // This variable is set to true when react-native is running in Dev mode.
   // __DEV__ is true when run locally, but false when published.
@@ -63,8 +63,8 @@ const getEnvVars = (env = Constants.manifest.releaseChannel) => {
     return ENV.development;
   } else if (env === "production") {
     return ENV.production;
-  } else if (env === "staging") {
-    return ENV.staging;
+  // } else if (env === "staging") {
+  //   return ENV.staging;
   } else {
     return ENV.production;
   }

@@ -35,7 +35,7 @@ function Footer(props) {
 
             <NavItem>
               <NavLink
-                href="https://ninjascode.com/pages/ourteam.html"
+                href="https://ninjascode.com/our-team"
                 rel="noopener noreferrer"
                 target="_blank">
                 {t('About Us')}

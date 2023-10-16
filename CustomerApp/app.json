@@ -3,8 +3,11 @@
     "name": "Enatega",
     "version": "1.0.21",
     "scheme": "enategasinglevendor",
-    "description": "Enatega is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://market.nativebase.io/view/react-native-food-delivery-backend-app",
+    "description": "Enatega is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://enatega.com/enatega-single-vendor/",
     "slug": "enategasinglevendor",
+    "owner": "ninjas_code",
+    "currentFullName": "@ninjas_code/enategasinglevendor",
+    "originalFullName": "@ninjas_code/enategasinglevendor",
     "privacy": "public",
     "androidStatusBar": {
       "backgroundColor": "#000"
@@ -21,7 +24,8 @@
       "backgroundColor": "#febb2c"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/e7c3fd70-4054-4dc8-bbdb-a572a3cc6fb1"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -76,8 +80,11 @@
     "facebookDisplayName": "Food delivery",
     "extra": {
       "eas": {
-        "projectId": "0b51ea6b-d9fd-48e2-9480-54149ca73a7a"
+        "projectId": "e7c3fd70-4054-4dc8-bbdb-a572a3cc6fb1"
       }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }

@@ -1,5 +1,6 @@
 import * as Localization from 'expo-localization'
-import { AsyncStorage, Platform } from 'react-native'
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Platform } from 'react-native'
 import i18n from 'i18n-js'
 import { en } from './languages/en'
 import { fr } from './languages/fr'
