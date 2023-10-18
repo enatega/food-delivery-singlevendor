@@ -62,7 +62,7 @@ const Theme = {
       fontSecondColor: COLORS.whitishGrey,
       placeHolderColor: COLORS.lightGrey,
       buttonBackground: COLORS.primary,
-      buttonBackgroundLight: COLORS.mediumBlueShadeGrey,
+      buttonBackgroundLight: COLORS.dkmediumBlueShadeGrey,
       buttonBackgroundBlue: COLORS.primaryLightBlue,
       active: COLORS.primaryLightBlue,
       buttonText: COLORS.white,

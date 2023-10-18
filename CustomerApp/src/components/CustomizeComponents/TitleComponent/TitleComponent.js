@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { View } from 'react-native'
 import { alignment } from '../../../utils/alignment'
-import TextDefault from '../../Text/TextDefault/TextDefault'
+import TextDefault from '../../Text'
 import styles from './styles'
 
 function TitleComponent(props) {

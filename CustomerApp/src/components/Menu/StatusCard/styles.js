@@ -18,7 +18,7 @@ const useStyle = () => {
       marginTop: 20,
       width: scale(275),
       padding: moderateScale(15),
-      backgroundColor: '#f7f7fb',
+      backgroundColor: colors.cardContainer,
       borderRadius: 10,
       borderStyle: 'dashed',
       borderColor: '#a5a5a5',
@@ -32,7 +32,8 @@ const useStyle = () => {
       // ...alignment.MTxSmall,
       // ...alignment.MLmedium
     },
-    textContainer: {},
+    textContainer: {
+    },
     statusCircleContainer: {
       flexDirection: 'row',
       justifyContent: 'flex-start',

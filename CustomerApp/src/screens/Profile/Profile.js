@@ -58,9 +58,17 @@ function Profile() {
     onError,
   });
 
+  const [title, setTitle] = useState('titleProfile');
+
   useLayoutEffect(() => {
     navigation.setOptions({
-      title: "Profile",
+      // headerTitle: () => (
+      //   <TextDefault center H4 bold>
+      //     {title || 'Profile'}
+      //   </TextDefault>
+      // ),
+      // title: "Profile",
+      headerTitle: i18n.t(title),
       headerRight: () => (
         <RightButton
           icon={toggleView ? ICONS_NAME.Pencil : ICONS_NAME.Cross}
@@ -70,6 +78,7 @@ function Profile() {
       ),
     });
   }, [navigation, toggleView]);
+
 
   useEffect(() => {
     if (backScreen) {

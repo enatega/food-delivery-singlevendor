@@ -6,6 +6,7 @@ import i18n from '../../../i18n'
 import { TextDefault, WrapperView } from '../../components'
 import { NAVIGATION_SCREEN } from '../../utils/constant'
 import useStyle from './styles'
+import { useTheme } from '@react-navigation/native'
 
 const links = [
   {
@@ -22,6 +23,7 @@ const links = [
 function Help() {
   const styles = useStyle()
   const navigation = useNavigation()
+  const { colors } = useTheme()
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -42,7 +44,7 @@ function Help() {
             key={index}>
             <TextDefault H4>{title}</TextDefault>
             <TouchableOpacity>
-              <AntDesign name="arrowright" size={22} color="black" />
+              <AntDesign name="arrowright" size={22} color={colors.fontMainColor} />
             </TouchableOpacity>
           </TouchableOpacity>
         ))}

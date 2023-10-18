@@ -164,7 +164,7 @@ const CreateAccount = () => {
           style={styles.marginLeft5}
           name="apple"
           size={scale(19)}
-          color="#000"
+          color={colors.iconColor}
         />
         <TextDefault style={alignment.MLsmall} bold>
           Signup with Apple

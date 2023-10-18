@@ -17,10 +17,12 @@ const COLORS = {
   primaryLightBlue: '#0cc8d5',
   lightBlueShadeGrey: '#f8f9fa',
   mediumBlueShadeGrey: '#f2f4f5',
+  dkmediumBlueShadeGrey: '#202020',
   black06: 'rgba(0,0,0,0.6)',
   white06: 'rgba(255,255,255,0.6)',
   redishOrange: '#FA7751',
   blueColor: '#00b9c6',
-  yellowishOrange: '#fff1d4'
+  yellowishOrange: '#fff1d4',
+  fontMainColor: '#000'
 }
 export { COLORS }
