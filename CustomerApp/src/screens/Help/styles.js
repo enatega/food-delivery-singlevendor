@@ -10,7 +10,7 @@ const useStyle = () => {
       flex: 1
     },
     itemContainer: {
-      backgroundColor: colors.white,
+      backgroundColor: colors.buttonBackgroundLight,
       marginHorizontal: moderateScale(20),
       borderRadius: moderateScale(10),
       elevation: 2,

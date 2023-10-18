@@ -71,7 +71,7 @@ const useStyle = () => {
       width: '100%',
       height: height * 0.07,
       borderRadius: moderateScale(20),
-      backgroundColor: colors.lightBackground,
+      backgroundColor: colors.buttonBackgroundLight,
       flexDirection: 'row',
       alignItems: 'center'
     },

@@ -43,7 +43,7 @@ const useStyle = () => {
     contactContainer: {
       width: '100%',
       alignSelf: 'center',
-      backgroundColor: colors.lightBackground,
+      backgroundColor: colors.cardContainer,
       borderRadius: 20,
       padding: scale(15)
     },
@@ -56,7 +56,7 @@ const useStyle = () => {
       alignSelf: 'center',
       borderTopLeftRadius: 20,
       borderTopRightRadius: 20,
-      backgroundColor: colors.lightBackground,
+      backgroundColor: colors.cardContainer,
       borderBottomColor: colors.horizontalLine,
       ...alignment.PLmedium,
       ...alignment.PRmedium,
