@@ -17,7 +17,6 @@ const useStyle = () => {
       aspectRatio: 1
     },
     backBtn: {
-      backgroundColor: colors.white,
       borderRadius: scale(13),
       justifyContent: 'center',
       alignItems: 'center'
