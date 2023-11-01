@@ -8,10 +8,10 @@ const useStyles = () => {
   return StyleSheet.create({
     flex: {
       flex: 1,
-      alignItems: 'center'
+      alignItems: 'center',
+      backgroundColor: colors.background,
     },
     mainContainer: {
-      backgroundColor: colors.background,
       ...alignment.PTlarge,
       ...alignment.PBlarge,
       ...alignment.PLsmall,
