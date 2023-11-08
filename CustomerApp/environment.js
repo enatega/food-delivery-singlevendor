@@ -27,9 +27,9 @@ const ENV = {
     WS_GRAPHQL_URL: "wss://enatega-singlevendor.up.railway.app/graphql",
     SERVER_URL: "https://enatega-singlevendor.up.railway.app/", // put / at the end of server url
     IOS_CLIENT_ID_GOOGLE:
-      "967541328677-nf8h4ou7rhmq9fahs87p057rggo95eah.apps.googleusercontent.com",
+      "94983896797-irt6u2cmq2sjcp7j1rj9m9pqptjd12ue.apps.googleusercontent.com",
     ANDROID_CLIENT_ID_GOOGLE:
-      "967541328677-7264tf7tkdtoufk844rck9mimrve135c.apps.googleusercontent.com",
+      "94983896797-omp6mi32rl3126siafgnskrqql0rdk5c.apps.googleusercontent.com",
     FACEBOOK_APP_ID: "404956210315749",
     AMPLITUDE_API_KEY: "358ef0deb443586e2cc4ddd4380151f0",
     STRIPE_PUBLIC_KEY: "pk_test_lEaBbVGnTkzja2FyFiNlbqtw",
