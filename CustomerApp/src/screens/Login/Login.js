@@ -202,7 +202,7 @@ function Login() {
           alwaysBounceVertical={false}
         >
           <View style={styles.mainContainer}>
-            <RegistrationHeader title={"Login"} back />
+            <RegistrationHeader title={i18n.t("loginBtn")} back />
             <View style={styles.subContainer}>
               <View style={[styles.flex, styles.upperContainer]}>
                 <EnategaImage
