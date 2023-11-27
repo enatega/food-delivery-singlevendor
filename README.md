@@ -45,7 +45,7 @@
 <div align="center">
 
   <a href="https://www.youtube.com/watch?v=8sE7ivnFyo0&feature=youtu.be&ab_channel=NinjasCode">
-  <img src="https://enatega.com/wp-content/uploads/2023/09/final.jpg" alt="Demo video" style="border-radius: 6px; width: auto;">
+  <img src="https://enatega.com/wp-content/uploads/2023/11/final.webp" alt="Demo video" style="border-radius: 6px; width: auto;">
   </a>
 
 </div>
@@ -113,21 +113,21 @@ The required credentials and keys have been set already. You can setup your own 
 
 The version of nodejs should be between 14.0 to 16.0
 
--[Link to Video tutorial/demonstration of Setup](https://enatega.com/singlevendor-documentation/)
+[![Guide Badge](https://img.shields.io/badge/Do_with_guided_tutorial-blue?style=for-the-badge&logo=book-reader)](https://enatega.com/single-vendor-doc/)
 
 ## :framed_picture: Screenshots: <a id="heading-6"></a>
 
 |                    Customer App                      |                
 | :--------------------------------------------------: | 
-| ![](https://enatega.com/wp-content/uploads/2023/09/customer.jpg) | 
+| ![](https://enatega.com/wp-content/uploads/2023/11/customer.jpg) | 
 
 |                    Rider App                     |                 
 | :-----------------------------------------------:|
-| ![](https://enatega.com/wp-content/uploads/2023/09/rider-app.jpg) |
+| ![](https://enatega.com/wp-content/uploads/2023/11/rider-app.jpg) |
 
 |                  Dashboard                        |                   
 | :-----------------------------------------------: | 
-| ![](https://enatega.com/wp-content/uploads/2023/09/dashboard-scaled.jpg) | 
+| ![](https://enatega.com/wp-content/uploads/2023/11/dashboard-scaled-1.jpg) | 
 
 ## :wrench: High Level Architecture: <a id="heading-7"></a>
 
@@ -173,18 +173,18 @@ The version of nodejs should be between 14.0 to 16.0
 ## :hammer_and_wrench: Technologies: <a id="heading-5"></a>
 |  Expo   | React-Navigation | Apollo GraphQL | ReactJS | NodeJS | MongoDB | Firebase | 
 |:-------:|:------------:|:--------------:|:-------:|:------:|:-------:|:--------:|
-| <a href="https://expo.dev/"><img src="https://enatega.com/wp-content/uploads/2023/09/expoicon.png" alt="Enatega Logos" width="100"></a>| <a href="https://reactnavigation.org/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-navigation.png" alt="Enatega Logos" width="100"></a>| <a href="https://www.apollographql.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/apollo.png" alt="Enatega Logos" width="100"></a>| <a href="https://reactjs.org/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-native.png" alt="Enatega Logos" width="100"></a> | <a href="https://nodejs.org/en/"><img src="https://enatega.com/wp-content/uploads/2023/09/node.png" alt="Enatega Logos" width="100"></a> | <a href="https://www.mongodb.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/mongoDB.png" alt="Enatega Logos" width="100"></a> | <a href="https://firebase.google.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/firebase.png" alt="Enatega Logos" width="100"></a> | 
+| <a href="https://expo.dev/"><img src="https://enatega.com/wp-content/uploads/2023/11/expoicon.png" alt="Enatega Logos" width="100"></a>| <a href="https://reactnavigation.org/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-navigation.png" alt="Enatega Logos" width="100"></a>| <a href="https://www.apollographql.com/"><img src="https://enatega.com/wp-content/uploads/2023/11/apollo.png" alt="Enatega Logos" width="100"></a>| <a href="https://reactjs.org/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-native.png" alt="Enatega Logos" width="100"></a> | <a href="https://nodejs.org/en/"><img src="https://enatega.com/wp-content/uploads/2023/09/node.png" alt="Enatega Logos" width="100"></a> | <a href="https://www.mongodb.com/"><img src="https://enatega.com/wp-content/uploads/2023/11/mongoDB.png" alt="Enatega Logos" width="100"></a> | <a href="https://firebase.google.com/"><img src="https://enatega.com/wp-content/uploads/2023/11/firebase.png" alt="Enatega Logos" width="100"></a> | 
 
 |React Native | React Router | GraphQL | ExpressJS | React Strap | Amplitude | 
 |:------------:|:------------:|:-------:|:---------:|:-----------:|:---------:|
-|<a href="https://reactnative.dev/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-native.png" alt="Enatega Logos" width="100"></a> | <a href="https://reactrouter.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-router-svgrepo-com.png" alt="Enatega Logos" width="100"></a> |<a href="https://graphql.org/"><img src="https://enatega.com/wp-content/uploads/2023/09/graphQl.png" alt="Enatega Logos" width="100"></a> | <a href="https://expressjs.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/expo.png" alt="Enatega Logos" width="100"></a> |<a href="https://reactstrap.github.io/"><img src="https://enatega.com/wp-content/uploads/2023/09/React-strap.png" alt="Enatega Logos" width="100"></a> | <a href="https://amplitude.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/Amplitude.png" alt="Enatega Logos" width="100"></a> | 
+|<a href="https://reactnative.dev/"><img src="https://enatega.com/wp-content/uploads/2023/09/react-native.png" alt="Enatega Logos" width="100"></a> | <a href="https://reactrouter.com/"><img src="https://enatega.com/wp-content/uploads/2023/11/react-router-svgrepo-com.png" alt="Enatega Logos" width="100"></a> |<a href="https://graphql.org/"><img src="https://enatega.com/wp-content/uploads/2023/11/graphQl-1.png" alt="Enatega Logos" width="100"></a> | <a href="https://expressjs.com/"><img src="https://enatega.com/wp-content/uploads/2023/09/expo.png" alt="Enatega Logos" width="100"></a> |<a href="https://reactstrap.github.io/"><img src="https://enatega.com/wp-content/uploads/2023/11/React-strap.png" alt="Enatega Logos" width="100"></a> | <a href="https://amplitude.com/"><img src="https://enatega.com/wp-content/uploads/2023/11/Amplitude.png" alt="Enatega Logos" width="100"></a> | 
 
 
 ## :iphone: Demos: <a id="heading-9"></a>
 |      Customer App             |        Rider App               |        Admin Dashboard        |
 | :---------------------------: | :----------------------------: | :----------------------------:|
-| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/LOGO-CUSTOMER.png" alt="Enatega Logos" width="150"></a>| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/09/RIDER-APP-LOGO.png" alt="Enatega Logos" width="150"></a>|<a href="https://singlevendor-admin.enatega.com"><img src="https://enatega.com/wp-content/uploads/2023/09/dashboard.png" alt="Enatega Logos" width="150"></a> |
-| <a href="https://play.google.com/store/apps/details?id=com.enatega.vendor"><img src="https://enatega.com/wp-content/uploads/2023/09/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/enatega/id1493209281"><img src="https://enatega.com/wp-content/uploads/2023/09/social_10096939.png" alt="iOS Logo" width="25"></a> |<a href="https://play.google.com/store/apps/details?id=com.enatega.rider"><img src="https://enatega.com/wp-content/uploads/2023/09/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/enatega-rider-app/id1493291047"><img src="https://enatega.com/wp-content/uploads/2023/09/social_10096939.png" alt="iOS Logo" width="25"></a> |
+| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/11/LOGO-CUSTOMER.png" alt="Enatega Logos" width="150"></a>| <a href="#heading-9" style="pointer-events: none;"><img src="https://enatega.com/wp-content/uploads/2023/11/RIDER-APP-LOGO.png" alt="Enatega Logos" width="150"></a>|<a href="https://singlevendor-admin.enatega.com"><img src="https://enatega.com/wp-content/uploads/2023/09/dashboard.png" alt="Enatega Logos" width="150"></a> |
+| <a href="https://play.google.com/store/apps/details?id=com.enatega.vendor"><img src="https://enatega.com/wp-content/uploads/2023/11/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/enatega/id1493209281"><img src="https://enatega.com/wp-content/uploads/2023/11/social_10096939.png" alt="iOS Logo" width="25"></a> |<a href="https://play.google.com/store/apps/details?id=com.enatega.rider"><img src="https://enatega.com/wp-content/uploads/2023/11/android_518705.png" alt="Android Logo" width="25"></a> <a href="https://apps.apple.com/pk/app/enatega-rider-app/id1493291047"><img src="https://enatega.com/wp-content/uploads/2023/11/social_10096939.png" alt="iOS Logo" width="25"></a> |
 
 
 
