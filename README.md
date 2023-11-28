@@ -11,8 +11,8 @@
 </div>
 
 <div align="center">
-  <h2>Enatega Single-vendor</h2>
-  <i>Enatega is an open-source delivery management platform for the future.</i>
+  <h2>Enatega Single Vendor Food Delivery Solution</h2>
+  <i>The white label food delivery solution built for restaurants of all sizes!</i>
  <br/>
 <br />
 </div>
@@ -51,7 +51,7 @@
 </div>
 
 <br/>
-Enatega is a state of the art white label storefront delivery solution that allows business owners to easily manage their deliveries. Whether they have a restaurant, grocery store, pharmacy, winery or any similar storefront, Enatega will intuitively and instantly be able to automate their deliveries, and handle the logistics. Our solution provides the capability of order management, as well as separate applications for the rider and the customer. It also boasts a suit of features which allow for a greater range of customizability for customers in terms of item selection.
+Enatega Single Vendor is a white label food delivery solution that allows restaurant owners to easily manage their deliveries. Enatega Single Vendor can help to intuitively and instantly automate your deliveries, and handle the logistics. Our food delivery solution provides the capability of order management, as well as separate applications for the rider and the customer. It also boasts a suite of features and can be customized to match your brand thanks to its white label capabilities.
 
 <b>This is the full free source code of our solution, however the backend and API is proprietary and can be obtained via paid license.</b>
 
@@ -79,7 +79,7 @@ Enatega is a state of the art white label storefront delivery solution that allo
 
 ## :question: What is included: <a id="heading-1"></a>
 
-Our solution contains three separate modules. These include the admin panel, the delivery app and the rider app. Below, the capabilities of all three modules have been listed:
+Our food delivery solution contains three separate modules for order management. These include the admin panel, the delivery app and the rider app. Below, the capabilities of all three modules have been listed:
 
 - The admin panel receives the orders that can be placed via the customer app. It also allows managing the restaurant’s orders as well as the riders’ accounts.(Run on node version 14)
 
