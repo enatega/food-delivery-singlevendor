@@ -60,7 +60,7 @@ function Order(props) {
               numberOfLines={2}
               bold
               textColor={colors.placeHolderColor}>
-              Your {i18n.t('orderId')}
+              {i18n.t('YourOrderID')}
             </TextDefault>
             <TextDefault H4 bolder>
               {props.orderId}
@@ -77,7 +77,7 @@ function Order(props) {
                 bold
                 uppercase
                 style={{ ...alignment.PLxSmall, ...alignment.PRxSmall }}>
-                {props.orderStatus}
+                {i18n.t(props.orderStatus)}
               </TextDefault>
             </View>
             <View style={{ paddingLeft: '5%' }}>
@@ -106,13 +106,13 @@ function Order(props) {
               textColor={colors.placeHolderColor}
               bold
               style={{ ...alignment.MTxSmall }}>
-              Payment method
+              {i18n.t('paymentMethod')}
             </TextDefault>
             <TextDefault
               textColor={colors.placeHolderColor}
               bold
               style={{ ...alignment.MTxSmall }}>
-              Delivery Time
+              {i18n.t('deliveryTime')}
             </TextDefault>
           </View>
           <View>

@@ -113,7 +113,7 @@ function Language() {
               justifyContent: 'center'
             }}>
             <TextDefault H5 bold textColor={colors.fontSecondColor}>
-              Done
+              {i18n.t('Done')}
             </TextDefault>
           </TouchableOpacity>
           <TouchableOpacity
@@ -127,7 +127,7 @@ function Language() {
               justifyContent: 'center'
             }}>
             <TextDefault H5 bold textColor={colors.fontMainColor}>
-              Cancel
+              {i18n.t('Cancel')}
             </TextDefault>
           </TouchableOpacity>
         </View>
