@@ -146,4 +146,6 @@ export const de = {
   OrderDetails: 'Bestelgegevens',
   Subtotal: 'Subtotaal',
   Assigntome: 'Toewijzen aan mij',
+  'About Us': 'Over Ons',
+'Product Page': 'Product Pagina',
 }

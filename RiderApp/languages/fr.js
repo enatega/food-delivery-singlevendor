@@ -146,5 +146,6 @@ export const fr = {
   OrderDetails: 'Détails de la commande',
   Subtotal: 'Sous-total',
   Assigntome: 'Attribuer à moi',
-
+  'About Us': 'À Propos de Nous',
+'Product Page': 'Page Produit',
 }

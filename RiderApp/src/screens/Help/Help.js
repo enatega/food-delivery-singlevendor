@@ -10,17 +10,17 @@ import styles from './styles'
 
 const links = [
   {
-    title: i18n.t('ProductPage'),
+    title: 'Product Page',
     url:
       'https://enatega.com/enatega-single-vendor/'
   },
-  { title: i18n.t('Docs'), url: 'https://enatega.com/docs/enatega-singlevendor-rider-app-introduction/' },
+  { title: 'Docs', url: 'https://enatega.com/docs/enatega-singlevendor-rider-app-introduction/' },
   {
-    title: i18n.t('Blog'),
+    title: 'Blog',
     url:
       'https://enatega.com/blog/'
   },
-  { title: i18n.t('AboutUs'), url: 'https://ninjascode.com/our-team/' }
+  { title: 'About Us', url: 'https://ninjascode.com/our-team/' }
 ]
 function Help() {
   const navigation = useNavigation()
@@ -42,7 +42,7 @@ function Help() {
           style={styles.itemContainer}
           key={index}>
           <TextDefault textColor={colors.fontMainColor} H4>
-            {title}
+            {i18n.t(title)}
           </TextDefault>
           <AntDesign name="arrowright" size={scale(20)} />
         </TouchableOpacity>

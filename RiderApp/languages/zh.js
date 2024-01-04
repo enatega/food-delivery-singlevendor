@@ -139,5 +139,6 @@ export const zh = {
   OrderDetails: '订单详情',
   Subtotal: '小计',
   Assigntome: '分配给我',
-
+  'About Us': '关于我们',
+'Product Page': '产品页面',
 }

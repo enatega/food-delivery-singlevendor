@@ -145,4 +145,6 @@ export const en = {
   OrderDetails: 'Order Details',
   Subtotal: 'Subtotal',
   Assigntome: 'Assign to me',
+  'About Us': 'About Us',
+  'Product Page': 'Product Page'
 }
