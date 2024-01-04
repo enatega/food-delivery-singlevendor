@@ -7,6 +7,7 @@ import UserContext from '../../context/user'
 import TextError from '../Text/TextError/TextError'
 import { useNavigation } from '@react-navigation/native'
 import { verticalScale } from '../../utilities/scaling'
+import i18n from '../../../i18n'
 
 export default function Orders() {
   const navigation = useNavigation()
@@ -20,10 +21,10 @@ export default function Orders() {
   } = useContext(UserContext)
 
   if (loadingAssigned) return <Spinner />
-  if (errorAssigned) return <TextError text="Something is worng" />
+  if (errorAssigned) return <TextError text={i18n.t('Somethingisworng')} />
 
   function emptyView() {
-    return <TextError text="No Orders Assigned yet!" />
+    return <TextError text={i18n.t('NoOrdersAssignedyet')} />
   }
 
   return (

@@ -6,6 +6,7 @@ import UserContext from '../../context/user'
 import styles from './style'
 import { TextError, Spinner } from '../../components'
 import { useNavigation } from '@react-navigation/native'
+import i18n from '../../../i18n'
 
 export default function Orders() {
   const navigation = useNavigation()
@@ -19,11 +20,11 @@ export default function Orders() {
   } = useContext(UserContext)
 
   function emptyView() {
-    return <TextError text="No New Order" />
+    return <TextError text={i18n.t('NoNewOrder')} />
   }
 
   if (loadingUnAssigned) return <Spinner />
-  if (errorUnAssigned) return <TextError text="Something is worng" />
+  if (errorUnAssigned) return <TextError text={i18n.t('Somethingisworng')} />
 
   return (
     <View style={styles.flex}>
