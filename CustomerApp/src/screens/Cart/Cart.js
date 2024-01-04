@@ -549,7 +549,7 @@ function Cart() {
                     style={{ width: '30%' }}
                     medium
                     H5>
-                    Total
+                    {i18n.t('total')}
                   </TextDefault>
                   <TextDefault
                     numberOfLines={1}
@@ -628,7 +628,7 @@ function Cart() {
                           {i18n.t('deliveryAddress')}
                         </TextDefault>
                         <TextDefault H5 textColor={colors.buttonBackgroundBlue}>
-                          Change
+                          {i18n.t('change')}
                         </TextDefault>
                       </View>
                       {address ? (

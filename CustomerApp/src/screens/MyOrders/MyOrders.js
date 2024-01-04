@@ -21,8 +21,8 @@ import { ICONS_NAME, NAVIGATION_SCREEN } from "../../utils/constant";
 import { scale } from "../../utils/scaling";
 import useStyle from "./style";
 
-const orderStatusActive = ["PENDING", "PICKED", "ACCEPTED"];
-const orderStatusInactive = ["DELIVERED", "COMPLETED"];
+const orderStatusActive = [i18n.t("PENDING"), i18n.t("PICKED"), i18n.t("ACCEPTED")];
+const orderStatusInactive = [i18n.t("DELIVERED"), i18n.t("COMPLETED")];
 
 function MyOrders() {
   const styles = useStyle();
@@ -86,7 +86,7 @@ function MyOrders() {
           </View>
           <View style={styles.descriptionEmpty}>
             <TextDefault bolder center H4>
-              No Orders Found
+              {i18n.t('noOrdersFound')}
             </TextDefault>
           </View>
           <TouchableOpacity
@@ -95,7 +95,7 @@ function MyOrders() {
             onPress={() => navigation.navigate(NAVIGATION_SCREEN.Menu)}
           >
             <TextDefault textColor={colors.buttonText} bold H5 center>
-              Start Shopping
+              {i18n.t('startShopping')}
             </TextDefault>
           </TouchableOpacity>
         </View>
@@ -109,7 +109,7 @@ function MyOrders() {
         data={
           loadingOrders || errorOrders
             ? []
-            : orders.filter((o) => orderStatusInactive.includes(o.order_status))
+            : orders.filter((o) => orderStatusInactive.includes(i18n.t(o.order_status)))
         }
         style={styles.container}
         contentContainerStyle={styles.contentContainer}
@@ -118,10 +118,10 @@ function MyOrders() {
           <ActiveOrders
             navigation={navigation}
             activeOrders={orders.filter((o) =>
-              orderStatusActive.includes(o.order_status)
+              orderStatusActive.includes(i18n.t(o.order_status))
             )}
             pastOrders={orders.filter((o) =>
-              orderStatusInactive.includes(o.order_status)
+              orderStatusInactive.includes(i18n.t(o.order_status))
             )}
             loading={loadingOrders}
             error={errorOrders}
@@ -151,7 +151,7 @@ function MyOrders() {
               </View>
               <View style={styles.infoContainer}>
                 <TextDefault H5 bold style={alignment.MBxSmall}>
-                  {"ID: "}
+                  {i18n.t('idVar')}
                   {item.order_id}
                 </TextDefault>
                 <TextDefault line={3} textColor={colors.tagColor} H5 medium>

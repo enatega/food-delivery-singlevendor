@@ -113,7 +113,7 @@ function NewAddress() {
       regionChange(loc)
     } else {
       FlashMessage({
-        message: 'Location permission not granted'
+        message: i18n.t('locaPermission')
       })
     }
   }
@@ -139,7 +139,7 @@ function NewAddress() {
 
   function onCompleted(data) {
     FlashMessage({
-      message: 'Address added'
+      message: i18n.t('addressAdded')
     })
     const cartAddress = route.params ? route.params.backScreen : null
     if (cartAddress === NAVIGATION_SCREEN.Cart) {
@@ -211,7 +211,7 @@ function NewAddress() {
                 <View style={styles.labelButtonContainer}>
                   <View style={styles.labelTitleContainer}>
                     <TextDefault H5 bold>
-                      Label As:
+                      {i18n.t('labelAs')}
                     </TextDefault>
                   </View>
                   <View style={styles.buttonInline}>
@@ -277,7 +277,7 @@ function NewAddress() {
                     onBlur={() => {
                       setDeliveryAddressError(
                         !deliveryAddress.trim().length
-                          ? 'Delivery address is required'
+                          ? i18n.t('addressReq')
                           : null
                       )
                     }}
@@ -311,7 +311,7 @@ function NewAddress() {
                     onBlur={() => {
                       setDeliveryDetailsError(
                         !deliveryDetails.trim().length
-                          ? 'Delivery details is required'
+                          ? i18n.t('deliveryDetailsReq')
                           : null
                       )
                     }}
@@ -322,10 +322,10 @@ function NewAddress() {
                 disabled={loading}
                 onPress={() => {
                   const deliveryAddressError = !deliveryAddress.trim().length
-                    ? 'Delivery address is required'
+                    ? i18n.t('addressReq')
                     : null
                   const deliveryDetailsError = !deliveryDetails.trim().length
-                    ? 'Delivery details is required'
+                    ? i18n.t('deliveryDetailsReq')
                     : null
 
                   setDeliveryAddressError(deliveryAddressError)
@@ -368,7 +368,7 @@ function NewAddress() {
                 activeOpacity={0.7}
                 onPress={() => navigation.goBack()}>
                 <TextDefault H5 bold>
-                  {'Cancel'}
+                  {i18n.t('cancel')}
                 </TextDefault>
               </TouchableOpacity>
             </View>

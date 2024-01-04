@@ -6,6 +6,7 @@ import { alignment } from '../../../utils/alignment'
 import { NAVIGATION_SCREEN } from '../../../utils/constant'
 import { TextDefault } from '../../Text'
 import useStyle from './styles'
+import i18n from '../../../../i18n'
 
 function DrawerProfile() {
   const styles = useStyle()
@@ -22,7 +23,7 @@ function DrawerProfile() {
               navigation.navigate(NAVIGATION_SCREEN.CreateAccount)
             }}>
             <TextDefault textColor={styles.whiteFont.color} bold H4>
-              Login/Create Account
+              {i18n.t('loginOrCreateAcc')}
             </TextDefault>
           </TouchableOpacity>
         </View>
@@ -40,7 +41,7 @@ function DrawerProfile() {
               medium
               H5
               style={alignment.PLxSmall}>
-              Welcome
+              {i18n.t('welcome')}
             </TextDefault>
             <TextDefault
               textColor={styles.whiteFont.color}

@@ -9,32 +9,33 @@ import Spinner from "../../Spinner/Spinner";
 import TextDefault from "../../Text/TextDefault/TextDefault";
 import TextError from "../../Text/TextError/TextError";
 import useStyle from "./styles";
+import i18n from "../../../../i18n";
 
 export const orderStatuses = [
   {
-    key: "PENDING",
+    key: i18n.t('PENDING'),
     status: 1,
-    statusText: "Your order is still pending.",
+    statusText: i18n.t('orderPending'),
   },
   {
-    key: "ACCEPTED",
+    key: i18n.t("ACCEPTED"),
     status: 2,
-    statusText: "Restaurant is preparing Food.",
+    statusText: i18n.t('prepFood'),
   },
   {
-    key: "PICKED",
+    key: i18n.t("PICKED"),
     status: 3,
-    statusText: "Rider is on the way.",
+    statusText: i18n.t('riderOnWay'),
   },
   {
-    key: "DELIVERED",
+    key: i18n.t("DELIVERED"),
     status: 4,
-    statusText: "Order is delivered.",
+    statusText: i18n.t('orderDelivered'),
   },
   {
-    key: "COMPLETED",
+    key: i18n.t("COMPLETED"),
     status: 5,
-    statusText: "Order is completed.",
+    statusText: i18n.t('completeOrder'),
   },
 ];
 
@@ -88,20 +89,20 @@ const StatusCard = () => {
           <View key={index} style={styles.statusContainer}>
             <View style={styles.textContainer}>
               <TextDefault H5 medium textColor={styles.lightText.color}>
-                Your order ID
+                {i18n.t('orderId')}
               </TextDefault>
               <TextDefault style={{ ...alignment.PBlarge }} H4 bolder>
                 {item.order_id}
               </TextDefault>
               <TextDefault H5 textColor={colors.placeHolderColor} medium>
-                Status
+                {i18n.t('status')}
               </TextDefault>
 
               <TextDefault textColor={"#00b9c6"} H5 medium>
-                {item.order_status}{" "}
+                {i18n.t(item.order_status)}{" "}
                 <TextDefault numberOfLines={2} medium>
                   {/* {checkStatus(item.order_status).status}.{' '} */}(
-                  {checkStatus(item.order_status).statusText})
+                  {checkStatus(i18n.t(item.order_status)).statusText})
                 </TextDefault>
               </TextDefault>
             </View>

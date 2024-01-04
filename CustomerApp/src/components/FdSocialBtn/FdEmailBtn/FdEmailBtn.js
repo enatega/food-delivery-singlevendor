@@ -10,6 +10,7 @@ import { ICONS_NAME } from '../../../utils/constant'
 import { scale } from '../../../utils/scaling'
 import { CustomIcon } from '../../CustomIcon'
 import useStyle from './styles'
+import i18n from '../../../../i18n'
 
 const FdEmailBtn = props => {
   const styles = useStyle()
@@ -30,7 +31,7 @@ const FdEmailBtn = props => {
             size={scale(19)}
           />
           <TextDefault style={alignment.MLxSmall} bold>
-            Signup using Email
+            {i18n.t('signupEmail')}
           </TextDefault>
         </>
       )}

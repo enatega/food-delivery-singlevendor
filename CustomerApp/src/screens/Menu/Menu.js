@@ -18,6 +18,7 @@ import { alignment } from "../../utils/alignment";
 import { NAVIGATION_SCREEN } from "../../utils/constant";
 import { scale } from "../../utils/scaling";
 import useStyle from "./styles";
+import i18n from "../../../i18n";
 
 // constants
 const CATEGORIES = gql`
@@ -32,7 +33,7 @@ function Menu() {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      title: "Home",
+      title: i18n.t('home'),
     });
   }, []);
 
@@ -51,7 +52,7 @@ function Menu() {
         <View style={styles.emptyContainer}>
           <EmptyFood width={scale(250)} height={scale(250)} />
           <TextDefault H4 bold style={alignment.MTlarge}>
-            No item found
+            {i18n.t('noItems')}
           </TextDefault>
         </View>
       );
@@ -77,7 +78,7 @@ function Menu() {
                   {isLoggedIn && profile && <StatusCard />}
 
                   <TextDefault style={alignment.Psmall} H4 medium>
-                    Featured
+                    {i18n.t('featured')}
                   </TextDefault>
                 </>
               );

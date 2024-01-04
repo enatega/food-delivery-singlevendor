@@ -12,6 +12,7 @@ import { moderateScale } from '../../../utils/scaling'
 import RadioBtn from '../../FdRadioBtn/RadioBtn'
 import TextDefault from '../../Text/TextDefault/TextDefault'
 import useStyle from './styles'
+import i18n from '../../../../i18n'
 
 const FilterModal = props => {
   const styles = useStyle()
@@ -82,7 +83,7 @@ const FilterModal = props => {
           alignment.PTsmall
         ]}>
         <TextDefault H5 bold>
-          Filters
+          {i18n.t('filters')}
         </TextDefault>
         <TouchableOpacity
           onPress={clearItems}
@@ -91,7 +92,7 @@ const FilterModal = props => {
             alignItems: 'center'
           }}>
           <TextDefault H5 bold textColor={colors.buttonBackgroundBlue}>
-            Reset
+           {i18n.t('reset')} 
           </TextDefault>
           <MaterialIcons
             name="refresh"
@@ -109,7 +110,7 @@ const FilterModal = props => {
             justifyContent: 'space-between'
           }}>
           <TextDefault H5 bold textColor={colors.placeHolderColor}>
-            Show sale items only
+            {i18n.t('showSaleItems')}
           </TextDefault>
           <Switch
             trackColor={{ false: '#767577', true: colors.tagColor }}
@@ -127,7 +128,7 @@ const FilterModal = props => {
             justifyContent: 'space-between'
           }}>
           <TextDefault H5 bold textColor={colors.placeHolderColor}>
-            Show stock items only
+            {i18n.t('showStockItems')}
           </TextDefault>
           <Switch
             trackColor={{ false: '#767577', true: colors.tagColor }}
@@ -142,7 +143,7 @@ const FilterModal = props => {
 
       <View style={styles.priceRangeRow}>
         <TextDefault bold H5>
-          Price Range
+          {i18n.t('priceRange')}
         </TextDefault>
         <View>
           <TextDefault bold H5 center>
@@ -187,7 +188,7 @@ const FilterModal = props => {
         </View>
       </View>
       <TextDefault bold H5 style={alignment.MTlarge}>
-        Sorting
+        {i18n.t('sorting')}
       </TextDefault>
       <View style={[alignment.PLlarge, alignment.PRlarge, alignment.MTmedium]}>
         {keys(SORT_DATA).map(item => {
@@ -222,13 +223,13 @@ const FilterModal = props => {
       <View style={[alignment.PLlarge, alignment.PRlarge]}>
         <TouchableOpacity style={styles.applyBtn} onPress={applyFilters}>
           <TextDefault H5 bold textColor={colors.lightBackground}>
-            Apply Filter
+            {i18n.t('applyFilter')}
           </TextDefault>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => props.closeFilterModal()}
           style={[styles.width100, alignment.PBlarge, alignment.PTlarge]}>
-          <TextDefault center>Close</TextDefault>
+          <TextDefault center>{i18n.t('close')}</TextDefault>
         </TouchableOpacity>
       </View>
     </View>

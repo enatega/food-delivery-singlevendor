@@ -10,15 +10,15 @@ import { useTheme } from '@react-navigation/native'
 
 const links = [
   {
-    title: 'Product Page',
+    title: i18n.t('productPage'),
     url: 'https://enatega.com/enatega-single-vendor/'
   },
-  { title: 'Docs', url: 'https://enatega.com/docs/enatega-singlevendor-introduction/' },
+  { title: i18n.t('docs'), url: 'https://enatega.com/docs/enatega-singlevendor-introduction/' },
   {
-    title: 'Blog',
+    title: i18n.t('blog'),
     url: 'https://enatega.com/blog/'
   },
-  { title: 'About Us', url: 'https://ninjascode.com/our-team' }
+  { title: i18n.t('aboutUs'), url: 'https://ninjascode.com/our-team' }
 ]
 function Help() {
   const styles = useStyle()

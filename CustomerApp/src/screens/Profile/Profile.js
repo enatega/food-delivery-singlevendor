@@ -83,9 +83,9 @@ function Profile() {
   useEffect(() => {
     if (backScreen) {
       viewHideAndShow();
-      setPhoneError("Phone number is required");
+      setPhoneError(i18n.t('phoneNumberRequired'));
       FlashMessage({
-        message: "Phone Number is missing",
+        message: i18n.t('phoneNumberMissing'),
       });
     }
   }, [backScreen]);
@@ -97,7 +97,7 @@ function Profile() {
   function onCompleted({ updateUser }) {
     if (updateUser) {
       FlashMessage({
-        message: "User's Info Updated",
+        message: i18n.t('userInfoUpdated'),
       });
       if (backScreen) {
         navigation.goBack();
@@ -119,12 +119,12 @@ function Profile() {
     let res = true;
     if (!name.trim()) {
       refName.current.focus();
-      setNameError("Name is required");
+      setNameError(i18n.t('nameReq'));
       res = false;
     }
     const num = phone.trim().replace(".", "");
     if (num.length < 11 || num.length > 15 || isNaN(num)) {
-      setPhoneError("Minimum 11 and maximum 15 characters allowed");
+      setPhoneError(i18n.t('minWords'));
       if (res) {
         refPhone.current.focus();
       }
@@ -154,7 +154,7 @@ function Profile() {
           label={i18n.t("name")}
           ref={refName}
           editable={false}
-          defaultValue={profile.name}
+          defaultValue={profile.name ? profile.name : null}
           labelFontSize={scale(12)}
           fontSize={scale(12)}
           style={{
@@ -224,7 +224,7 @@ function Profile() {
           onPress={() => setModalVisible(true)}
           style={styles.changePassword}
         >
-          <TextDefault>Change Password</TextDefault>
+          <TextDefault>{i18n.t('changePass')}</TextDefault>
           <MaterialCommunityIcons
             name={"pencil"}
             size={20}
@@ -383,7 +383,7 @@ function Profile() {
                       bold
                       style={[alignment.MTsmall, alignment.MBsmall]}
                     >
-                      {"Cancel"}
+                      {i18n.t('cancel')}
                     </TextDefault>
                   </TouchableOpacity>
                 </View>
@@ -394,7 +394,7 @@ function Profile() {
               textColor={colors.fontSecondColor}
               style={alignment.MBsmall}
             >
-              All rights are reserved by Enatega
+              {i18n.t('rightsReserved')}
             </TextDefault>
           </ScrollView>
         </KeyboardAvoidingView>

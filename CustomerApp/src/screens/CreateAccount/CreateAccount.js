@@ -29,6 +29,7 @@ import { NAVIGATION_SCREEN } from "../../utils/constant";
 import { scale } from "../../utils/scaling";
 import useStyle from "./styles";
 import ApolloClient from "apollo-client";
+import i18n from "../../../i18n";
 
 const {
   IOS_CLIENT_ID_GOOGLE,
@@ -167,7 +168,7 @@ const CreateAccount = () => {
           color={colors.iconColor}
         />
         <TextDefault style={alignment.MLsmall} bold>
-          Signup with Apple
+          {i18n.t('signupApple')}
         </TextDefault>
       </TouchableOpacity>
     );
@@ -241,7 +242,7 @@ const CreateAccount = () => {
   return (
     <WrapperView>
       <View style={[styles.mainContainer, styles.flex]}>
-        <RegistrationHeader title={"Get Started"} />
+        <RegistrationHeader title={i18n.t('getStarted')} />
         <View style={styles.subContainer}>
           <View style={[styles.flex, styles.upperContainer]}>
             <EnategaImage
@@ -263,7 +264,7 @@ const CreateAccount = () => {
               onPress={() => navigation.navigate(NAVIGATION_SCREEN.Login)}
             >
               <TextDefault style={[alignment.MLsmall]} bold>
-                Already a member? Log in
+                {i18n.t('alreadyMember')}
               </TextDefault>
             </TouchableOpacity>
           </View>

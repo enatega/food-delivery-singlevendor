@@ -446,10 +446,7 @@ export const reviewOrder = `mutation ReviewOrder(
   }
 }`;
 
-//
-// use this to push token instead of login, signup mutation?
-// needs research
-//
+
 export const pushToken = `mutation PushToken($token:String!){
   pushToken(token:$token){
     _id

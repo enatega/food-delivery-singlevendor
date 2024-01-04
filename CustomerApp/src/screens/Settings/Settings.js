@@ -159,7 +159,14 @@ function Settings() {
         "enatega-language",
         languageTypes[languageInd].code
       );
-      Updates.reloadAsync();
+      i18n.locale = languageTypes[languageInd].code
+      const lang = await AsyncStorage.getItem("enatega-language");
+      console.log(lang)
+      const defLang = languageTypes.findIndex((el) => el.code === lang);
+      const langName = languageTypes[defLang].value;
+      activeRadioSetter(defLang);
+      languageNameSetter(langName);
+      // Updates.reloadAsync();
     }
   };
 
@@ -169,7 +176,7 @@ function Settings() {
 
   function onCompleted() {
     FlashMessage({
-      message: "Notification Status Updated",
+      message: i18n.t('notificationUpdate'),
     });
   }
 
@@ -242,7 +249,7 @@ function Settings() {
                     medium
                     H5
                   >
-                    Language
+                    {i18n.t('language')}
                   </TextDefault>
                   <TextDefault medium H5>
                     ({languageName})
@@ -275,7 +282,7 @@ function Settings() {
                 textColor={colors.statusSecondColor}
               >
                 {" "}
-                Receive Special Offers{" "}
+                {i18n.t('receiveOffers')}{" "}
               </TextDefault>
               <SwitchBtn
                 isEnabled={offerNotification}
@@ -298,7 +305,7 @@ function Settings() {
                 textColor={colors.statusSecondColor}
               >
                 {" "}
-                Get updates on your order status!{" "}
+                {i18n.t('getUpdatesText')}{" "}
               </TextDefault>
               <SwitchBtn
                 isEnabled={orderNotification}
@@ -317,7 +324,7 @@ function Settings() {
             <View style={styles.notificationChekboxContainer}>
               <TextDefault numberOfLines={1} textColor={"red"}>
                 {" "}
-                Delete Account{" "}
+                {i18n.t('delAcc')}{" "}
               </TextDefault>
               <CustomIcon
                 name={ICONS_NAME.Trash}
@@ -328,7 +335,7 @@ function Settings() {
           </TouchableOpacity>
           <View style={styles.versionContainer}>
             <TextDefault textColor={colors.fontSecondColor}>
-              Version: {Constants.manifest.version}
+              {/* Version: {Constants.manifest.version} */}
             </TextDefault>
           </View>
         </View>
@@ -373,7 +380,7 @@ function Settings() {
       >
         <View style={{ flex: 1, alignItems: "center" }}>
           <TextDefault bolder H5 style={{ marginTop: 20 }}>
-            Are you Sure you want to delete Account?
+            {i18n.t('delAccText')}
           </TextDefault>
           <TouchableOpacity
             activeOpacity={0.7}
@@ -401,7 +408,7 @@ function Settings() {
             style={[styles.width100, alignment.PBlarge, alignment.PTlarge]}
             onPress={() => onClose()}
           >
-            <TextDefault center>Cancel</TextDefault>
+            <TextDefault center>{i18n.t('cancel')}</TextDefault>
           </TouchableOpacity>
         </View>
       </Modalize>

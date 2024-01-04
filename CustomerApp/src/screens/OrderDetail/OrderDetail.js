@@ -51,7 +51,7 @@ function OrderDetail() {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: 'Order Detail',
+      headerTitle: i18n.t('orderDetail'),
       headerRight: null
     })
   }, [navigation])
@@ -73,7 +73,7 @@ function OrderDetail() {
     <WrapperView>
       <ScrollView style={[styles.flex]}>
         <View>
-          {order.order_status === 'PICKED' && order.rider && (
+          {i18n.t(order.order_status) === i18n.t('PICKED') && order.rider && (
             <TrackingRider
               delivery_address={order.delivery_address}
               id={order.rider._id}
@@ -86,14 +86,14 @@ function OrderDetail() {
             bolder
             H3
             style={alignment.MBsmall}>
-            Thank You!
+            {i18n.t('thankYou')}
           </TextDefault>
           <TextDefault
             textColor={colors.fontSecondColor}
             medium
             H5
             style={[alignment.MTsmall]}>
-            Your order ID is
+            {i18n.t('orderId')}
           </TextDefault>
           <TextDefault H4 bolder style={alignment.PTxSmall}>
             {order.order_id}
@@ -103,20 +103,20 @@ function OrderDetail() {
             bold
             H5
             style={[alignment.MTlarge]}>
-            Status
+            {i18n.t('status')}
           </TextDefault>
           <TextDefault
             textColor={colors.buttonBackgroundBlue}
             H4
             medium
             style={[alignment.MBsmall, alignment.MTxSmall]}>
-            {order.order_status}{' '}
+            {i18n.t(order.order_status)}{' '}
             <TextDefault medium>
-              ( {checkStatus(order.order_status).statusText})
+              ( {checkStatus(i18n.t(order.order_status)).statusText})
             </TextDefault>
           </TextDefault>
           <TextDefault textColor={colors.fontSecondColor} H5 bold>
-            Delivery address:
+            {i18n.t('deliveryAddress')}:
           </TextDefault>
           <TextDefault style={{ ...alignment.PTxSmall }} H5>
             {order.delivery_address.delivery_address}
@@ -151,7 +151,7 @@ function OrderDetail() {
               textColor={colors.fontMainColor}
               medium
               style={{ width: '40%' }}>
-              Subtotal
+              {i18n.t('subTotal')}
             </TextDefault>
             <TextDefault
               textColor={colors.fontMainColor}
@@ -169,7 +169,7 @@ function OrderDetail() {
               textColor={colors.fontMainColor}
               medium
               style={{ width: '40%' }}>
-              Delivery fee
+              {i18n.t('deliveryFee')}
             </TextDefault>
             <TextDefault
               textColor={colors.fontMainColor}
@@ -185,7 +185,7 @@ function OrderDetail() {
               textColor={colors.fontMainColor}
               bold
               style={{ width: '40%' }}>
-              Total
+              {i18n.t('total')}
             </TextDefault>
             <TextDefault
               textColor={colors.fontMainColor}
@@ -197,7 +197,7 @@ function OrderDetail() {
             </TextDefault>
           </View>
         </View>
-        {order.order_status === 'PICKED' && (
+        {i18n.t(order.order_status) === i18n.t('PICKED') && (
           <View
             style={{
               ...alignment.PLmedium,
@@ -240,26 +240,26 @@ function OrderDetail() {
                   borderRadius: moderateScale(10)
                 }}>
                 <TextDefault H5 bold textColor={colors.lightBackground}>
-                  Chat with Rider
+                  {i18n.t('chatWithRider')}
                 </TextDefault>
               </TouchableOpacity>
             </View>
           </View>
         )}
 
-        {(order.order_status === 'DELIVERED' ||
-          order.order_status === 'COMPLETED') &&
+        {(i18n.t(order.order_status) === i18n.t('DELIVERED') ||
+          i18n.t(order.order_status) === i18n.t('COMPLETED')) &&
           order.review &&
           order.review.rating === 0 && (
           <View style={styles.orderReceipt}>
             <TextDefault H3 bolder style={alignment.MBsmall}>
-                Any suggestion?
+                {i18n.t('anySuggestion')}
             </TextDefault>
             <TextDefault
               textColor={colors.fontSecondColor}
               bold
               style={[alignment.MBsmall, alignment.MTsmall]}>
-                Review regarding your order?
+                {i18n.t('reviewRegarding')}
             </TextDefault>
             <TouchableOpacity
               activeOpacity={0.7}
@@ -280,7 +280,7 @@ function OrderDetail() {
                 H5
                 bold
                 center>
-                  Write a review
+                 {i18n.t('writeReview')}
               </TextDefault>
             </TouchableOpacity>
           </View>

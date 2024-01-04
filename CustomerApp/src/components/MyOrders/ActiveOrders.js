@@ -13,6 +13,7 @@ import TextDefault from '../Text/TextDefault/TextDefault'
 import TextError from '../Text/TextError/TextError'
 import TextLine from '../Text/TextLine/TextLine'
 import useStyle from './styles'
+import i18n from '../../../i18n'
 
 export const orderStatuses = [
   {
@@ -65,7 +66,7 @@ const ActiveOrders = ({
     if (!pastOrders || (pastOrders && !pastOrders.length)) {
       return <TextDefault> </TextDefault>
     }
-    return <TextLine headerName="Old Order" textWidth="34%" lineWidth="28%" />
+    return <TextLine headerName={i18n.t('oldOrder')} textWidth="34%" lineWidth="28%" />
   }
 
   const checkStatus = status => {
@@ -77,7 +78,7 @@ const ActiveOrders = ({
 
   return (
     <React.Fragment>
-      <TextLine headerName="Active Order" textWidth="40%" lineWidth="26%" />
+      <TextLine headerName={i18n.t('activeOrder')} textWidth="40%" lineWidth="26%" />
       {activeOrders.map((item, index) => (
         <TouchableOpacity
           activeOpacity={0.7}
@@ -97,7 +98,7 @@ const ActiveOrders = ({
             </View>
             <View style={styles.infoContainer}>
               <TextDefault H5 bolder style={alignment.MBxSmall}>
-                {'ID: '}
+                {i18n.t('idVar')}
                 {item.order_id}
               </TextDefault>
               <TextDefault line={3} textColor={colors.tagColor} H5 bold>
@@ -117,7 +118,7 @@ const ActiveOrders = ({
                 style={alignment.MTxSmall}
                 bold
                 center>
-                {item.order_status}
+                {i18n.t(item.order_status)}
               </TextDefault>
             </View>
           </View>
