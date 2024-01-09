@@ -146,5 +146,9 @@ export const en = {
   Subtotal: 'Subtotal',
   Assigntome: 'Assign to me',
   'About Us': 'About Us',
-  'Product Page': 'Product Page'
+  'Product Page': 'Product Page',
+  Order: 'Order',
+  OrderMarkedAs: 'Order marked as',
+  titleLogin: 'Login',
+  Picked: 'Picked'
 }

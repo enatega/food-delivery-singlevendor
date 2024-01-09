@@ -141,4 +141,8 @@ export const zh = {
   Assigntome: '分配给我',
   'About Us': '关于我们',
 'Product Page': '产品页面',
+Order: '订单',
+OrderMarkedAs: '标记为订单',
+titleLogin: '登录',
+Picked: '已选取',
 }

@@ -147,5 +147,9 @@ export const fr = {
   Subtotal: 'Sous-total',
   Assigntome: 'Attribuer à moi',
   'About Us': 'À Propos de Nous',
-'Product Page': 'Page Produit',
+  'Product Page': 'Page Produit',
+  Order: 'Commande',
+  OrderMarkedAs: 'Commande marquée comme',
+  titleLogin: 'Connexion',
+  Picked: 'Choisi',
 }

@@ -71,13 +71,13 @@ function OrderDetail() {
   useLayoutEffect(() => {
     if (!selectedOrder) return;
     navigation.setOptions({
-      title: `Order ${selectedOrder.order_id}`,
+      title: `${i18n.t('Order')} ${selectedOrder.order_id}`,
     });
   }, [selectedOrder]);
   async function onCompleted({ updateOrderStatusRider, assignOrder }) {
     if (updateOrderStatusRider) {
       FlashMessage({
-        message: `Order marked as ${updateOrderStatusRider.order_status}`,
+        message: `${i18n.t('OrderMarkedAs')} ${updateOrderStatusRider.order_status}`,
       });
       if (updateOrderStatusRider.order_status === "DELIVERED") {
         navigation.goBack();

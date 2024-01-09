@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native'
 import Constants from 'expo-constants'
 import * as Notifications from 'expo-notifications'
 import gql from 'graphql-tag'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState,useLayoutEffect } from 'react'
 import {
   KeyboardAvoidingView,
   Platform,
@@ -38,11 +38,13 @@ export default function Login() {
 
   const { setTokenAsync } = useContext(AuthContext)
 
-  useEffect(() => {
+
+    useLayoutEffect(() => {
     navigation.setOptions({
-      headerLeft: null
+      headerRight: null,
+      headerTitle: i18n.t('titleHelp')
     })
-  }, [])
+  }, [navigation])
 
   const [mutate, { loading }] = useMutation(RIDER_LOGIN, {
     onCompleted,

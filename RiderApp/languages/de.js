@@ -147,5 +147,9 @@ export const de = {
   Subtotal: 'Subtotaal',
   Assigntome: 'Toewijzen aan mij',
   'About Us': 'Over Ons',
-'Product Page': 'Product Pagina',
+  'Product Page': 'Product Pagina',
+  Order: 'Bestelling',
+  OrderMarkedAs: 'Bestelling gemarkeerd als',
+  titleLogin: 'Inloggen',
+  Picked: 'Gekozen',
 }

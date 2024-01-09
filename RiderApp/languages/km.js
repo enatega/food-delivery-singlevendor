@@ -144,5 +144,8 @@ export const km = {
   Subtotal: 'សរុបរង',
   Assigntome: 'ផ្ដល់ទៅខ្លួនឯង',
   'About Us': 'អំពីយើង',
-'Product Page': 'ទំព័រផលិតផល',
+  'Product Page': 'ទំព័រផលិតផល',
+  Order: 'បញ្ជាទិញ',
+  OrderMarkedAs: 'បញ្ជាតម្រៀបជានៅជិត',
+  Picked: 'បានជ្រើសរើស',
 }
