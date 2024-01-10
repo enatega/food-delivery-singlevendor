@@ -98,7 +98,7 @@ export const fr = {
   orderReceived: 'Ordre reçu',
   cancelled: 'Annulé',
   foodPreparing: 'La nourriture est en cours de préparation',
-  delivered: 'Livré',
+  Delivered: 'Livré',
   rateAndReview: 'Notez et évaluez',
   reviewPlaceholder: 'Des revues plus détaillées ont plus de visibilité ...',
   submit: 'Soumettre',

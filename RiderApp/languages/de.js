@@ -98,7 +98,7 @@ export const de = {
   orderReceived: 'Bestellung erhalten',
   cancelled: 'Abgebrochen',
   foodPreparing: 'Essen wird zubereitet',
-  delivered: 'Geliefert',
+  Delivered: 'Geliefert',
   rateAndReview: 'Bewerten und bewerten',
   reviewPlaceholder: 'Detaillierte Bewertungen erhalten mehr Sichtbarkeit ...',
   submit: 'einreichen',

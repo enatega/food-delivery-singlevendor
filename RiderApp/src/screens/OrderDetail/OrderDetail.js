@@ -77,7 +77,7 @@ function OrderDetail() {
   async function onCompleted({ updateOrderStatusRider, assignOrder }) {
     if (updateOrderStatusRider) {
       FlashMessage({
-        message: `${i18n.t('OrderMarkedAs')} ${updateOrderStatusRider.order_status}`,
+        message: `${i18n.t('OrderMarkedAs')} ${i18n.t(updateOrderStatusRider.order_status)}`,
       });
       if (updateOrderStatusRider.order_status === "DELIVERED") {
         navigation.goBack();

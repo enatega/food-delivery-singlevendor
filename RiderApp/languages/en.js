@@ -98,7 +98,7 @@ export const en = {
   orderReceived: 'Order Received',
   cancelled: 'Cancelled',
   foodPreparing: 'Food is being prepared',
-  delivered: 'Delivered',
+  Delivered: 'Delivered',
   rateAndReview: 'Rate and Review',
   reviewPlaceholder: 'More detailed reviews get more visibility...',
   submit: 'Submit',

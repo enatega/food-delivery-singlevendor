@@ -18,7 +18,8 @@ const languageTypes = [
   { value: 'français', code: 'fr', index: 1 },
   { value: 'ភាសាខ្មែរ', code: 'km', index: 2 },
   { value: '中文', code: 'zh', index: 3 },
-  { value: 'Deutsche', code: 'de', index: 4 }
+  { value: 'Deutsche', code: 'de', index: 4 },
+  { value: 'Arabic', code: 'ar', index: 5 }
 ]
 
 function Language() {

@@ -92,7 +92,7 @@ export const zh = {
   orderReceived: '订单已经收到',
   cancelled: '取消',
   foodPreparing: '食物正在准备中',
-  delivered: '交付',
+  Delivered: '交付',
   rateAndReview: '打分和评论',
   reviewPlaceholder: '更详细的评论获得更多可见性......',
   submit: '提交',

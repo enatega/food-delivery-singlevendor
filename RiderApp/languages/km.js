@@ -96,7 +96,7 @@ export const km = {
   orderReceived: 'បញ្ជាទិញដែលទទួលបាន',
   cancelled: 'បានបោះបង់',
   foodPreparing: 'ម្ហូបកំពុងត្រូវបានរៀបចំ',
-  delivered: 'បានបញ្ជូន',
+  Delivered: 'បានបញ្ជូន',
   rateAndReview: 'វាយតម្លៃនិងពិនិត្យ',
   reviewPlaceholder: 'ការពិនិត្យលម្អិតបន្ថែមទៀតទទួលបានភាពមើលឃើញកាន់តែច្រើន ...',
   submit: 'ដាក់ស្នើ',
