@@ -20,6 +20,11 @@ const FilterModal = props => {
   const configuration = useContext(ConfigurationContext)
   const [filters, setFilters] = useState({})
 
+  const localizedSortData = {};
+  Object.keys(SORT_DATA).forEach(key => {
+    localizedSortData[key] = i18n.t(SORT_DATA[key]);
+  });
+
   useEffect(() => {
     setFilters({
       onSale: false,
@@ -92,7 +97,7 @@ const FilterModal = props => {
             alignItems: 'center'
           }}>
           <TextDefault H5 bold textColor={colors.buttonBackgroundBlue}>
-           {i18n.t('reset')} 
+            {i18n.t('reset')}
           </TextDefault>
           <MaterialIcons
             name="refresh"
@@ -206,7 +211,8 @@ const FilterModal = props => {
                     ? colors.fonfontMainColort
                     : colors.placeHolderColor
                 }>
-                {get(SORT_DATA, item)}
+                {/* {get(SORT_DATA, item)} */}
+                {localizedSortData[item]}
               </TextDefault>
               <RadioBtn
                 size={10}

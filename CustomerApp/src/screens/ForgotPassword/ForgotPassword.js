@@ -57,7 +57,7 @@ function ForgotPassword() {
   }
   function onCompleted(data) {
     FlashMessage({
-      message: 'Reset password link sent on your email'
+      message: i18n.t('ResetPasswordLinkSent')
     })
   }
   function onError(error) {

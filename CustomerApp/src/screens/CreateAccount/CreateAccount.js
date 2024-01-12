@@ -65,7 +65,7 @@ const CreateAccount = () => {
   async function onCompleted(data) {
     if (!data.login.is_active) {
       FlashMessage({
-        message: "Can't Login,This Account is Deleted!",
+        message: i18n.t('cantLogin'),
       });
       setLoading(false);
     } else {

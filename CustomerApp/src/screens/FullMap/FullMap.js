@@ -7,6 +7,7 @@ import { FlashMessage, TextDefault, WrapperView } from '../../components'
 import { NAVIGATION_SCREEN } from '../../utils/constant'
 import { scale } from '../../utils/scaling'
 import useStyle from './styles'
+import i18n from '../../../i18n'
 
 const LATITUDE = 33.7001019
 const LONGITUDE = 72.9735978
@@ -220,7 +221,7 @@ export default function FullMap() {
       setRegion(loc)
     } else {
       FlashMessage({
-        message: 'Location permission not granted'
+        message: i18n.t('LocationPermissionNotGranted')
       })
     }
   }

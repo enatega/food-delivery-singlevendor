@@ -6,6 +6,7 @@ import RadioButton from "../../../components/FdRadioBtn/RadioBtn";
 import TextDefault from "../../../components/Text/TextDefault/TextDefault";
 import { alignment } from "../../../utils/alignment";
 import useStyle from "./styles";
+import i18n from '../../../../i18n'
 
 const languageTypes = [
   { value: "English", code: "en", index: 0 },
@@ -13,6 +14,7 @@ const languageTypes = [
   { value: "ភាសាខ្មែរ", code: "km", index: 2 },
   { value: "中文", code: "zh", index: 3 },
   { value: "Deutsche", code: "de", index: 4 },
+  { value: "Arabic", code: "ar", index: 5 },
 ];
 
 function SettingModal(props) {
@@ -23,7 +25,7 @@ function SettingModal(props) {
   return (
     <View style={styles.flex}>
       <TextDefault bolder H5 style={alignment.MTlarge}>
-        Select Language
+        {i18n.t('SelectLanguage')}
       </TextDefault>
 
       {languageTypes.map((item, index) => (
@@ -55,7 +57,7 @@ function SettingModal(props) {
         onPress={() => props.onSelectedLanguage(activeRadio)}
       >
         <TextDefault textColor={colors.lightBackground} bolder uppercase>
-          Done
+          {i18n.t('Done')}
         </TextDefault>
       </TouchableOpacity>
       <TouchableOpacity
@@ -63,7 +65,7 @@ function SettingModal(props) {
         style={[styles.width100, alignment.PBlarge, alignment.PTlarge]}
         onPress={() => props.onClose()}
       >
-        <TextDefault center>Cancel</TextDefault>
+        <TextDefault center>{i18n.t('Cancel')}</TextDefault>
       </TouchableOpacity>
       {/* </View> */}
     </View>

@@ -227,7 +227,7 @@ function Cart() {
       await addQuantityContext(key)
     } else {
       FlashMessage({
-        message: 'No more items in stock'
+        message: i18n.t('noMoreItems')
       })
     }
   }
@@ -265,7 +265,7 @@ function Cart() {
     }
     if (!paymentMethod) {
       FlashMessage({
-        message: 'Set payment method before checkout'
+        message: i18n.t('SetPaymentMethod')
       })
       return false
     }

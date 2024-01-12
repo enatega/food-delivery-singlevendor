@@ -151,7 +151,7 @@ function NewAddress() {
 
   function onError(error) {
     FlashMessage({
-      message: `An error occured. Please try again. ${error}`
+      message: `${i18n.t('AnErrorOccured')} ${error}`
     })
   }
 
@@ -242,7 +242,7 @@ function NewAddress() {
                             }
                             bold
                             center>
-                            {label.title}
+                            {i18n.t(label.title)}
                           </TextDefault>
                         </TouchableOpacity>
                       )

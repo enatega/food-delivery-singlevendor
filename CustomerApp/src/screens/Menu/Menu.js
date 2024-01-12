@@ -43,7 +43,7 @@ function Menu() {
     } else if (error) {
       return (
         <TextError
-          text={error ? error.message : "No Foods"}
+          text={error ? error.message : i18n.t('NoFoods')}
           backColor="transparent"
         />
       );

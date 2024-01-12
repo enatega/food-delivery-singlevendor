@@ -13,6 +13,7 @@ import { CustomIcon } from '../../CustomIcon'
 import { FlashMessage } from '../../FlashMessage/FlashMessage'
 import TextDefault from '../../Text/TextDefault/TextDefault'
 import useStyles from './styles'
+import i18n from '../../../../i18n'
 
 function HeaderIcon({ icon, iconColor, iconSize = scale(20) }) {
   const { colors } = useTheme()
@@ -127,7 +128,7 @@ function RightButton(props) {
       navigation.navigate(NAVIGATION_SCREEN.Cart)
     } else {
       FlashMessage({
-        message: 'Cart is empty.'
+        message: i18n.t('CartIsEmpty')
       })
     }
   }, [cartCount])
