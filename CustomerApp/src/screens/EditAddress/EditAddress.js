@@ -114,7 +114,7 @@ function EditAddress() {
 
   function onCompleted(data) {
     FlashMessage({
-      message: 'Address updated'
+      message: i18n.t('addressUpdated')
     })
     // show message here
     navigation.goBack()
@@ -122,7 +122,7 @@ function EditAddress() {
 
   function onError(error) {
     FlashMessage({
-      message: `An error occured. Please try again ${error}`
+      message: `${i18n.t('AnErrorOccured')} ${error}`
     })
   }
 
@@ -189,7 +189,7 @@ function EditAddress() {
               <View style={styles.labelButtonContainer}>
                 <View style={alignment.PBsmall}>
                   <TextDefault H5 bold>
-                    Label as
+                    {i18n.t('labelAs')}
                   </TextDefault>
                 </View>
                 <View style={styles.buttonInline}>
@@ -220,7 +220,7 @@ function EditAddress() {
                           }
                           bold
                           center>
-                          {label.title}
+                          {i18n.t(label.title)}
                         </TextDefault>
                       </TouchableOpacity>
                     )
@@ -255,7 +255,7 @@ function EditAddress() {
                   onBlur={() => {
                     setDeliveryAddressError(
                       !deliveryAddress.trim().length
-                        ? 'Delivery address is required'
+                        ? i18n.t('addressReq')
                         : null
                     )
                   }}
@@ -287,7 +287,7 @@ function EditAddress() {
                   onBlur={() => {
                     setDeliveryDetailsError(
                       !deliveryDetails.trim().length
-                        ? 'Delivery details is required'
+                        ? i18n.t('deliveryDetailsReq')
                         : null
                     )
                   }}
@@ -299,10 +299,10 @@ function EditAddress() {
               disabled={loading}
               onPress={() => {
                 const deliveryAddressError = !deliveryAddress.trim().length
-                  ? 'Delivery address is required'
+                  ? i18n.t('addressReq')
                   : null
                 const deliveryDetailsError = !deliveryDetails.trim().length
-                  ? 'Delivery details is required'
+                  ? i18n.t('addressReq')
                   : null
 
                 setDeliveryAddressError(deliveryAddressError)
@@ -346,7 +346,7 @@ function EditAddress() {
               activeOpacity={0.7}
               onPress={() => navigation.goBack()}>
               <TextDefault H4 bold>
-                {'cancel'}
+                {i18n.t('cancel')}
               </TextDefault>
             </TouchableOpacity>
           </ScrollView>

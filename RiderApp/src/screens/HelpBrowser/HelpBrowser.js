@@ -2,6 +2,7 @@ import { useNavigation, useRoute } from '@react-navigation/native'
 import React, { useLayoutEffect } from 'react'
 import { WebView } from 'react-native-webview'
 import { MainWrapper, Spinner } from '../../components'
+import i18n from '../../../i18n'
 
 function HelpBrowser() {
   const navigation = useNavigation()
@@ -11,7 +12,7 @@ function HelpBrowser() {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: null,
-      headerTitle: title
+      headerTitle: i18n.t(title)
     })
   }, [navigation])
 

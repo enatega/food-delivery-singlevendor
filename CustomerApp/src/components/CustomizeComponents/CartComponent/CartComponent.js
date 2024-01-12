@@ -8,6 +8,7 @@ import { CustomIcon } from '../../CustomIcon'
 import { FlashMessage } from '../../FlashMessage/FlashMessage'
 import TextDefault from '../../Text/TextDefault/TextDefault'
 import useStyle from './styles'
+import i18n from '../../../../i18n'
 
 function CartComponent(props) {
   const { colors } = useTheme()
@@ -18,7 +19,7 @@ function CartComponent(props) {
     if (props.stock > quantity) setQuantity(quantity + 1)
     else {
       FlashMessage({
-        message: 'No more items in stock'
+        message: i18n.t('noMoreItems')
       })
     }
   }

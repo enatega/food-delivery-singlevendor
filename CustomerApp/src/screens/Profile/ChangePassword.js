@@ -53,11 +53,11 @@ function ChangePassword(props) {
     if (data.changePassword) {
       clearFields()
       FlashMessage({
-        message: 'Password Updated'
+        message: i18n.t('passChange')
       })
       props.hideModal()
     } else {
-      Alert.alert('Error', 'Invalid password')
+      Alert.alert('Error', i18n.t('invalidPass'))
     }
   }
 
@@ -70,7 +70,7 @@ function ChangePassword(props) {
         <View style={styles.modalContent}>
           <View style={styles.titleContainer}>
             <TextDefault bold H4>
-              Change password
+              {i18n.t('changePass')}
             </TextDefault>
           </View>
 
@@ -78,7 +78,7 @@ function ChangePassword(props) {
             <TextField
               secureTextEntry
               error={oldPasswordError}
-              label="Current Password"
+              label={i18n.t('currentPass')}
               labelFontSize={scale(12)}
               fontSize={scale(12)}
               labelHeight={10}
@@ -89,7 +89,7 @@ function ChangePassword(props) {
               labelTextStyle={{ fontSize: scale(12) }}
               onChangeText={setOldPassword}
               onBlur={() => {
-                setOldPasswordError(!oldPassword ? 'Password is required' : '')
+                setOldPasswordError(!oldPassword ? i18n.t('passReq') : '')
               }}
             />
           </View>
@@ -97,7 +97,7 @@ function ChangePassword(props) {
             <TextField
               secureTextEntry
               error={newPasswordError}
-              label="New Password"
+              label={i18n.t('newPass')}
               labelFontSize={scale(12)}
               fontSize={scale(12)}
               labelHeight={10}
@@ -108,7 +108,7 @@ function ChangePassword(props) {
               labelTextStyle={{ fontSize: scale(12) }}
               onChangeText={setNewPassword}
               onBlur={() => {
-                setNewPasswordError(!newPassword ? 'Password is required' : '')
+                setNewPasswordError(!newPassword ? i18n.t('passReq') : '')
               }}
             />
           </View>
@@ -117,9 +117,9 @@ function ChangePassword(props) {
             disabled={loading}
             onPress={() => {
               const newPasswordError =
-                newPassword === '' ? 'Password is required' : ''
+                newPassword === '' ? i18n.t('passReq') : ''
               const oldPasswordError =
-                oldPassword === '' ? 'Password is required' : ''
+                oldPassword === '' ? i18n.t('passReq') : ''
               setNewPasswordError(newPasswordError)
               setOldPasswordError(oldPasswordError)
 

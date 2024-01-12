@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useLayoutEffect } from 'react'
+import { useNavigation } from '@react-navigation/native'
 import {
   ImageBackground,
   StatusBar,
@@ -15,10 +16,18 @@ const BACKGROUND_IMAGE = require('../../../assets/images/ui/BG.png')
 export default function Orders() {
   const styles = useStyle()
   const [isNewOrderSelected, setIsNewOrderSelected] = useState(false)
+  const navigation = useNavigation()
 
   useEffect(() => {
     StatusBar.setBarStyle('light-content')
   }, [isNewOrderSelected])
+
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerRight: null,
+      headerTitle: i18n.t('Orders')
+    })
+  }, [navigation])
 
   return (
     <View style={[styles.flex, styles.bottom]}>

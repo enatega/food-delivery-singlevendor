@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native'
 import Constants from 'expo-constants'
 import * as Notifications from 'expo-notifications'
 import gql from 'graphql-tag'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState,useLayoutEffect } from 'react'
 import {
   KeyboardAvoidingView,
   Platform,
@@ -38,11 +38,13 @@ export default function Login() {
 
   const { setTokenAsync } = useContext(AuthContext)
 
-  useEffect(() => {
+
+    useLayoutEffect(() => {
     navigation.setOptions({
-      headerLeft: null
+      headerRight: null,
+      headerTitle: i18n.t('titleHelp')
     })
-  }, [])
+  }, [navigation])
 
   const [mutate, { loading }] = useMutation(RIDER_LOGIN, {
     onCompleted,
@@ -55,11 +57,11 @@ export default function Login() {
     setPasswordError('')
 
     if (!username) {
-      setUsernameError('Username is required')
+      setUsernameError(i18n.t('Usernameisrequired'))
       res = false
     }
     if (!password) {
-      setPasswordError('Password is required')
+      setPasswordError(i18n.t('Passwordisrequired'))
       res = false
     }
     return res
@@ -67,23 +69,23 @@ export default function Login() {
 
   async function onCompleted(data) {
     FlashMessage({
-      message: 'Logged in'
+      message: i18n.t('Loggedin')
     })
     await AsyncStorage.setItem('rider-id', data.riderLogin.userId)
     setTokenAsync(data.riderLogin.token)
   }
   function onError({ networkError, graphQLErrors }) {
     console.log('errors', networkError, graphQLErrors)
-    // let message = ''
-    // if (!!graphQLErrors && graphQLErrors.length) {
-    //   message = graphQLErrors[0].message
-    // }
-    // if (!!networkError) {
-    //   message = networkError.result.errors[0].message
-    // }
-    // FlashMessage({
-    //   message: message
-    // })
+    let message = ''
+    if (!!graphQLErrors && graphQLErrors.length) {
+      message = graphQLErrors[0].message
+    }
+    if (!!networkError) {
+      message = networkError.result.errors[0].message
+    }
+    FlashMessage({
+      message: message
+    })
   }
 
   return (
@@ -100,13 +102,13 @@ export default function Login() {
               <TextDefault
                 style={alignment.MBmedium}
                 textColor={colors.placeHolderColor}>
-                Enter your Email and Password
+                {i18n.t('EnteryourEmailandPassword')}
               </TextDefault>
               <FilledTextField
                 defaultValue={'rider'}
                 error={usernameError}
                 keyboardType={'email-address'}
-                label={'Email or Phone'}
+                label={i18n.t('EmailorPhone')}
                 labelFontSize={scale(12)}
                 fontSize={scale(12)}
                 activeLineWidth={0}
@@ -126,7 +128,7 @@ export default function Login() {
               <FilledTextField
                 defaultValue={'123123'}
                 error={passwordError}
-                label={'Password'}
+                label={i18n.t('Password')}
                 secureTextEntry
                 labelFontSize={scale(12)}
                 fontSize={scale(12)}

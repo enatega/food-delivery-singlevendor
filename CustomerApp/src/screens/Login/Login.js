@@ -82,7 +82,7 @@ function Login() {
     setPasswordError(null);
 
     if (!email) {
-      setEmailError("Email/Phone is required");
+      setEmailError(i18n.t('emailphoneReq'));
       result = false;
     } else {
       const emailRegex = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
@@ -93,7 +93,7 @@ function Login() {
       }
     }
     if (!password) {
-      setPasswordError("Password is required");
+      setPasswordError(i18n.t('passReq'));
       result = false;
     }
     return result;
@@ -101,7 +101,7 @@ function Login() {
   async function onCompleted(data) {
     if (!data.login.is_active) {
       FlashMessage({
-        message: "Can't Login,This Account is Deleted!",
+        message: i18n.t('cantLogin'),
       });
       setLoading(false);
     } else {
@@ -213,7 +213,7 @@ function Login() {
               </View>
               <View style={styles.width100}>
                 <TextDefault medium textColor={colors.fontSecondColor}>
-                  Enter your Email and Password
+                  {i18n.t('enterUsername')}
                 </TextDefault>
                 <View style={styles.marginTop3} />
                 <FilledTextField
@@ -268,7 +268,7 @@ function Login() {
                     medium
                     center
                   >
-                    Forgot Password?
+                    {i18n.t('forgotPassword')}
                   </TextDefault>
                 </TouchableOpacity>
                 <View style={[styles.marginTop3]}>{renderLoginAction()}</View>
@@ -280,7 +280,7 @@ function Login() {
                   }
                 >
                   <TextDefault textColor={colors.fontSecondColor} bold center>
-                    Create New Account
+                    {i18n.t('createNewAcc')}
                   </TextDefault>
                 </TouchableOpacity>
               </View>

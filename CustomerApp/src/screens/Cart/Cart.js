@@ -227,7 +227,7 @@ function Cart() {
       await addQuantityContext(key)
     } else {
       FlashMessage({
-        message: 'No more items in stock'
+        message: i18n.t('noMoreItems')
       })
     }
   }
@@ -265,7 +265,7 @@ function Cart() {
     }
     if (!paymentMethod) {
       FlashMessage({
-        message: 'Set payment method before checkout'
+        message: i18n.t('SetPaymentMethod')
       })
       return false
     }
@@ -549,7 +549,7 @@ function Cart() {
                     style={{ width: '30%' }}
                     medium
                     H5>
-                    Total
+                    {i18n.t('total')}
                   </TextDefault>
                   <TextDefault
                     numberOfLines={1}
@@ -628,7 +628,7 @@ function Cart() {
                           {i18n.t('deliveryAddress')}
                         </TextDefault>
                         <TextDefault H5 textColor={colors.buttonBackgroundBlue}>
-                          Change
+                          {i18n.t('change')}
                         </TextDefault>
                       </View>
                       {address ? (

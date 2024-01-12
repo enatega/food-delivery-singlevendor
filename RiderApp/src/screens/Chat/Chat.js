@@ -1,6 +1,6 @@
 import { Feather, FontAwesome } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState, useLayoutEffect } from 'react'
 import { Keyboard, View } from 'react-native'
 import {
   Bubble,
@@ -13,6 +13,7 @@ import { alignment } from '../../utilities/alignment'
 import colors from '../../utilities/colors'
 import { scale } from '../../utilities/scaling'
 import useStyle from './styles'
+import i18n from '../../../i18n'
 
 const UserInfo = {
   _id: 1,
@@ -42,7 +43,7 @@ function Chat() {
 
   useEffect(() => {
     navigation.setOptions({
-      title: 'Chat'
+      headerTitle: i18n.t('titleChat')
     })
     setMessages([
       {

@@ -7,6 +7,7 @@ import TextDefault from '../../../components/Text/TextDefault/TextDefault'
 import { alignment } from '../../../utils/alignment'
 import { moderateScale } from '../../../utils/scaling'
 import useStyle from './styles'
+import i18n from '../../../../i18n'
 
 const FdGoogleBtn = props => {
   const styles = useStyle()
@@ -34,7 +35,7 @@ const FdGoogleBtn = props => {
             ]}
           />
           <TextDefault style={alignment.MLlarge} bold>
-            Signup with Google
+            {i18n.t('signupGoogle')}
           </TextDefault>
         </>
       )}

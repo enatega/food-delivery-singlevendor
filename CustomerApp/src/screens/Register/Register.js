@@ -31,6 +31,7 @@ import { ICONS_NAME, NAVIGATION_SCREEN } from '../../utils/constant'
 import country_codes from '../../utils/country_codes'
 import { scale, verticalScale } from '../../utils/scaling'
 import useStyle from './styles'
+import i18n from '../../../i18n'
 
 const CREATEUSER = gql`
   ${createUser}
@@ -309,7 +310,7 @@ function Register() {
                     navigation.navigate(NAVIGATION_SCREEN.ForgotPassword)
                   }>
                   <TextDefault style={alignment.MTsmall} bold center>
-                    Forgot password?
+                    {i18n.t('forgotPassword')}
                   </TextDefault>
                 </TouchableOpacity>
               </View>

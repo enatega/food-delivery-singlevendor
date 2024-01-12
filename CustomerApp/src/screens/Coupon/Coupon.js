@@ -21,7 +21,7 @@ function SelectVoucher() {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: null,
-      title: 'My Vouchers'
+      title: i18n.t('myVouchers')
     })
   }, [navigation])
 
@@ -33,14 +33,14 @@ function SelectVoucher() {
     <WrapperView>
       <View style={styles.container}>
         <TextLine
-          headerName="TYPe voucher code"
+          headerName={i18n.t('typeVoucherCode')}
           textWidth="50%"
           lineWidth="25%"
         />
         <View style={styles.upperContainer}>
           <View style={{ width: '70%' }}>
             <TextField
-              label="Enter your voucher code"
+              label={i18n.t('enterVoucherCode')}
               labelFontSize={scale(12)}
               fontSize={scale(12)}
               labelHeight={10}

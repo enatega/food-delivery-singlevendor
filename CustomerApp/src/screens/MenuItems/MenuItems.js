@@ -31,6 +31,7 @@ import { alignment } from "../../utils/alignment";
 import { ICONS_NAME, NAVIGATION_SCREEN, SORT_DATA } from "../../utils/constant";
 import { moderateScale, scale } from "../../utils/scaling";
 import useStyle from "./styles";
+import i18n from "../../../i18n";
 
 // constants
 const FOODS = gql`
@@ -73,7 +74,7 @@ function MenuItems() {
   async function onAddToCart(food) {
     if (food.stock < 1) {
       FlashMessage({
-        message: "Item out of stock",
+        message: i18n.t('ItemOutOfStock'),
       });
       return;
     }
@@ -112,7 +113,7 @@ function MenuItems() {
           {item.stock < 1 && (
             <View style={styles.emtpyStockLabel}>
               <TextDefault textColor={styles.whiteFont.color} center>
-                No Stock
+                {i18n.t('NoStock')}
               </TextDefault>
             </View>
           )}
@@ -189,7 +190,7 @@ function MenuItems() {
     } else if (error) {
       return (
         <TextError
-          text={error ? error.message : "No Foods"}
+          text={error ? error.message : i18n.t('NoFoods')}
           backColor="transparent"
         />
       );
@@ -198,7 +199,7 @@ function MenuItems() {
         <View style={styles.emptyContainer}>
           <EmptyFood width={scale(250)} height={scale(250)} />
           <TextDefault H4 bold style={alignment.MTlarge}>
-            No food item found
+            {i18n.t('NoFooditemFound')}
           </TextDefault>
         </View>
       );

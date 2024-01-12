@@ -7,10 +7,11 @@ import { en } from './translations/en'
 import { fr } from './translations/fr'
 import { km } from './translations/km'
 import { zh } from './translations/zh'
+import { ar } from './translations/ar'
 
 i18n.initAsync = async() => {
   i18n.fallbacks = true
-  i18n.translations = { fr, en, km, zh, de }
+  i18n.translations = { fr, en, km, zh, de, ar }
   // i18n.locale = 'km'
   if (Platform.OS === 'android') {
     const lang = await AsyncStorage.getItem('enatega-language')

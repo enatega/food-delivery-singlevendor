@@ -20,6 +20,7 @@ import colors from "../../utilities/colors";
 import { linkToMapsApp } from "../../utilities/links";
 import { scale } from "../../utilities/scaling";
 import styles from "./styles";
+import i18n from "../../../i18n";
 
 const CONFIGURATION = gql`
   ${configuration}
@@ -70,13 +71,13 @@ function OrderDetail() {
   useLayoutEffect(() => {
     if (!selectedOrder) return;
     navigation.setOptions({
-      title: `Order ${selectedOrder.order_id}`,
+      title: `${i18n.t('Order')} ${selectedOrder.order_id}`,
     });
   }, [selectedOrder]);
   async function onCompleted({ updateOrderStatusRider, assignOrder }) {
     if (updateOrderStatusRider) {
       FlashMessage({
-        message: `Order marked as ${updateOrderStatusRider.order_status}`,
+        message: `${i18n.t('OrderMarkedAs')} ${i18n.t(updateOrderStatusRider.order_status)}`,
       });
       if (updateOrderStatusRider.order_status === "DELIVERED") {
         navigation.goBack();
@@ -172,17 +173,17 @@ function OrderDetail() {
   }
 
   if (loadingAssigned || loadingUnAssigned) {
-    return <TextError text="Loading orders" />;
+    return <TextError text={i18n.t('Loadingorders')} />;
   }
   if (loadingConfig) {
     return <Spinner />;
   }
   if (errorConfig) {
-    return <TextError text="Something is worng" />;
+    return <TextError text={i18n.t('Somethingisworng')} />;
   }
   if (!selectedOrder) {
     return (
-      <TextError text="Order assgined to other rider,(something like that)" />
+      <TextError text={i18n.t('Orderassginedtootherrider')} />
     );
   }
 
@@ -202,7 +203,7 @@ function OrderDetail() {
                 textColor={colors.tagColor}
                 style={{ ...alignment.PTxSmall, ...alignment.PBxSmall }}
               >
-                Customer Details
+                {i18n.t('CustomerDetails')}
               </TextDefault>
             </View>
             <View style={styles.customerContent}>
@@ -214,7 +215,7 @@ function OrderDetail() {
                       textColor={colors.placeHolderColor}
                       style={{ ...alignment.PTxSmall, ...alignment.PBxSmall }}
                     >
-                      Name
+                      {i18n.t('name')}
                     </TextDefault>
                     <TextDefault bolder style={{ ...alignment.PBxSmall }}>
                       {selectedOrder.user.name}
@@ -228,7 +229,7 @@ function OrderDetail() {
                       textColor={colors.placeHolderColor}
                       style={{ ...alignment.PTxSmall, ...alignment.PBxSmall }}
                     >
-                      Contact
+                      {i18n.t('Contact')}
                     </TextDefault>
                     <TextDefault bolder style={{ ...alignment.PBxSmall }}>
                       {selectedOrder.user.phone}
@@ -242,7 +243,7 @@ function OrderDetail() {
                       textColor={colors.placeHolderColor}
                       style={{ ...alignment.PTxSmall, ...alignment.PBxSmall }}
                     >
-                      Delviery Location
+                      {i18n.t('DelvieryLocation')}
                     </TextDefault>
                     <TextDefault
                       numberOfLines={2}
@@ -266,7 +267,7 @@ function OrderDetail() {
                 textColor={colors.tagColor}
                 style={{ ...alignment.PTmedium }}
               >
-                Order Details
+                {i18n.t('OrderDetails')}
               </TextDefault>
             </View>
             <View style={styles.orderSpacer} />
@@ -284,7 +285,7 @@ function OrderDetail() {
                     bolder
                     style={{ ...alignment.PTmedium, ...alignment.PLmedium }}
                   >
-                    Subtotal
+                    {i18n.t('Subtotal')}
                   </TextDefault>
                 </View>
                 <View style={styles.orderTextRight}>
@@ -311,7 +312,7 @@ function OrderDetail() {
                     bolder
                     style={{ ...alignment.PLmedium }}
                   >
-                    Delivery Charges
+                    {i18n.t('delvieryCharges')}
                   </TextDefault>
                 </View>
                 <View style={styles.orderTextRight}>
@@ -331,7 +332,7 @@ function OrderDetail() {
               <View style={styles.orderSubRow}>
                 <View style={styles.orderTextLeft}>
                   <TextDefault H4 bolder>
-                    Total
+                    {i18n.t('total')}
                   </TextDefault>
                 </View>
                 <View style={styles.orderTextRight}>
@@ -423,7 +424,7 @@ function OrderDetail() {
                   bold
                   style={{ ...alignment.PTxSmall, ...alignment.PBxSmall }}
                 >
-                  Assign to me
+                  {i18n.t('Assigntome')}
                 </TextDefault>
               )}
             </TouchableOpacity>
@@ -449,7 +450,7 @@ function OrderDetail() {
                     bold
                     style={{ ...alignment.PTxSmall, ...alignment.PBxSmall }}
                   >
-                    Picked
+                    {i18n.t('Picked')}
                   </TextDefault>
                 </TouchableOpacity>
               )}
@@ -468,7 +469,7 @@ function OrderDetail() {
                     bold
                     style={{ ...alignment.PTxSmall, ...alignment.PBxSmall }}
                   >
-                    Delivered
+                    {i18n.t('Delivered')}
                   </TextDefault>
                 </TouchableOpacity>
               )}

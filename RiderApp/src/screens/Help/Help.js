@@ -42,7 +42,7 @@ function Help() {
           style={styles.itemContainer}
           key={index}>
           <TextDefault textColor={colors.fontMainColor} H4>
-            {title}
+            {i18n.t(title)}
           </TextDefault>
           <AntDesign name="arrowright" size={scale(20)} />
         </TouchableOpacity>
