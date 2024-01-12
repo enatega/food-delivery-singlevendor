@@ -10,15 +10,15 @@ import { useTheme } from '@react-navigation/native'
 
 const links = [
   {
-    title: i18n.t('productPage'),
+    title: 'Product Page',
     url: 'https://enatega.com/enatega-single-vendor/'
   },
-  { title: i18n.t('docs'), url: 'https://enatega.com/docs/enatega-singlevendor-introduction/' },
+  { title: 'Docs', url: 'https://enatega.com/docs/enatega-singlevendor-introduction/' },
   {
-    title: i18n.t('blog'),
+    title: 'Blog',
     url: 'https://enatega.com/blog/'
   },
-  { title: i18n.t('aboutUs'), url: 'https://ninjascode.com/our-team' }
+  { title: 'About Us', url: 'https://ninjascode.com/our-team' }
 ]
 function Help() {
   const styles = useStyle()
@@ -42,7 +42,7 @@ function Help() {
             }
             style={styles.itemContainer}
             key={index}>
-            <TextDefault H4>{title}</TextDefault>
+            <TextDefault H4>{i18n.t(title)}</TextDefault>
             <TouchableOpacity>
               <AntDesign name="arrowright" size={22} color={colors.fontMainColor} />
             </TouchableOpacity>

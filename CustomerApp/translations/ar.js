@@ -187,8 +187,8 @@ export const ar = {
   locaPermission: 'لم يتم منح إذن الموقع',
   addressAdded: 'تمت إضافة العنوان',
   productPage: 'صفحة المنتج',
-  docs: 'المستندات',
-  blog: 'المدونة',
+  Docs: 'المستندات',
+  Blog: 'المدونة',
   aboutUs: 'عنا',
   myVouchers: 'قسائمي',
   typeVoucherCode: 'اكتب رمز القسيمة',
@@ -239,5 +239,11 @@ export const ar = {
   ResetPasswordLinkSent: 'تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني',
   LocationPermissionNotGranted: 'لم يتم منح إذن الموقع',
   NoFooditemFound: 'لم يتم العثور على عنصر طعام',
+  SavedYet: 'لم تقم بحفظ أي عنوان بعد.',
+  ClickAddNewAddress: 'انقر فوق إضافة عنوان جديد للبدء',
+  NoAddressesfound: 'لم يتم العثور على عناوين.',
+  AddNewAddress: 'إضافة عنوان جديد',
+  'About Us': 'من نحن',
+  'Product Page': 'صفحة المنتج',
 
 }

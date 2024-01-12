@@ -183,8 +183,8 @@ export const km = {
   locaPermission: 'ការអនុញ្ញាតឱ្យតាមដានទីតាំងមិនបានទទួលយក',
   addressAdded: 'បាន​បន្ថែម​អាសយដ្ឋាន',
   productPage: 'ទំព័រផលិតផល',
-  docs: 'ឯកសារ',
-  blog: 'ប្លក់',
+  Docs: 'ឯកសារ',
+  Blog: 'ប្លក់',
   aboutUs: 'អំពី​យើង',
   myVouchers: 'លេខកូដ​វេបសាយ​របស់​ខ្ញុំ',
   typeVoucherCode: "បញ្ចូល​លេខកូដ​វេបសាយ",
@@ -235,5 +235,11 @@ export const km = {
   ResetPasswordLinkSent: 'បានផ្ញើតំណរពេលបានប្ដូរពាក្យសម្ងាត់របស់អ្នកហើយ',
   LocationPermissionNotGranted: 'មិនបានទទួលស្ថានភាពទីតាំង',
   NoFooditemFound: 'មិនបានរកឃើញវាលម្ហូប',
+  SavedYet: 'អ្នកមិនទាន់រក្សាទុកអាសយដ្ឋានណាមួយទេ។',
+  ClickAddNewAddress: 'ចុចលើប៊ូតុងបន្ថែមអាសយដ្ឋានថ្មីដើម្បីចាប់ផ្តើម',
+  NoAddressesfound: 'រកមិនឃើញអាសយដ្ឋានទេ។',
+  AddNewAddress: 'បន្ថែមអាសយដ្ឋានថ្មី',
+  'About Us': 'អំពីពួកយើង',
+  'Product Page': 'ទំព័រផលិតផល',
 
 }

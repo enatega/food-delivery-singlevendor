@@ -187,8 +187,8 @@ export const en = {
   locaPermission: 'Location permission not granted',
   addressAdded: 'Address added',
   productPage: 'Product Page',
-  docs: 'Docs',
-  blog: 'Blog',
+  Docs: 'Docs',
+  Blog: 'Blog',
   aboutUs: 'About Us',
   myVouchers: 'My Vouchers',
   typeVoucherCode: "TYPe voucher code",
@@ -238,5 +238,11 @@ export const en = {
   AnErrorOccured: 'An error occured. Please try again',
   ResetPasswordLinkSent: 'Reset password link sent on your email',
   LocationPermissionNotGranted: 'Location permission not granted',
-  NoFooditemFound: 'No food item found'
+  NoFooditemFound: 'No food item found',
+  SavedYet: 'You haven&#39;t saved any address yet.',
+  ClickAddNewAddress: 'Click Add New Address to get started',
+  NoAddressesfound: 'No Addresses found.',
+  AddNewAddress: 'Add New Address',
+  'About Us': 'About Us',
+  'Product Page': 'Product Page',
 }

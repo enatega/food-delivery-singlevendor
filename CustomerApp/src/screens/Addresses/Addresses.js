@@ -68,13 +68,13 @@ function Addresses() {
             H5
             style={alignment.Msmall}
           >
-            No Addresses found.
+            {i18n.t('NoAddressesfound')}
           </TextDefault>
           <View>
             <TextDefault textColor={colors.fontSecondColor}>
-              You haven&#39;t saved any address yet.
+              {i18n.t('SavedYet')}
               {"\n"}
-              Click Add New Address to get started
+              {i18n.t('ClickAddNewAddress')}
             </TextDefault>
           </View>
           <TouchableOpacity
@@ -83,7 +83,7 @@ function Addresses() {
             onPress={() => navigation.navigate(NAVIGATION_SCREEN.NewAddress)}
           >
             <TextDefault textColor={colors.white} H5 bold>
-              Add New Address
+              {i18n.t('AddNewAddress')}
             </TextDefault>
           </TouchableOpacity>
         </View>
@@ -135,7 +135,7 @@ function Addresses() {
                     H5
                     style={[alignment.MTxSmall, alignment.MLsmall]}
                   >
-                    {address.label}
+                    {i18n.t(address.label)}
                   </TextDefault>
                 </View>
                 <View style={[styles.titleAddress]}>
@@ -185,7 +185,7 @@ function Addresses() {
           textColor={colors.fontSecondColor}
           style={alignment.MBsmall}
         >
-          All rights are reserved by Enatega
+          {i18n.t('rightsReserved')}
         </TextDefault>
       </View>
     </WrapperView>

@@ -187,8 +187,8 @@ export const de = {
   locaPermission: 'Standortberechtigung nicht erteilt',
   addressAdded: 'Adresse hinzugefügt',
   productPage: 'Produktseite',
-  docs: 'Dokumente',
-  blog: 'Blog',
+  Docs: 'Dokumente',
+  Blog: 'Blog',
   aboutUs: 'Über uns',
   myVouchers: 'Meine Gutscheine',
   typeVoucherCode: "Gutscheincode eingeben",
@@ -239,5 +239,11 @@ export const de = {
   ResetPasswordLinkSent: 'Reset wachtwoordlink verzonden naar uw e-mail',
   LocationPermissionNotGranted: 'Locatietoestemming niet verleend',
   NoFooditemFound: 'Geen voedingsmiddel gevonden',
+  SavedYet: 'Je hebt nog geen enkel adres opgeslagen.',
+  ClickAddNewAddress: 'Klik op Nieuw adres toevoegen om te beginnen',
+  NoAddressesfound: 'Geen adressen gevonden.',
+  AddNewAddress: 'Nieuw adres toevoegen',
+  'About Us': 'Over ons',
+  'Product Page': 'Productpagina',
 
 }
