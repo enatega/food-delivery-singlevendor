@@ -188,8 +188,8 @@ export const fr = {
   locaPermission: 'Autorisation de localisation non accordée',
   addressAdded: 'Adresse ajoutée',
   productPage: 'Page produit',
-  docs: 'Docs',
-  blog: 'Blog',
+  Docs: 'Docs',
+  Blog: 'Blog',
   aboutUs: 'À propos de nous',
   myVouchers: 'Mes bons',
   typeVoucherCode: "Saisir le code du bon",
@@ -240,5 +240,10 @@ export const fr = {
   ResetPasswordLinkSent: 'Lien de réinitialisation du mot de passe envoyé sur votre email',
   LocationPermissionNotGranted: 'Permission de localisation non accordée',
   NoFooditemFound: 'Aucun article alimentaire trouvé',
-
+  SavedYet: "Vous n'avez encore sauvegardé aucune adresse.",
+  ClickAddNewAddress: 'Cliquez sur Ajouter une nouvelle adresse pour commencer',
+  NoAddressesfound: 'Aucune adresse trouvée.',
+  AddNewAddress: 'Ajouter une nouvelle adresse',
+  'About Us': 'À propos de nous',
+  'Product Page': 'Page de produit',
 }

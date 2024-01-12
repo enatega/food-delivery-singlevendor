@@ -346,7 +346,7 @@ function Settings() {
         style={alignment.MBsmall}
         center
       >
-        All rights are reserved by Enatega
+        {i18n.t('rightsReserved')}
       </TextDefault>
 
       {/* Modal for language Changes */}

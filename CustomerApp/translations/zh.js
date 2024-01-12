@@ -179,8 +179,8 @@ export const zh = {
   locaPermission: '未授予位置权限',
   addressAdded: '已添加地址',
   productPage: '产品页面',
-  docs: '文档',
-  blog: '博客',
+  Docs: '文档',
+  Blog: '博客',
   aboutUs: '关于我们',
   myVouchers: '我的优惠券',
   typeVoucherCode: "输入优惠券代码",
@@ -231,5 +231,11 @@ export const zh = {
   ResetPasswordLinkSent: '重置密码链接已发送到您的电子邮件',
   LocationPermissionNotGranted: '未授予位置权限',
   NoFooditemFound: '找不到食品项目',
+  SavedYet: '您尚未保存任何地址。',
+  ClickAddNewAddress: '单击“添加新地址”以开始',
+  NoAddressesfound: '未找到地址。',
+  AddNewAddress: '添加新地址',
+  'About Us': '关于我们',
+  'Product Page': '产品页面',
 
 }
