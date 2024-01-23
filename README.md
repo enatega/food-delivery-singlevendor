@@ -1,47 +1,4 @@
-<div align="right">
-<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution" style="text-decoration:none">
-  <img src="https://img.shields.io/badge/-0d1117?logo=facebook"  width="40" height="30">
-</a>
-<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution" style="text-decoration:none">
-  <img src="https://img.shields.io/badge/-0d1117?logo=linkedin"  width="40" height="30">
-</a>
-<a target="_blank" href="https://twitter.com/intent/tweet?&url=https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution&via=TWITTER-HANDLE" style="text-decoration:none">
-  <img src="https://img.shields.io/badge/-0d1117?logo=twitter" width="40" height="30">
-</a>
-</div>
-
-<div align="center">
-  <h2>Enatega Single Vendor Food Delivery Solution</h2>
-  <i>The white label food delivery solution built for restaurants of all sizes!</i>
- <br/>
-<br />
-</div>
-
-<div align="center">
-
-[![Static Badge](https://img.shields.io/badge/License-MIT-red)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/blob/main/LICENSE)
-[![Stars](https://img.shields.io/github/stars/Ninjas-Code-official/Enatega-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/stargazers)
-[![Forks](https://img.shields.io/github/forks/Ninjas-Code-official/Enatega-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/forks)
-[![GitHub contributors](https://img.shields.io/github/contributors/Ninjas-Code-official/Enatega-Food-Delivery-Solution)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/graphs/contributors)
-[![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/Ninjas-Code-official/Enatega-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/pulls)
-[![Activity](https://img.shields.io/github/last-commit/Ninjas-Code-official/Enatega-Food-Delivery-Solution.svg)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/commits/main)
-[![YouTube Channel](https://img.shields.io/badge/Watch_us-Youtube-red)](https://www.youtube.com/@ninjascode509)
-[![Company Website](https://img.shields.io/badge/Visit_us-Website-blue)](https://enatega.com)
-[![Closed Issues](https://img.shields.io/github/issues-closed/Ninjas-Code-official/Enatega-Food-Delivery-Solution?color=success)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/issues?q=is%3Aissue+is%3Aclosed)
-[![Closed Pull Requests](https://img.shields.io/badge/Closed%20Pull%20Requests-View%20on%20GitHub-blue.svg)](https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/pulls?q=is%3Apr+is%3Aclosed)
-
-</div>
-
-<div align="center">
-
-[![Static Badge](https://img.shields.io/badge/facebook-blue?logo=facebook&logoColor=Blue&color=%23fbfbfb)](https://www.facebook.com/enatega)
-[![Static Badge](https://img.shields.io/badge/Instagram-blue?logo=instagram&logoColor=D815BE&color=%23fcfcfc)](https://www.instagram.com/enatega.nb/)
-[![Static Badge](https://img.shields.io/badge/Twitter-blue?logo=Twitter&logoColor=blue&color=%23fcfcfc)](https://twitter.com/EnategaA)
-[![Static Badge](https://img.shields.io/badge/LinkedIn-blue?logo=LinkedIn&logoColor=darkblue&color=%23fcfcfc)](https://www.linkedin.com/company/14583783/)
-
-</div>
-
-# Enatega Single Vendor Solution
+# Enatega Food Delivery
 
 <div align="center">
 
@@ -193,24 +150,7 @@ Find the link for the complete documentation of the Enatega Single Vendor Soluti
 
 ## :tv: Demo Videos: <a id="heading-14"></a>
 
-| Demo |
+| Youtube Link |
 | :--: |
 
 | <a href="https://www.youtube.com/watch?v=AWbdt9GX1t4"><img src="https://img.youtube.com/vi/AWbdt9GX1t4/0.jpg" width="200" alt="Video"></a>
-
-## :people_holding_hands: Contributors: <a id="heading-14"></a>
-
-<div align="center">
-<br>
-<a href="https://github.com/Ninjas-Code-official/Enatega-Food-Delivery-Solution/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Ninjas-Code-official/Enatega-Food-Delivery-Solution"" style="max-width: 50%; height: auto;" />
-</a>
-</div>
-
-## :warning: Disclaimer: <a id="heading-12"></a>
-
-The frontend source code for our solution is completely open source. However, the API and backend is proprietary and can be accessed via a paid license. For further information, contact us on the channels provided below.
-
-## :mailbox_with_mail: Contact Us: <a id="heading-13"></a>
-
-[Check out the product page and pricing and more for Enatega Food Delivery Solution](https://enatega.com/enatega-single-vendor?utm_source=github&utm_medium=opensource&utm_campaign=enatega-restaurant-solution).
