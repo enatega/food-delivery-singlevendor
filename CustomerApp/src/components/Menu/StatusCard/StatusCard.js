@@ -13,29 +13,29 @@ import i18n from "../../../../i18n";
 
 export const orderStatuses = [
   {
-    key: i18n.t('PENDING'),
+    key: i18n.t("PENDING"),
     status: 1,
-    statusText: i18n.t('orderPending'),
+    statusText: i18n.t("orderPending"),
   },
   {
     key: i18n.t("ACCEPTED"),
     status: 2,
-    statusText: i18n.t('prepFood'),
+    statusText: i18n.t("prepFood"),
   },
   {
     key: i18n.t("PICKED"),
     status: 3,
-    statusText: i18n.t('riderOnWay'),
+    statusText: i18n.t("riderOnWay"),
   },
   {
     key: i18n.t("DELIVERED"),
     status: 4,
-    statusText: i18n.t('orderDelivered'),
+    statusText: i18n.t("orderDelivered"),
   },
   {
     key: i18n.t("COMPLETED"),
     status: 5,
-    statusText: i18n.t('completeOrder'),
+    statusText: i18n.t("completeOrder"),
   },
 ];
 
@@ -89,19 +89,19 @@ const StatusCard = () => {
           <View key={index} style={styles.statusContainer}>
             <View style={styles.textContainer}>
               <TextDefault H5 medium textColor={styles.lightText.color}>
-                {i18n.t('orderId')}
+                {i18n.t("orderId")}
               </TextDefault>
               <TextDefault style={{ ...alignment.PBlarge }} H4 bolder>
                 {item.order_id}
               </TextDefault>
               <TextDefault H5 textColor={colors.placeHolderColor} medium>
-                {i18n.t('status')}
+                {i18n.t("status")}
               </TextDefault>
 
               <TextDefault textColor={"#00b9c6"} H5 medium>
                 {i18n.t(item.order_status)}{" "}
                 <TextDefault numberOfLines={2} medium>
-                  {/* {checkStatus(item.order_status).status}.{' '} */}(
+                  {checkStatus(item.order_status).status}. (
                   {checkStatus(i18n.t(item.order_status)).statusText})
                 </TextDefault>
               </TextDefault>

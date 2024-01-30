@@ -7,7 +7,13 @@ import * as Localization from "expo-localization";
 import * as Notifications from "expo-notifications";
 import * as Updates from "expo-updates";
 import gql from "graphql-tag";
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, {
+  useContext,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 import {
   AppState,
   Linking,
@@ -90,7 +96,7 @@ function Settings() {
   const modalizeRef = useRef(null);
   const modalizeRef1 = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     navigation.setOptions({
       headerTitle: i18n.t("titleSettings"),
       headerRight: null,
@@ -160,9 +166,9 @@ function Settings() {
         "enatega-language",
         languageTypes[languageInd].code
       );
-      i18n.locale = languageTypes[languageInd].code
+      i18n.locale = languageTypes[languageInd].code;
       const lang = await AsyncStorage.getItem("enatega-language");
-      console.log(lang)
+      console.log(lang);
       const defLang = languageTypes.findIndex((el) => el.code === lang);
       const langName = languageTypes[defLang].value;
       activeRadioSetter(defLang);
@@ -177,7 +183,7 @@ function Settings() {
 
   function onCompleted() {
     FlashMessage({
-      message: i18n.t('notificationUpdate'),
+      message: i18n.t("notificationUpdate"),
     });
   }
 
@@ -250,7 +256,7 @@ function Settings() {
                     medium
                     H5
                   >
-                    {i18n.t('language')}
+                    {i18n.t("language")}
                   </TextDefault>
                   <TextDefault medium H5>
                     ({languageName})
@@ -283,7 +289,7 @@ function Settings() {
                 textColor={colors.statusSecondColor}
               >
                 {" "}
-                {i18n.t('receiveOffers')}{" "}
+                {i18n.t("receiveOffers")}{" "}
               </TextDefault>
               <SwitchBtn
                 isEnabled={offerNotification}
@@ -306,7 +312,7 @@ function Settings() {
                 textColor={colors.statusSecondColor}
               >
                 {" "}
-                {i18n.t('getUpdatesText')}{" "}
+                {i18n.t("getUpdatesText")}{" "}
               </TextDefault>
               <SwitchBtn
                 isEnabled={orderNotification}
@@ -325,7 +331,7 @@ function Settings() {
             <View style={styles.notificationChekboxContainer}>
               <TextDefault numberOfLines={1} textColor={"red"}>
                 {" "}
-                {i18n.t('delAcc')}{" "}
+                {i18n.t("delAcc")}{" "}
               </TextDefault>
               <CustomIcon
                 name={ICONS_NAME.Trash}
@@ -334,11 +340,11 @@ function Settings() {
               />
             </View>
           </TouchableOpacity>
-          <View style={styles.versionContainer}>
+          {/* <View style={styles.versionContainer}>
             <TextDefault textColor={colors.fontSecondColor}>
-              {/* Version: {Constants.manifest.version} */}
+              {/* Version: {Constants.manifest.version} 
             </TextDefault>
-          </View>
+          </View> */}
         </View>
       </View>
       <TextDefault
@@ -346,7 +352,7 @@ function Settings() {
         style={alignment.MBsmall}
         center
       >
-        {i18n.t('rightsReserved')}
+        {i18n.t("rightsReserved")}
       </TextDefault>
 
       {/* Modal for language Changes */}
@@ -381,7 +387,7 @@ function Settings() {
       >
         <View style={{ flex: 1, alignItems: "center" }}>
           <TextDefault bolder H5 style={{ marginTop: 20 }}>
-            {i18n.t('delAccText')}
+            {i18n.t("delAccText")}
           </TextDefault>
           <TouchableOpacity
             activeOpacity={0.7}
@@ -409,7 +415,7 @@ function Settings() {
             style={[styles.width100, alignment.PBlarge, alignment.PTlarge]}
             onPress={() => onClose()}
           >
-            <TextDefault center>{i18n.t('cancel')}</TextDefault>
+            <TextDefault center>{i18n.t("cancel")}</TextDefault>
           </TouchableOpacity>
         </View>
       </Modalize>
