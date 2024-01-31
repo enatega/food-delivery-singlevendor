@@ -11,33 +11,55 @@ import TextError from "../../Text/TextError/TextError";
 import useStyle from "./styles";
 import i18n from "../../../../i18n";
 
-export const orderStatuses = [
-  {
-    key: i18n.t("PENDING"),
+// export const orderStatuses = [
+//   {
+//     key: i18n.t("PENDING"),
+//     status: 1,
+//     statusText: i18n.t("orderPending"),
+//   },
+//   {
+//     key: i18n.t("ACCEPTED"),
+//     status: 2,
+//     statusText: i18n.t("prepFood"),
+//   },
+//   {
+//     key: i18n.t("PICKED"),
+//     status: 3,
+//     statusText: i18n.t("riderOnWay"),
+//   },
+//   {
+//     key: i18n.t("DELIVERED"),
+//     status: 4,
+//     statusText: i18n.t("orderDelivered"),
+//   },
+//   {
+//     key: i18n.t("COMPLETED"),
+//     status: 5,
+//     statusText: i18n.t("completeOrder"),
+//   },
+// ];
+export const orderStatuses = {
+  PENDING: {
     status: 1,
-    statusText: i18n.t("orderPending"),
+    statusText: "orderPending",
   },
-  {
-    key: i18n.t("ACCEPTED"),
+  ACCEPTED: {
     status: 2,
-    statusText: i18n.t("prepFood"),
+    statusText: "prepFood",
   },
-  {
-    key: i18n.t("PICKED"),
+  PICKED: {
     status: 3,
-    statusText: i18n.t("riderOnWay"),
+    statusText: "riderOnWay",
   },
-  {
-    key: i18n.t("DELIVERED"),
+  DELIVERED: {
     status: 4,
-    statusText: i18n.t("orderDelivered"),
+    statusText: "orderDelivered",
   },
-  {
-    key: i18n.t("COMPLETED"),
+  COMPLETED: {
     status: 5,
-    statusText: i18n.t("completeOrder"),
+    statusText: "completeOrder",
   },
-];
+};
 
 const orderStatusActive = ["PENDING", "PICKED", "ACCEPTED"];
 
@@ -54,12 +76,12 @@ const StatusCard = () => {
   } = useContext(UserContext);
   const configuration = useContext(ConfigurationContext);
 
-  const checkStatus = (status) => {
-    const obj = orderStatuses.filter((x) => {
-      return x.key === status;
-    });
-    return obj[0];
-  };
+  // const checkStatus = (status) => {
+  //   const obj = orderStatuses.filter((x) => {
+  //     return x.key === status;
+  //   });
+  //   return obj[0];
+  // };
 
   if (loadingOrders) return <Spinner />;
   if (errorOrders) return <TextError>{errorOrders.message}</TextError>;
@@ -101,8 +123,10 @@ const StatusCard = () => {
               <TextDefault textColor={"#00b9c6"} H5 medium>
                 {i18n.t(item.order_status)}{" "}
                 <TextDefault numberOfLines={2} medium>
-                  {checkStatus(item.order_status).status}. (
-                  {checkStatus(i18n.t(item.order_status)).statusText})
+                  {/* {checkStatus(item.order_status).status}.{' '} */}
+                  {/* {checkStatus(i18n.t(item.order_status)?.status)?.statusText ||
+                    "..."} */}
+                  {`(${i18n.t(orderStatuses[item.order_status]?.statusText)})`}
                 </TextDefault>
               </TextDefault>
             </View>
