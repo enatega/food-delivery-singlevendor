@@ -11,33 +11,28 @@ import TextError from "../../Text/TextError/TextError";
 import useStyle from "./styles";
 import i18n from "../../../../i18n";
 
-export const orderStatuses = [
-  {
-    key: i18n.t('PENDING'),
+export const orderStatuses = {
+  PENDING: {
     status: 1,
-    statusText: i18n.t('orderPending'),
+    statusText: "orderPending",
   },
-  {
-    key: i18n.t("ACCEPTED"),
+  ACCEPTED: {
     status: 2,
-    statusText: i18n.t('prepFood'),
+    statusText: "prepFood",
   },
-  {
-    key: i18n.t("PICKED"),
+  PICKED: {
     status: 3,
-    statusText: i18n.t('riderOnWay'),
+    statusText: "riderOnWay",
   },
-  {
-    key: i18n.t("DELIVERED"),
+  DELIVERED: {
     status: 4,
-    statusText: i18n.t('orderDelivered'),
+    statusText: "orderDelivered",
   },
-  {
-    key: i18n.t("COMPLETED"),
+  COMPLETED: {
     status: 5,
-    statusText: i18n.t('completeOrder'),
+    statusText: "completeOrder",
   },
-];
+};
 
 const orderStatusActive = ["PENDING", "PICKED", "ACCEPTED"];
 
@@ -54,13 +49,6 @@ const StatusCard = () => {
   } = useContext(UserContext);
   const configuration = useContext(ConfigurationContext);
 
-  const checkStatus = (status) => {
-    const obj = orderStatuses.filter((x) => {
-      return x.key === status;
-    });
-    return obj[0];
-  };
-
   if (loadingOrders) return <Spinner />;
   if (errorOrders) return <TextError>{errorOrders.message}</TextError>;
 
@@ -73,7 +61,6 @@ const StatusCard = () => {
       refreshing={networkStatusOrders === 4}
       onRefresh={() => networkStatusOrders === 7 && fetchOrders()}
       data={orders.filter((o) => orderStatusActive.includes(o.order_status))}
-      //keyExtractor={(item) => item._id}
       keyExtractor={(item, index) => String(index)}
       renderItem={({ item, index }) => (
         <TouchableOpacity
@@ -89,20 +76,19 @@ const StatusCard = () => {
           <View key={index} style={styles.statusContainer}>
             <View style={styles.textContainer}>
               <TextDefault H5 medium textColor={styles.lightText.color}>
-                {i18n.t('orderId')}
+                {i18n.t("orderId")}
               </TextDefault>
               <TextDefault style={{ ...alignment.PBlarge }} H4 bolder>
                 {item.order_id}
               </TextDefault>
               <TextDefault H5 textColor={colors.placeHolderColor} medium>
-                {i18n.t('status')}
+                {i18n.t("status")}
               </TextDefault>
 
               <TextDefault textColor={"#00b9c6"} H5 medium>
                 {i18n.t(item.order_status)}{" "}
                 <TextDefault numberOfLines={2} medium>
-                  {/* {checkStatus(item.order_status).status}.{' '} */}(
-                  {checkStatus(i18n.t(item.order_status)).statusText})
+                  {`(${i18n.t(orderStatuses[item.order_status]?.statusText)})`}
                 </TextDefault>
               </TextDefault>
             </View>

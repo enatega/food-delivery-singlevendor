@@ -33,7 +33,7 @@ function Menu() {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      title: i18n.t('home'),
+      title: i18n.t("home"),
     });
   }, []);
 
@@ -43,7 +43,7 @@ function Menu() {
     } else if (error) {
       return (
         <TextError
-          text={error ? error.message : i18n.t('NoFoods')}
+          text={error ? error.message : i18n.t("NoFoods")}
           backColor="transparent"
         />
       );
@@ -52,7 +52,7 @@ function Menu() {
         <View style={styles.emptyContainer}>
           <EmptyFood width={scale(250)} height={scale(250)} />
           <TextDefault H4 bold style={alignment.MTlarge}>
-            {i18n.t('noItems')}
+            {i18n.t("noItems")}
           </TextDefault>
         </View>
       );
@@ -78,7 +78,7 @@ function Menu() {
                   {isLoggedIn && profile && <StatusCard />}
 
                   <TextDefault style={alignment.Psmall} H4 medium>
-                    {i18n.t('featured')}
+                    {i18n.t("featured")}
                   </TextDefault>
                 </>
               );

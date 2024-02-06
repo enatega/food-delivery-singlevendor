@@ -1,11 +1,9 @@
 import { useMutation } from "@apollo/react-hooks";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation, useTheme } from "@react-navigation/native";
-import Constants from "expo-constants";
 import * as Device from "expo-device";
 import * as Localization from "expo-localization";
 import * as Notifications from "expo-notifications";
-import * as Updates from "expo-updates";
 import gql from "graphql-tag";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import {
@@ -18,7 +16,6 @@ import {
 } from "react-native";
 
 import { Modalize } from "react-native-modalize";
-import { async } from "validate.js";
 import i18n from "../../../i18n";
 import { moderateScale } from "../../utils/scaling";
 
@@ -78,7 +75,6 @@ function Settings() {
     profile.is_order_notification
   );
   const [activeRadio, activeRadioSetter] = useState(languageTypes[0].index);
-  // eslint-disable-next-line no-unused-vars
   const [appState, setAppState] = useState(AppState.currentState);
   const [uploadToken] = useMutation(PUSH_TOKEN);
   const [updateUserInfo] = useMutation(UPDATEUSER);
@@ -119,9 +115,12 @@ function Settings() {
   };
 
   useEffect(() => {
-    AppState.addEventListener("change", _handleAppStateChange);
+    const subscription = AppState.addEventListener(
+      "change",
+      _handleAppStateChange
+    );
     return () => {
-      AppState.remove("change", _handleAppStateChange);
+      subscription.remove("change", _handleAppStateChange);
     };
   }, []);
 
@@ -160,14 +159,13 @@ function Settings() {
         "enatega-language",
         languageTypes[languageInd].code
       );
-      i18n.locale = languageTypes[languageInd].code
+      i18n.locale = languageTypes[languageInd].code;
       const lang = await AsyncStorage.getItem("enatega-language");
-      console.log(lang)
+      console.log(lang);
       const defLang = languageTypes.findIndex((el) => el.code === lang);
       const langName = languageTypes[defLang].value;
       activeRadioSetter(defLang);
       languageNameSetter(langName);
-      // Updates.reloadAsync();
     }
   };
 
@@ -177,7 +175,7 @@ function Settings() {
 
   function onCompleted() {
     FlashMessage({
-      message: i18n.t('notificationUpdate'),
+      message: i18n.t("notificationUpdate"),
     });
   }
 
@@ -250,7 +248,7 @@ function Settings() {
                     medium
                     H5
                   >
-                    {i18n.t('language')}
+                    {i18n.t("language")}
                   </TextDefault>
                   <TextDefault medium H5>
                     ({languageName})
@@ -283,7 +281,7 @@ function Settings() {
                 textColor={colors.statusSecondColor}
               >
                 {" "}
-                {i18n.t('receiveOffers')}{" "}
+                {i18n.t("receiveOffers")}{" "}
               </TextDefault>
               <SwitchBtn
                 isEnabled={offerNotification}
@@ -306,7 +304,7 @@ function Settings() {
                 textColor={colors.statusSecondColor}
               >
                 {" "}
-                {i18n.t('getUpdatesText')}{" "}
+                {i18n.t("getUpdatesText")}{" "}
               </TextDefault>
               <SwitchBtn
                 isEnabled={orderNotification}
@@ -325,7 +323,7 @@ function Settings() {
             <View style={styles.notificationChekboxContainer}>
               <TextDefault numberOfLines={1} textColor={"red"}>
                 {" "}
-                {i18n.t('delAcc')}{" "}
+                {i18n.t("delAcc")}{" "}
               </TextDefault>
               <CustomIcon
                 name={ICONS_NAME.Trash}
@@ -334,11 +332,6 @@ function Settings() {
               />
             </View>
           </TouchableOpacity>
-          <View style={styles.versionContainer}>
-            <TextDefault textColor={colors.fontSecondColor}>
-              {/* Version: {Constants.manifest.version} */}
-            </TextDefault>
-          </View>
         </View>
       </View>
       <TextDefault
@@ -346,7 +339,7 @@ function Settings() {
         style={alignment.MBsmall}
         center
       >
-        {i18n.t('rightsReserved')}
+        {i18n.t("rightsReserved")}
       </TextDefault>
 
       {/* Modal for language Changes */}
@@ -381,7 +374,7 @@ function Settings() {
       >
         <View style={{ flex: 1, alignItems: "center" }}>
           <TextDefault bolder H5 style={{ marginTop: 20 }}>
-            {i18n.t('delAccText')}
+            {i18n.t("delAccText")}
           </TextDefault>
           <TouchableOpacity
             activeOpacity={0.7}
@@ -409,7 +402,7 @@ function Settings() {
             style={[styles.width100, alignment.PBlarge, alignment.PTlarge]}
             onPress={() => onClose()}
           >
-            <TextDefault center>{i18n.t('cancel')}</TextDefault>
+            <TextDefault center>{i18n.t("cancel")}</TextDefault>
           </TouchableOpacity>
         </View>
       </Modalize>
