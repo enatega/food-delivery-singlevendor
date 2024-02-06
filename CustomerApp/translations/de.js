@@ -246,4 +246,5 @@ export const de = {
   AddNewAddress: "Nieuw adres toevoegen",
   "About Us": "Over ons",
   "Product Page": "Productpagina",
+  "Change Payment Method": "Bezahlungsmethode ändern",
 };

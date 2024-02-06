@@ -147,7 +147,6 @@ function Cart() {
   function update(cache, { data: { placeOrder } }) {
     if (placeOrder && placeOrder.payment_method === 'COD') {
       const data = cache.readQuery({ query: ORDERS })
-      // console.log('placeorder', placeOrder)
       if (data) {
         cache.writeQuery({
           query: ORDERS,

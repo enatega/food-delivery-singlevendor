@@ -29,13 +29,6 @@ function calculatePrice(food) {
   return foodPrice;
 }
 
-// const checkStatus = (status) => {
-//   const obj = orderStatuses.filter((x) => {
-//     return x.key === status;
-//   });
-//   return obj[0];
-// };
-
 function OrderDetail() {
   const styles = useStyle();
   const route = useRoute();

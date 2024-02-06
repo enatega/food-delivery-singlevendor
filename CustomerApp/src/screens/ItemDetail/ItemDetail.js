@@ -201,11 +201,13 @@ function ItemDetail() {
                   status="Required"
                 />
                 <View style={[alignment.PLmedium, alignment.PRmedium]}>
-                  {<RadioComponent
-                    options={food.variations}
-                    selected={selectedVariation}
-                    onPress={onSelectVariation}
-                  />}
+                  {
+                    <RadioComponent
+                      options={food.variations}
+                      selected={selectedVariation}
+                      onPress={onSelectVariation}
+                    />
+                  }
                 </View>
               </>
             )}
@@ -214,7 +216,7 @@ function ItemDetail() {
                 <TitleComponent
                   title={addon.title}
                   subTitle={addon.description}
-                  error={false}
+                  error={addon.error}
                   status={
                     addon.quantity_minimum === 0
                       ? "OPTIONAL"

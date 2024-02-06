@@ -244,4 +244,5 @@ export const km = {
   AddNewAddress: "បន្ថែមអាសយដ្ឋានថ្មី",
   "About Us": "អំពីពួកយើង",
   "Product Page": "ទំព័រផលិតផល",
+  "Change Payment Method": "ផ្លាស់ប្តូរវិធីបង់ប្រាក់",
 };

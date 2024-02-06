@@ -237,4 +237,5 @@ export const zh = {
   AddNewAddress: "添加新地址",
   "About Us": "关于我们",
   "Product Page": "产品页面",
+  "Change Payment Method": "更改付款方式",
 };

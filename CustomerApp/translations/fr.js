@@ -249,4 +249,5 @@ export const fr = {
   AddNewAddress: "Ajouter une nouvelle adresse",
   "About Us": "À propos de nous",
   "Product Page": "Page de produit",
+  "Change Payment Method": "Changer la méthode de paiement",
 };
