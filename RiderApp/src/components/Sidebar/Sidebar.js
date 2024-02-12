@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { useContext } from 'react'
 import { Platform, View } from 'react-native'
-import i18n from '../../../i18n'
+import { useTranslation } from "react-i18next";
 import { AuthContext } from '../../context/auth'
 import { NAVIGATION_SCREEN } from '../../utilities/constant'
 import NavItem from './NavItem/NavItem'
@@ -40,6 +40,7 @@ const datas = [
 ]
 
 function SidebBar({ navigation }) {
+  const { t } = useTranslation();
   const { logout } = useContext(AuthContext)
 
   // if (loading) return <Spinner />
@@ -64,7 +65,7 @@ function SidebBar({ navigation }) {
                       }
                     }}
                     icon={data.icon}
-                    title={i18n.t(data.title)}
+                    title={t(data.title)}
                   />
                 </View>
               )
@@ -78,7 +79,7 @@ function SidebBar({ navigation }) {
               navigation.closeDrawer()
             }}
             icon={'sign-out'}
-            title={i18n.t('titleLogout')}
+            title={t('titleLogout')}
           />
         </View>
       </View>

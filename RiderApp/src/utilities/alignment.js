@@ -1,135 +1,135 @@
-import { scale } from './scaling'
+import { scale } from "./scaling";
 
-const XSMALL = 5
-const SMALL = 10
-const MEDIUM = 15
-const LARGE = 20
+const XSMALL = 5;
+const SMALL = 10;
+const MEDIUM = 15;
+const LARGE = 20;
 export const alignment = {
   MxSmall: {
-    margin: scale(XSMALL)
+    margin: scale(XSMALL),
   },
   MBxSmall: {
-    marginBottom: scale(XSMALL)
+    marginBottom: scale(XSMALL),
   },
   MTxSmall: {
-    marginTop: scale(XSMALL)
+    marginTop: scale(XSMALL),
   },
   MRxSmall: {
-    marginRight: scale(XSMALL)
+    marginRight: scale(XSMALL),
   },
   MLxSmall: {
-    marginLeft: scale(XSMALL)
+    marginLeft: scale(XSMALL),
   },
 
   Msmall: {
-    margin: scale(SMALL)
+    margin: scale(SMALL),
   },
   MBsmall: {
-    marginBottom: scale(SMALL)
+    marginBottom: scale(SMALL),
   },
   MTsmall: {
-    marginTop: scale(SMALL)
+    marginTop: scale(SMALL),
   },
   MRsmall: {
-    marginRight: scale(SMALL)
+    marginRight: scale(SMALL),
   },
   MLsmall: {
-    marginLeft: scale(SMALL)
+    marginLeft: scale(SMALL),
   },
 
   Mmedium: {
-    margin: scale(MEDIUM)
+    margin: scale(MEDIUM),
   },
   MBmedium: {
-    marginBottom: scale(MEDIUM)
+    marginBottom: scale(MEDIUM),
   },
   MTmedium: {
-    marginTop: scale(MEDIUM)
+    marginTop: scale(MEDIUM),
   },
   MRmedium: {
-    marginRight: scale(MEDIUM)
+    marginRight: scale(MEDIUM),
   },
   MLmedium: {
-    marginLeft: scale(MEDIUM)
+    marginLeft: scale(MEDIUM),
   },
   Mlarge: {
-    margin: scale(LARGE)
+    margin: scale(LARGE),
   },
   MBlarge: {
-    marginBottom: scale(LARGE)
+    marginBottom: scale(LARGE),
   },
   MTlarge: {
-    marginTop: scale(LARGE)
+    marginTop: scale(LARGE),
   },
   MRlarge: {
-    marginRight: scale(LARGE)
+    marginRight: scale(LARGE),
   },
   MLlarge: {
-    marginLeft: scale(LARGE)
+    marginLeft: scale(LARGE),
   },
 
   // Padding
   PxSmall: {
-    padding: scale(XSMALL)
+    padding: scale(XSMALL),
   },
   PBxSmall: {
-    paddingBottom: scale(XSMALL)
+    paddingBottom: scale(XSMALL),
   },
   PTxSmall: {
-    paddingTop: scale(XSMALL)
+    paddingTop: scale(XSMALL),
   },
   PRxSmall: {
-    paddingRight: scale(XSMALL)
+    paddingRight: scale(XSMALL),
   },
   PLxSmall: {
-    paddingLeft: scale(XSMALL)
+    paddingLeft: scale(XSMALL),
   },
 
   Psmall: {
-    padding: scale(SMALL)
+    padding: scale(SMALL),
   },
   PBsmall: {
-    paddingBottom: scale(SMALL)
+    paddingBottom: scale(SMALL),
   },
   PTsmall: {
-    paddingTop: scale(SMALL)
+    paddingTop: scale(SMALL),
   },
   PRsmall: {
-    paddingRight: scale(SMALL)
+    paddingRight: scale(SMALL),
   },
   PLsmall: {
-    paddingLeft: scale(SMALL)
+    paddingLeft: scale(SMALL),
   },
 
   Pmedium: {
-    padding: scale(MEDIUM)
+    padding: scale(MEDIUM),
   },
   PBmedium: {
-    paddingBottom: scale(MEDIUM)
+    paddingBottom: scale(MEDIUM),
   },
   PTmedium: {
-    paddingTop: scale(MEDIUM)
+    paddingTop: scale(MEDIUM),
   },
   PRmedium: {
-    paddingRight: scale(MEDIUM)
+    paddingRight: scale(MEDIUM),
   },
   PLmedium: {
-    paddingLeft: scale(MEDIUM)
+    paddingLeft: scale(MEDIUM),
   },
 
   Plarge: {
-    padding: scale(LARGE)
+    padding: scale(LARGE),
   },
   PBlarge: {
-    paddingBottom: scale(LARGE)
+    paddingBottom: scale(LARGE),
   },
   PTlarge: {
-    paddingTop: scale(LARGE)
+    paddingTop: scale(LARGE),
   },
   PRlarge: {
-    paddingRight: scale(LARGE)
+    paddingRight: scale(LARGE),
   },
   PLlarge: {
-    paddingLeft: scale(LARGE)
-  }
-}
+    paddingLeft: scale(LARGE),
+  },
+};

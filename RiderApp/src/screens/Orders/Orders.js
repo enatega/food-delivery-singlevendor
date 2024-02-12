@@ -1,33 +1,34 @@
-import React, { useEffect, useState, useLayoutEffect } from 'react'
-import { useNavigation } from '@react-navigation/native'
+import React, { useEffect, useState, useLayoutEffect } from "react";
+import { useNavigation } from "@react-navigation/native";
 import {
   ImageBackground,
   StatusBar,
   TouchableOpacity,
-  View
-} from 'react-native'
-import i18n from '../../../i18n'
-import { AssignedOrders, NewOrders, TextDefault } from '../../components'
-import colors from '../../utilities/colors'
-import useStyle from './style'
+  View,
+} from "react-native";
+import { useTranslation } from "react-i18next";
+import { AssignedOrders, NewOrders, TextDefault } from "../../components";
+import colors from "../../utilities/colors";
+import useStyle from "./style";
 
-const BACKGROUND_IMAGE = require('../../../assets/images/ui/BG.png')
+const BACKGROUND_IMAGE = require("../../../assets/images/ui/BG.png");
 
 export default function Orders() {
-  const styles = useStyle()
-  const [isNewOrderSelected, setIsNewOrderSelected] = useState(false)
-  const navigation = useNavigation()
+  const { t } = useTranslation();
+  const styles = useStyle();
+  const [isNewOrderSelected, setIsNewOrderSelected] = useState(false);
+  const navigation = useNavigation();
 
   useEffect(() => {
-    StatusBar.setBarStyle('light-content')
-  }, [isNewOrderSelected])
+    StatusBar.setBarStyle("light-content");
+  }, [isNewOrderSelected]);
 
   useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: null,
-      headerTitle: i18n.t('Orders')
-    })
-  }, [navigation])
+      headerTitle: t("Orders"),
+    });
+  }, [t, navigation]);
 
   return (
     <View style={[styles.flex, styles.bottom]}>
@@ -41,11 +42,12 @@ export default function Orders() {
               {
                 backgroundColor: !isNewOrderSelected
                   ? colors.buttonBackgroundPink
-                  : 'transparent'
-              }
-            ]}>
+                  : "transparent",
+              },
+            ]}
+          >
             <TextDefault bold H5 numberOfLines={1}>
-              {i18n.t('myOrders')}
+              {t("myOrders")}
             </TextDefault>
           </TouchableOpacity>
           <TouchableOpacity
@@ -56,16 +58,17 @@ export default function Orders() {
               {
                 backgroundColor: isNewOrderSelected
                   ? colors.buttonBackgroundPink
-                  : 'transparent'
-              }
-            ]}>
+                  : "transparent",
+              },
+            ]}
+          >
             <TextDefault bold H5 numberOfLines={1}>
-              {i18n.t('newOrders')}
+              {t("newOrders")}
             </TextDefault>
           </TouchableOpacity>
         </View>
       </ImageBackground>
       {!isNewOrderSelected ? <AssignedOrders /> : <NewOrders />}
     </View>
-  )
+  );
 }

@@ -6,7 +6,7 @@ import * as SplashScreen from "expo-splash-screen";
 import React, { useEffect, useState } from "react";
 import { Platform, StatusBar } from "react-native";
 import FlashMessage from "react-native-flash-message";
-import i18n from "./i18n";
+//import i18n from "./i18n";
 import setupApolloClient from "./src/apollo/index";
 import { AuthContext } from "./src/context/auth";
 import { ConfigurationProvider } from "./src/context/configuration";
@@ -56,7 +56,7 @@ export default function App() {
   };
 
   async function loadData() {
-    await i18n.initAsync();
+    //await i18n.initAsync();
     await Font.loadAsync({
       MuseoSans300: require("./assets/font/MuseoSans/MuseoSans300.ttf"),
       MuseoSans500: require("./assets/font/MuseoSans/MuseoSans500.ttf"),
