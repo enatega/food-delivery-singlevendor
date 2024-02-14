@@ -1,6 +1,5 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
-import * as Localization from "expo-localization";
 import { Platform } from "react-native";
 import { en } from "./languages/en";
 import { de } from "./languages/de";

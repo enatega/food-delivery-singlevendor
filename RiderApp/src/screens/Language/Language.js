@@ -1,7 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
-import * as Localization from "expo-localization";
-import * as Updates from "expo-updates";
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import { TouchableOpacity, View, ActivityIndicator } from "react-native";
 import i18n from "../../../i18next";
@@ -65,7 +63,6 @@ function Language() {
         languageNameSetter(langName);
       }
       i18n.changeLanguage(lang);
-      //modalVisibleSetter(false);
     } catch (error) {
       console.error("Error during language selection:", error);
     } finally {
