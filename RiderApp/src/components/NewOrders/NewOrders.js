@@ -7,9 +7,10 @@ import UserContext from '../../context/user'
 import TextError from '../Text/TextError/TextError'
 import { useNavigation } from '@react-navigation/native'
 import { verticalScale } from '../../utilities/scaling'
-import i18n from '../../../i18n'
+import { useTranslation } from "react-i18next";
 
 export default function Orders() {
+  const { t } = useTranslation();
   const navigation = useNavigation()
   const configuration = useContext(ConfigurationContext)
   const {
@@ -21,11 +22,11 @@ export default function Orders() {
   } = useContext(UserContext)
 
   function emptyView() {
-    return <TextError text={i18n.t('NoNewOrder')} />
+    return <TextError text={t('NoNewOrder')} />
   }
 
   if (loadingUnAssigned) return <Spinner />
-  if (errorUnAssigned) return <TextError text={i18n.t('Somethingisworng')} />
+  if (errorUnAssigned) return <TextError text={t('Somethingisworng')} />
 
   return (
     <FlatList

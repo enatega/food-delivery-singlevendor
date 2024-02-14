@@ -3,7 +3,7 @@ import { View, TouchableOpacity } from 'react-native'
 import { scale } from '../../utilities/scaling'
 import colors from '../../utilities/colors'
 import styles from './style'
-import i18n from '../../../i18n'
+import { useTranslation } from "react-i18next";
 import TextDefault from '../Text/TextDefault/TextDefault'
 import { alignment } from '../../utilities/alignment'
 import { AntDesign } from '@expo/vector-icons'
@@ -36,7 +36,7 @@ function Order(props) {
   // const cardHeight = props.height
   //   ? props.height
   //   : PixelRatio.getFontScale() * verticalScale(150)
-
+  const { t } = useTranslation();
   const checkStatus = status => {
     const obj = orderStatuses.filter(x => {
       return x.key === status
@@ -60,7 +60,7 @@ function Order(props) {
               numberOfLines={2}
               bold
               textColor={colors.placeHolderColor}>
-              {i18n.t('YourOrderID')}
+              {t('YourOrderID')}
             </TextDefault>
             <TextDefault H4 bolder>
               {props.orderId}
@@ -77,7 +77,7 @@ function Order(props) {
                 bold
                 uppercase
                 style={{ ...alignment.PLxSmall, ...alignment.PRxSmall }}>
-                {i18n.t(props.orderStatus)}
+                {t(props.orderStatus)}
               </TextDefault>
             </View>
             <View style={{ paddingLeft: '5%' }}>
@@ -100,19 +100,19 @@ function Order(props) {
               style={alignment.MTmedium}
               textColor={colors.placeHolderColor}
               bold>
-              {i18n.t('totalOrderAmount')}
+              {t('totalOrderAmount')}
             </TextDefault>
             <TextDefault
               textColor={colors.placeHolderColor}
               bold
               style={{ ...alignment.MTxSmall }}>
-              {i18n.t('paymentMethod')}
+              {t('paymentMethod')}
             </TextDefault>
             <TextDefault
               textColor={colors.placeHolderColor}
               bold
               style={{ ...alignment.MTxSmall }}>
-              {i18n.t('deliveryTime')}
+              {t('deliveryTime')}
             </TextDefault>
           </View>
           <View>
@@ -140,14 +140,14 @@ function Order(props) {
         {/* <View style={[styles.card_container__left]}>
           <View style={[styles.left_toptextLine]}>
           <TextDefault center H5 bold textColor={colors.placeHolderColor}>
-             Your {i18n.t('orderId')}
+             Your {t('orderId')}
             </TextDefault>
             <TextDefault H3 bolder>
               {props.orderId}
             </TextDefault>
           </View> */}
         {/* <TextDefault style={alignment.MTmedium} textColor={colors.placeHolderColor} bold>
-            {i18n.t('totalOrderAmount')} - {props.orderAmount}
+            {t('totalOrderAmount')} - {props.orderAmount}
           </TextDefault>
           <TextDefault
             textColor={colors.placeHolderColor}
